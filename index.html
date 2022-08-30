@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- site information -->
+    <title>Jeff Lu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- stylesheets, fonts, and fontawesome -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ygv6uzw.css">
+    <script src="https://kit.fontawesome.com/6b4fd4dffa.js" crossorigin="anonymous"></script>
+
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#333333">
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#F9FCFD">
+    <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#F9FCFD">
+  </head>
+
+  <body>
+    <div class="scroll-helper-top"></div>
+    <!------------
+      NAVBAR 
+      ------------>
+    <nav class="nav" id="nav">
+      <div class="container">
+
+        <!-- left -->
+        <a class="nav-hero">
+          <img src="assets/imgs/monogram.png" alt="JL monogram logo">
+          <h5>Jeff Lu</h5>
+        </a>
+
+        <!-- hamburger menu (for smaller screens) -->
+        <input type="checkbox" id="nav-menu">
+        <label for="nav-menu" class="nav-btn" onClick="toggle()">
+            <i></i>
+            <i></i>
+            <i></i>
+        </label>
+
+        <!-- right (for larger screens) -->
+        <div class="links">
+          <ul>
+            <li>
+              <a class="nav-work">Work</a>
+            </li>
+            <li>
+              <a class="nav-about">About</a>
+            </li>
+            <li>
+              <a class="nav-contact">Contact</a>
+            </li>
+            <li>
+              <!-- <i class="fa-solid fa-file-pdf"></i>  -->
+              <a href="assets/pdfs/resume.pdf" target="_blank" onclick="menuOff()">Resume 
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!------------
+      HERO 
+      ------------>
+    <!-- <section class="hero">
+
+      !-- images --
+      <img class="splash" src="assets/imgs/splash.png" alt="Background texture">
+      <div class="container">
+        <img class="headshot" src="assets/imgs/headshot.png" alt="Headshot">
+
+        !-- text --
+        <h2>
+          <strong>Hey!</strong> 👋🏼
+        </h2>
+        <a href="https://youtu.be/AfIOBLr1NDU?t=2" target="_blank">
+          <h1>
+            My name is 
+              <span>
+                <strong>Jeff</strong>.
+                <i class="fa-solid fa-volume-high"></i>
+              </span>
+          </h1>
+        </a>
+        <h2>
+          I'm a UI/UX designer focused on combining the elements of 
+            <strong class="one">technology</strong>, 
+            <strong class="two">the arts</strong>, and 
+            <strong class="three">the human psyche</strong> that go into creating beautiful interfaces.
+        </h2>
+
+        !-- button --
+        <a class="btn nav-work2" href="#">
+          <i class="fa-solid fa-chevron-down"></i>
+        </a>
+
+        <div class="scroll-helper-work"></div>
+      </div>
+    </section> -->
+
+    <!------------
+      WORK 
+      ------------>
+    <section class="work">
+      <div class="container">
+
+        <!-- title -->
+        <!-- <h3>Work</h3> -->
+        <h2>
+          I'm a UI/UX designer dedicated to combining the elements of 
+            <strong class="one">technology</strong>, 
+            <strong class="two">the arts</strong>, and 
+            <strong class="three">the human psyche</strong> that go into creating beautiful interfaces.
+        </h2>
+
+        <!-- gallery -->
+        <div class="grid">
+          <div class="container">
+            <a href="assets/pdfs/uclacki.pdf" target="_blank">
+              <img src="assets/imgs/uclacki.png" alt="Case Study #1">
+              <div class="overlay">
+                <h4>UCLA CKI</h4>
+                <p>Web UI/UX Case Study</p>
+              </div>
+            </a>
+          </div>
+          <div class="container">
+            <a href="assets/pdfs/pilot.pdf" target="_blank">
+              <img src="assets/imgs/pilot.png" alt="Case Study #2">
+              <div class="overlay">
+                <h4>Pilot</h4>
+                <p>Smart TV UI/UX Concept</p>
+              </div>
+            </a>
+          </div>
+          <div class="container">
+            <a href="assets/pdfs/aria.pdf" target="_blank">
+              <img src="assets/imgs/aria.png" alt="Case Study #3">
+              <div class="overlay">
+                <h4>Aria</h4>
+                <p>Web UI/UX Concept</p>
+              </div>
+            </a>
+          </div>
+          <div class="container">
+            <a href="assets/pdfs/rover.pdf" target="_blank">
+              <img src="assets/imgs/rover.png" alt="Case Study #4">
+              <div class="overlay">
+                <h4>Rover</h4>
+                <p>Mobile UI/UX Concept</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="scroll-helper-about"></div>
+      </div>
+    </section>
+
+    <!------------
+      ABOUT 
+      ------------>
+    <section class="about">
+      <div class="container">
+        
+        <!-- title -->
+        <h3>About</h3>
+        <div class="flex">
+
+          <!-- text -->
+          <p>
+            Hey! 
+              <a href="https://youtu.be/AfIOBLr1NDU?t=2" target="_blank" class="inline">
+            My name is Jeff. 
+            </a>
+            I'm a sophomore at UCLA studying 
+              <a href="https://www.psych.ucla.edu" target="_blank" class="inline">Cognitive Science</a> and 
+              <a href="https://linguistics.ucla.edu" target="_blank" class="inline">Linguistics of Computer Science</a>. 
+            As a Marie Kondo fanatic with an interest in tech, I'm driven by leveraging human-computer interaction principles to create visually pleasing products with panache.
+              <br><br>
+            In addition to UI/UX design, I've previously worked in 
+              <a href="https://www.instagram.com/fpsproductions/" target="_blank" class="inline">marketing design</a>, 
+              <a href="https://kidskonservatory.com" target="_blank" class="inline">web development</a>, and 
+              <a href="https://www.figma.com/proto/QH5iPg8lH7K3IQyVgCFyOA/APIFM?node-id=2765%3A6825&scaling=contain&page-id=2395%3A6680&starting-point-node-id=2765%3A6825&show-proto-sidebar=0" target="_blank" class="inline">mobile app development</a>. 
+            I'm currently in the market for any position that will let me put my skills to use.
+              <br><br>
+            When I'm not designing things, I can probably be spotted playing a board game, solving the daily crossword, or learning any instrument I can get my hands on (I'm at 7 and counting!)
+              <br>
+          </p>
+
+          <!-- photo -->
+          <img src="assets/imgs/about.jpg" alt="Headshot">
+        </div>
+      </div>
+    </section>
+
+    <!------------
+      contact 
+      ------------>
+    <section class="contact">
+      <div class="container">
+        
+        <!-- title -->
+        <h3>Contact</h3>
+
+        <!-- buttons -->
+        <a class="btn" id="email" href="mailto: jefflukr@gmail.com">
+          <i class="fa-solid fa-envelope"></i> jefflukr@gmail.com
+        </a>
+
+        <a class="btn" href="assets/pdfs/resume.pdf" target="_blank">
+          <i class="fa-solid fa-file-pdf"></i> Resume
+        </a>
+
+        <a class="btn linkedin" href="https://www.linkedin.com/in/thejefflu" target="_blank">
+          <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+        </a>
+        <!-- <a class="btn behance" href="https://www.behance.net/thejefflu" target="_blank">
+          <i class="fa-brands fa-behance"></i>
+        </a>
+        <a class="btn dribbble" href="https://dribbble.com/thejefflu" target="_blank">
+          <i class="fa-brands fa-dribbble"></i>
+        </a>
+        <a class="btn medium" href="https://medium.com/@thejefflu" target="_blank">
+          <i class="fa-brands fa-medium"></i> -->
+        </a>
+        
+        <!-- text -->
+        <p>
+          Designed & Developed with 
+            <i class="fa-solid fa-heart"></i> 
+          by Jeff Lu 2022
+        </p>
+      </div>
+    </section>
+
+    <div class="scroll-helper-contact"></div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
