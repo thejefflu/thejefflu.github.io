@@ -30,23 +30,23 @@ function menuOff() {
 
 var nav1 = document.querySelector('.nav-hero');
 nav1.addEventListener('click', function() {
-  smoothScroll('.scroll-helper-top', 2000);
+  smoothScroll('.scroll-helper-top', 1500);
 });
 
 var nav2 = document.querySelector('.nav-work');
 nav2.addEventListener('click', function() {
-  smoothScroll('.scroll-helper-top', 2000);
+  smoothScroll('.scroll-helper-work', 1500);
 });
 
 var nav4 = document.querySelector('.nav-about');
 nav4.addEventListener('click', function() {
-  smoothScroll('.scroll-helper-about', 2000);
+  smoothScroll('.scroll-helper-about', 1500);
 });
 
 var nav5 = document.querySelector('.nav-contact');
 nav5.addEventListener('click', function() {
   console.log('h');
-  smoothScroll('.scroll-helper-contact', 2000);
+  smoothScroll('.scroll-helper-contact', 1500);
 });
 
 var navMenu = document.getElementById("nav-menu");
