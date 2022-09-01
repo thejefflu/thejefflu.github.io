@@ -136,6 +136,7 @@ p span {
 .about p {
   margin-bottom: 5em;
   width: calc(100% - 19rem);
+  max-width: 60ch;
 }
 
 .contact p {
@@ -212,6 +213,23 @@ h2 strong { /* inline links w hover effect */
 
 #heading {
   color: var(--jet);
+  font-size: 1.25rem;
+  padding-bottom: 6px;
+}
+
+#heading i {
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.3s ease;
+  margin: 0;
+}
+
+@media (hover: hover) {
+  #heading:hover i,
+  #heading:focus i {
+    opacity: 1;
+    transform: scale(0.75);
+  }
 }
 
 @media (hover: hover) {
@@ -243,8 +261,16 @@ nav img {
   width: 15rem;
   border-radius: 25px;
   object-fit: cover;
-  box-shadow: 0px 10px 30px -10px var(--gunmetal);
+  box-shadow: 0px 5px 20px -5px var(--gunmetal);
   margin-bottom: 5em;
+  transition: 0.4s ease
+}
+
+@media (hover: hover) {
+  .about img:hover,
+  .about img:focus {
+    transform: scale(1.025);
+  }
 }
 
 /* buttons */
@@ -428,13 +454,22 @@ section .container,
     width: calc(50% - 10px);
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0px 10px 25px -25px var(--gunmetal);
+    box-shadow: 0px 5px 25px -20px var(--gunmetal);
+    transition: 0.4s ease;
+  }
+
+  @media (hover: hover) {
+    .work .grid .container:hover,
+    .work .grid .container:focus {
+      transform: scale(1.025);
+    }
   }
 
 .about .container .flex {
   display: flex;
   gap: 4rem;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .contact .container {
@@ -636,6 +671,7 @@ section .container,
 
   h2 {
     padding-top: 8em;
+    width: 95%;
   }
 
   .about,
@@ -663,6 +699,7 @@ section .container,
 
   .about p {
     width: 100%;
+    max-width: none;
     order: 2;
     margin: 0;
   }
@@ -689,7 +726,7 @@ section .container,
   }
 
   .work .grid {
-    padding-bottom: 4em;
+    padding-bottom: 5em;
   }
 
   .about {
@@ -709,15 +746,11 @@ section .container,
   .contact .container {
     padding-bottom: 21em;
   }
-
-  h3 {
-    font-size: 3.25rem;
-  }
 }
 
 @media screen and (max-width: 25em) {
-  h3 {
-    font-size: 2.6rem;
+  .contact p {
+    width: 25ch;
   }
 }
 
