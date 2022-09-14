@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- site information -->
+    <title>Jeff Lu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- stylesheets, fonts, and fontawesome -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ygv6uzw.css">
+    <script src="https://kit.fontawesome.com/6b4fd4dffa.js" crossorigin="anonymous"></script>
+
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#333333">
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#F9FCFD">
+    <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#F9FCFD">
+  </head>
+
+  <body>
+    <!------------
+      NAVBAR 
+      ------------>
+    <nav class="nav" id="nav">
+      <div class="container">
+
+        <!-- left -->
+        <a class="nav-hero" href="index.html">
+          <img src="assets/imgs/monogram.png" alt="JL monogram logo">
+          <h5>UCLA CKI <i class="fa-solid fa-arrow-right-to-bracket"></i></h5>
+        </a>
+
+        <!-- hamburger menu (for smaller screens) -->
+        <input type="checkbox" id="nav-menu">
+        <label for="nav-menu" class="nav-btn" onclick="toggleScroll()">
+            <i></i>
+            <i></i>
+            <i></i>
+        </label>
+
+        <!-- right (for larger screens) -->
+        <div class="links">
+          <ul>
+            <li>
+              <a class="nav-brief" onclick="enableScroll()">Brief</a>
+            </li>
+            <li>
+              <a class="nav-research" onclick="enableScroll()">Research</a>
+            </li>
+            <li>
+              <a class="nav-process" onclick="enableScroll()">Process</a>
+            </li>
+            <li>
+              <a class="nav-designs" onclick="enableScroll()">Final Designs</a>
+            </li>
+            <li>
+              <a class="nav-closing" onclick="enableScroll()">Closing</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+   <!------------
+    SPLASH 
+    ------------>
+
+    <section class="splash">
+      <img src="assets/imgs/uclacki/splash.png" class="splash-img">
+      <div class="container small">
+        <h3 class="case-study">
+          UCLA CKI
+        </h3>
+        <h1>“Not everybody can be famous. But everybody can be great, because greatness is determined by service.”
+        </h1>
+        <p class="quote">— Martin Luther King Jr.</p>
+        
+        <div class="flex">
+          <p>
+            <span>Timeline</span> 
+            <br> 
+            Aug 2022
+          </p>
+          <p>
+            <span>Platform</span>
+            <br> 
+            Smart TV Application
+          </p>
+          <p>
+            <span>Role</span>
+            <br> 
+            UI/UX Designer
+          </p>
+          <p>
+            <span>Toolkit</span> 
+            <br> 
+            Adobe XD
+          </p>
+        </div>
+        
+        
+        <a class="btn centered" href="work/uclacki.pdf" target="_blank">
+          <i class="fa-solid fa-file-pdf"></i> Process Deck
+        </a>
+      </div>
+      <div class="scroll-helper-brief"></div>
+    </section>
+
+    <!------------
+      BRIEF 
+      ------------>
+    <section class="brief">
+      <div class="container small">
+        <h3>Brief</h3>
+
+          <h6 class="subheading">Background</h6>
+          <p class="description">Circle K International (CKI) is the world’s largest collegiate service organization. UCLA’s chapter stands at the forefront of CKI, earning the honor of “Outstanding Total Achievement” at the 2022 District Convention and generating thousands of volunteering hours and charity funds annually.</p>
+
+          <h6 class="subheading">Problem Statement</h6>
+          <p class="description">The list of resources available to UCLA CKI members is extremely robust, ranging from service event sign-up sheets to test banks. In addition, the club has an overarching theme every year (this year’s was Animal Crossing). 
+<br><br>
+            With this in mind, <strong>the organization’s current website lacks ease of access to resources, nor does it convey a strong sense of theme or visual identity</strong>. As a result, members can feel confused or overwhelmed rather than assisted by the club website.</p>
+
+          <h1 class="callout extra-margin">"How might we utililize web design to <strong>increase retention</strong> and <strong>improve member experience</strong> for a collegiate student organization?"</h1>
+
+          <h6 class="subheading">Team and Responsibilities</h6>
+          <p class="description">As the organization’s director of technology, I was placed <strong>in command of the website’s end-to-end redesign</strong>, from ideation to launch.<br><br>
+
+            In the process, I <strong>worked in tandem with the organization’s graphics director</strong>, who provided Animal Crossing drawings to be integrated into the design. I also <strong>communicated with the club’s executive board</strong> to ensure that designs aligned with the desired “image” of the organization.</p>
+
+          <h6 class="subheading">Scope and Constraints</h6>
+          <p class="description">The scope of the redesign extended to <strong>the club’s entire website</strong>, including a welcome splash page, “about” pages, asset repositories, and more.
+<br><br>
+            The task was also to be completed in a <strong>short time frame</strong>, starting no earlier than the mid-summer reveal of the new club theme, and finishing no later than the beginning of the new school year in September.
+            <br><br>
+            Finally, because the website is hosted through Weebly, I was somewhat restricted in the designs I could produce due to <strong>inherent implementation limitations</strong>.</p>
+      </div>
+      <div class="scroll-helper-research"></div>
+    </section>
+
+    <!------------
+      RESEARCH 
+      ------------>
+      <section class="research">
+        <div class="container small">
+          <h3>Research</h3>
+  
+            <h6 class="subheading">Competitive Analysis</h6>
+            <p>Before attempting to create my own designs, I conducted an audit of the websites of 3 other UCLA service organizations, 1 other Circle K branch, and 1 non-collegiate, LA-based service organization.
+<br><br>
+              In doing so, I <strong>identified 8 features that made websites for service organizations more effective</strong>, whether as means of recruitment or member retention. I would later take special care capitalizing off of these factors when designing Circle K’s own website.</p>
+            <img src="assets/imgs/uclacki/competitive-analysis.png">
+
+            <h6 class="subheading">Contextual Inquiry</h6>
+            <p>Next, I reached out to <strong>10 current Circle K members</strong> and invited them to participate in written interviews to find out more about the range of their values and experiences. I found that:</p>
+            <img src="assets/imgs/uclacki/contextual-inquiry.png">
+  
+            <h6 class="subheading">User Personas</h6>
+            <p></p>
+            <img src="assets/imgs/uclacki/personas.png">
+
+            <h6 class="subheading">Key Takeaways</h6>
+            <p></p>
+            <img src="assets/imgs/uclacki/takeaways.png">
+
+            <h6 class="subheading">Proposed Solutions</h6>
+            <p></p>
+            <img src="assets/imgs/uclacki/solutions.png">
+
+        </div>
+        <div class="scroll-helper-process"></div>
+      </section>
+
+    <!------------
+      PROCESS 
+      ------------>
+      <section class="process">
+        <div class="container small">
+          <h3>Process</h3>
+  
+            <h6 class="subheading">Sitemap</h6>
+            <p></p>
+            <img src="assets/imgs/uclacki/sitemap.png">
+
+            <h6 class="subheading">Lo-Fi Wireframes</h6>
+            <img src="assets/imgs/uclacki/lofi.png">
+
+            <h6 class="subheading">Mid-Fi Prototypes</h6>
+            <img class="no-margin" src="assets/imgs/uclacki/midfi.png">
+            <img src="assets/imgs/uclacki/midfi-prototype.png">
+
+            <h6 class="subheading">Usability Testing</h6>
+            <p>Upon the creation of my first working prototype, I gathered <strong>4 participants for a System Usability Scale</strong> in order to gauge the design’s effectiveness from a birds-eye view. I found that:</p>
+            <img src="assets/imgs/uclacki/usability-testing.png">
+        </div>
+        <div class="scroll-helper-designs"></div>
+      </section>
+
+    <!------------
+      FINAL DESIGNS 
+      ------------>
+      <section class="designs">
+        <div class="container small">
+          <h3>Final Designs</h3>
+  
+            <h6 class="subheading">Landing Page</h6>
+            <p>Users are greeted with a familiar view of UCLA’s Royce Hall, followed by promotional pictures and quotes sourced directly from current members.</p>
+            <img class="shadow" src="assets/imgs/uclacki/hifi1.png">
+
+            <h6 class="subheading">Tenets</h6>
+            <p>The site’s primary source of “About” content. Detailed descriptions of Circle K’s three tenets, each accompanied by quotes, photos, and quantified measures of impact.</p>
+            <img class="shadow" src="assets/imgs/uclacki/hifi2.png">
+
+            <h6 class="subheading">Board Officers</h6>
+            <p>Contact information for each of the club’s 18 board officers, alongside headshots and brief biographies to foster a sense of familiarity.</p>
+            <img class="shadow" src="assets/imgs/uclacki/hifi3.png">
+
+            <h6 class="subheading">Beyond UCLA</h6>
+            <p>Descriptions of what Circle K looks like beyond the university level, for those who want to get more involved.</p>
+            <img class="shadow" src="assets/imgs/uclacki/hifi4.png">
+
+            <h6 class="subheading">Prospective Members</h6>
+            <p>A succint set of action items for those looking to join the club, along with an FAQ section, designed to facilitate and demystify the onboarding process.</p>
+            <img class="shadow" src="assets/imgs/uclacki/hifi5.png">
+
+            <h6 class="subheading">Current Members</h6>
+            <p>A one-stop shop for the club’s most frequently accessed resources, including a link to an external repository of every resource the club has to offer.</p>
+            <img class="shadow" src="assets/imgs/uclacki/hifi6.png">
+
+            <h6 class="subheading">Contact</h6>
+            <p>A no-frills contact form for those with a quick question. All form responses directed to yours truly!</p>
+            <img class="shadow" src="assets/imgs/uclacki/hifi7.png">
+
+        </div>
+      </section>
+
+    <!------------
+      CLOSING
+      ------------>
+      <section class="closing">
+        <div class="container small">
+          <h3>Closing</h3>
+            <h6 class="subheading">Style Guide</h6>
+            <p>I sought to create a friendly, clean look to create a <strong>welcoming presence</strong> for new and current members alike. 
+<br><br>
+              Throughout, I utilized blue and beige to elicit <strong>impressions of prestige and humanitarianism</strong>. These colors also naturally aligned with Circle K’s official colors and UCLA CKI’s theme for this year, Animal Crossing.</p>
+            <img src="assets/imgs/uclacki/style-guide.png">
+  
+            <h6 class="subheading">Takeaways</h6>
+            <p>Working on UCLA CKI’s website was my first foray into the art of designing for a “real-world” project, as opposed to a concept. As such, I was able use the opportunity to <strong>streamline a design process</strong> that works best for me, and gained a new appreciation for <strong>the importance of visual identity and pathos-centered design</strong> in the world of marketing. 
+
+              Through the extensive research that the project demanded, I also gained new insight about the importance of <strong>keeping the user front and center</strong> every step of the way, as their needs and thought processes do not always align with what I, as a designer, might expect.</p>
+
+            <a class="btn centered-two" href="work/uclacki.pdf" target="_blank">
+              <i class="fa-solid fa-file-pdf"></i> Process Deck
+            </a>
+
+            <p class="next">Next Case Study: <a href="pilot.html" class="inline">Pilot</a></p>
+
+        </div>
+      </section>
+
+    <!-- <div class="scroll-helper-contact"></div> -->
+    <div class="scroll-helper-closing"></div>
+    <script src="js/case-study.js"></script>
+  </body>
+</html>

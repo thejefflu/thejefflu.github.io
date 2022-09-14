@@ -39,7 +39,7 @@
 
         <!-- hamburger menu (for smaller screens) -->
         <input type="checkbox" id="nav-menu">
-        <label for="nav-menu" class="nav-btn" onClick="toggle()">
+        <label for="nav-menu" class="nav-btn" onclick="toggleScroll()">
             <i></i>
             <i></i>
             <i></i>
@@ -49,16 +49,16 @@
         <div class="links">
           <ul>
             <li>
-              <a class="nav-work">Work</a>
+              <a class="nav-work" onclick="enableScroll()">Work</a>
             </li>
             <li>
-              <a class="nav-about">About</a>
+              <a class="nav-about" onclick="enableScroll()">About</a>
             </li>
             <li>
-              <a class="nav-contact">Contact</a>
+              <a class="nav-contact" onclick="enableScroll()">Contact</a>
             </li>
             <li>
-              <a href="resume.pdf" target="_blank" onclick="menuOff()">Resume 
+              <a href="resume.pdf" target="_blank" onclick="menuOff(); enableScroll()">Resume 
               </a>
             </li>
           </ul>
@@ -83,12 +83,12 @@
       WORK 
       ------------>
 
-        <section class="work">
-          <div class="container">
+      <section class="work">
+        <div class="container">
         <!-- gallery -->
         <div class="grid">
           <div class="container">
-            <a href="uclacki.pdf" target="_blank">
+            <a href="uclacki.html">
               <img src="assets/imgs/uclacki.png" alt="Case Study #1">
               <div class="overlay">
                 <h4>UCLA CKI</h4>
@@ -97,7 +97,7 @@
             </a>
           </div>
           <div class="container">
-            <a href="pilot.pdf" target="_blank">
+            <a href="pilot.html">
               <img src="assets/imgs/pilot.png" alt="Case Study #2">
               <div class="overlay">
                 <h4>Pilot</h4>
@@ -106,7 +106,7 @@
             </a>
           </div>
           <div class="container">
-            <a href="aria.pdf" target="_blank">
+            <a href="aria.html">
               <img src="assets/imgs/aria.png" alt="Case Study #3">
               <div class="overlay">
                 <h4>Aria</h4>
@@ -115,7 +115,7 @@
             </a>
           </div>
           <div class="container">
-            <a href="rover.pdf" target="_blank">
+            <a href="rover.html">
               <img src="assets/imgs/rover.png" alt="Case Study #4">
               <div class="overlay">
                 <h4>Rover</h4>
@@ -149,7 +149,7 @@
             I'm a sophomore at UCLA studying 
               <a href="https://www.psych.ucla.edu" target="_blank" class="inline">Cognitive Science</a> and 
               <a href="https://linguistics.ucla.edu" target="_blank" class="inline">Linguistics of Computer Science</a>. 
-            I approach life by combining this interdisciplinary background with my love of Marie Kondo. For my design work, this means I'm driven by integrating my knowledge of technology, the arts, and the human psyche to spark the utmost of&nbspjoy.
+            I approach life by combining this interdisciplinary background with my love of Marie Kondo. So, I strive to integrate my knowledge of technology, the arts, and the human psyche to spark the utmost of joy through my design&nbspwork.
               <br><br>
             In addition to UI/UX design, I've previously worked in <a href="apifm.pdf" target="_blank" class="inline">full stack development</a>, <a href="https://kidskonservatory.com" target="_blank" class="inline">marketing design</a>, and 
               <a href="https://www.instagram.com/fpsproductions/" target="_blank" class="inline">print design</a>.

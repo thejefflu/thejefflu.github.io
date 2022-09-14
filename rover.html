@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- site information -->
+    <title>Jeff Lu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- stylesheets, fonts, and fontawesome -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ygv6uzw.css">
+    <script src="https://kit.fontawesome.com/6b4fd4dffa.js" crossorigin="anonymous"></script>
+
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#333333">
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#F9FCFD">
+    <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#F9FCFD">
+  </head>
+
+  <body>
+    <!------------
+      NAVBAR 
+      ------------>
+    <nav class="nav" id="nav">
+      <div class="container">
+
+        <!-- left -->
+        <a class="nav-hero" href="index.html">
+          <img src="assets/imgs/monogram.png" alt="JL monogram logo">
+          <h5>Rover <i class="fa-solid fa-arrow-right-to-bracket"></i></h5>
+        </a>
+
+        <!-- hamburger menu (for smaller screens) -->
+        <input type="checkbox" id="nav-menu">
+        <label for="nav-menu" class="nav-btn" onclick="toggleScroll()">
+            <i></i>
+            <i></i>
+            <i></i>
+        </label>
+
+        <!-- right (for larger screens) -->
+        <div class="links">
+          <ul>
+            <li>
+              <a class="nav-brief" onclick="enableScroll()">Brief</a>
+            </li>
+            <li>
+              <a class="nav-research" onclick="enableScroll()">Research</a>
+            </li>
+            <li>
+              <a class="nav-process" onclick="enableScroll()">Process</a>
+            </li>
+            <li>
+              <a class="nav-designs" onclick="enableScroll()">Final Designs</a>
+            </li>
+            <li>
+              <a class="nav-closing" onclick="enableScroll()">Closing</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+   <!------------
+    SPLASH 
+    ------------>
+
+    <section class="splash">
+      <img src="assets/imgs/rover/splash.png" class="splash-img">
+      <div class="container small">
+        <h3 class="case-study">
+          Rover
+        </h3>
+        <h1>“Mankind was born on Earth. It was never meant to die here.”</h1>
+        <p class="quote">— Joseph Cooper, <em>Interstellar</em></p>
+        
+        <div class="flex">
+          <p>
+            <span>Timeline</span> 
+            <br> 
+            Jun - Jul 2022
+          </p>
+          <p>
+            <span>Platform</span>
+            <br> 
+            Mobile Application
+          </p>
+          <p>
+            <span>Role</span>
+            <br> 
+            UI/UX Designer
+          </p>
+          <p>
+            <span>Toolkit</span> 
+            <br> 
+            Figma
+          </p>
+        </div>
+        
+        
+        <a class="btn centered" href="work/rover.pdf" target="_blank">
+          <i class="fa-solid fa-file-pdf"></i> Process Deck
+        </a>
+      </div>
+      <div class="scroll-helper-brief"></div>
+    </section>
+
+    <!------------
+      BRIEF 
+      ------------>
+    <section class="brief">
+      <div class="container small">
+        <h3>Brief</h3>
+
+          <h6 class="subheading">Background</h6>
+          <p class="description">Rover is an all-in-one delivery and moving service. Created for a fictionalized future in which the first colony on Mars has been established, it is the first application of its kind to offer cargo transport between Earth and the Red Planet.</p>
+
+          <h6 class="subheading">Problem Statement</h6>
+          <p class="description">Due to the nature of early passenger rocket models, colonists, short-term settlers, and tourists alike cannot reliably transport their civilian good with them. As a result, prospective travelers can be left frustrated by the lack of transparency and accessibility of shipping solutions.</p>
+
+          <h1 class="callout">"How might we make the interplanetary traveling process more <strong>streamlined</strong>, <strong>accessible</strong>, and <strong>enjoyable</strong>?"</h1>
+      </div>
+      <div class="scroll-helper-research"></div>
+    </section>
+
+    <!------------
+      RESEARCH 
+      ------------>
+      <section class="research">
+        <div class="container small">
+          <h3>Research</h3>
+  
+            <h6 class="subheading">Competitive Analysis</h6>
+            <p>Because no pre-existing delivery or moving companies offer services to Mars (yet), I investigated <strong>three indirect competitors</strong> offering similar services to those planned for Rover. In doing so, I was able to identify shortcomings in these competitors from which I could optimize my own designs.</p>
+            <img class="shadow" src="assets/imgs/rover/competitive-analysis.png">
+  
+            <h6 class="subheading">User Personas</h6>
+            <p>After conducting some informal surveys and researching traveling trends among tourists (going to places on Earth) and astronauts (going to places in space), I discerned two archetypes that, used together, effectively encapsulated the scope of the intended audience for Rover.</p>
+            <img src="assets/imgs/rover/personas.png">
+
+            <h6 class="subheading">Key Takeaways</h6>
+            <p>Put together, my preliminary research gave way to three overarching themes in the needs of users:</p>
+            <img src="assets/imgs/rover/takeaways.png">
+
+            <h6 class="subheading">Proposed Solutions</h6>
+            <p>As a final step before moving on to the official design process, I devised solutions aimed to implement in order to address the above takeaways:</p>
+            <img src="assets/imgs/rover/solutions.png">
+        </div>
+        <div class="scroll-helper-process"></div>
+      </section>
+
+    <!------------
+      PROCESS 
+      ------------>
+      <section class="process">
+        <div class="container small">
+          <h3>Process</h3>
+  
+            <h6 class="subheading">"Paper" Wireframes</h6>
+            <p>I sketched different iterations of user flows in a <strong>close-up storyboard style</strong>, capturing the thought processes and emotional journey of the user while doubling as initial wireframes. Here are some of those sketches:</p>
+            <img class="shadow" src="assets/imgs/rover/paper-wireframes.png">
+  
+            <h6 class="subheading">Lo-Fi Wireflow</h6>
+            <p>After conducting some informal surveys and researching traveling trends among tourists (going to places on Earth) and astronauts (going to places in space), I discerned two archetypes that, used together, effectively encapsulated the scope of the intended audience for Rover.</p>
+            <img class="no-margin" src="assets/imgs/rover/lofi-wireframes.png">
+            <img class="shadow" src="assets/imgs/rover/lofi-wireflow.png">
+
+            <h6 class="subheading">Usability Testing</h6>
+            <p>Before finalizing my designs, I underwent a round of iteration with the help of <strong>five participants</strong> who I enlisted for a usability study. Findings that would go on to inform future design decisions included that...</p>
+            <h1 class="callout">80% of users were taken aback by the lack of an <strong>order confirmation screen</strong>.<br><br>60% of users found the <strong>layout of the marketplace</strong> unintuitive or unclear.<br><br>60% of users had difficulty determining where to start the <strong>checkout process</strong>.</h1>
+            <img class="shadow" src="assets/imgs/rover/usability-testing.jpg">
+        </div>
+        <div class="scroll-helper-designs"></div>
+      </section>
+
+    <!------------
+      FINAL DESIGNS 
+      ------------>
+      <section class="designs">
+        <div class="container small">
+          <h3>Final Designs</h3>
+  
+            <h6 class="subheading">Onboarding</h6>
+            <p>I used the onboarding screen—the first thing the user sees—to <strong>set the tone for the rest of the application</strong> with bold sci fi-esque typography, glassmorphic components, and gradient hues to create a simple and futuristic first impression.</p>
+            <img src="assets/imgs/rover/onboarding.png">
+
+            <h6 class="subheading">Hangar</h6>
+            <p>The marketplace hub—rebranded to the Hangar to fit a space theme—is the app's central hub for ordering goods from retailers on Earth and on Mars. Designed with the unique nature of cross-planet ordering in mind, it serves as a <strong>personalized feed of the user's favorite goods and retailers</strong> from across planets.</p>
+            <img src="assets/imgs/rover/hangar.png">
+
+            <h6 class="subheading">Podbay</h6>
+            <p>The other half of the ordering interface, the Podbay, is for ordering shipments of furniture and other personal items across planets. Contextual inquiries revealed that the ideal moving system would involve <strong>pre-determined packages, rather than the common quote-requesting system</strong>.</p>
+            <img src="assets/imgs/rover/podbay.png">
+
+            <h6 class="subheading">Checkout</h6>
+            <p>Finally, I created a short checkout system: a feat that proved more challenging than expected, as it had to handle destinations on different planets, and be able to differentiate between any items and shipments that may be ordered together.</p>
+            <img src="assets/imgs/rover/checkout.png">
+        </div>
+      </section>
+
+    <!------------
+      CLOSING
+      ------------>
+      <section class="closing">
+        <div class="container small">
+          <h3>Closing</h3>
+  
+            <h6 class="subheading">Takeaways</h6>
+            <p>Working on Rover as part of a certificate program was my first foray into the world of UX design. This, combined with the highly fictionalized nature of the app, led me to focus on <strong>svisual design</strong>, <strong>user experience/accessibility guidelines</strong>, and <strong>usability testing</strong> over user research (finding participants who plan on going to Mars any time soon would’ve been a futile effort). 
+              <br><br>
+            Nevertheless, working on Rover project gave me <strong>a taste of what the world of UX entails</strong>, provided me with a springboard for future projects, and solidified my passion for this wonderful industry.</p>
+
+            <a class="btn centered-two" href="work/rover.pdf" target="_blank">
+              <i class="fa-solid fa-file-pdf"></i> Process Deck
+            </a>
+
+            <p class="next">Next Case Study: <a href="uclacki.html" class="inline">UCLA CKI</a></p>
+
+        </div>
+      </section>
+
+    <!-- <div class="scroll-helper-contact"></div> -->
+    <div class="scroll-helper-closing"></div>
+    <script src="js/case-study.js"></script>
+  </body>
+</html>

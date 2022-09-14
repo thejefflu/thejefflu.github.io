@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- site information -->
+    <title>Jeff Lu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- stylesheets, fonts, and fontawesome -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ygv6uzw.css">
+    <script src="https://kit.fontawesome.com/6b4fd4dffa.js" crossorigin="anonymous"></script>
+
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#333333">
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#F9FCFD">
+    <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#F9FCFD">
+  </head>
+
+  <body>
+    <!------------
+      NAVBAR 
+      ------------>
+    <nav class="nav" id="nav">
+      <div class="container">
+
+        <!-- left -->
+        <a class="nav-hero" href="index.html">
+          <img src="assets/imgs/monogram.png" alt="JL monogram logo">
+          <h5>Pilot <i class="fa-solid fa-arrow-right-to-bracket"></i></h5>
+        </a>
+
+        <!-- hamburger menu (for smaller screens) -->
+        <input type="checkbox" id="nav-menu">
+        <label for="nav-menu" class="nav-btn" onclick="toggleScroll()">
+            <i></i>
+            <i></i>
+            <i></i>
+        </label>
+
+        <!-- right (for larger screens) -->
+        <div class="links">
+          <ul>
+            <li>
+              <a class="nav-brief" onclick="enableScroll()">Brief</a>
+            </li>
+            <li>
+              <a class="nav-research" onclick="enableScroll()">Research</a>
+            </li>
+            <li>
+              <a class="nav-process" onclick="enableScroll()">Process</a>
+            </li>
+            <li>
+              <a class="nav-designs" onclick="enableScroll()">Final Designs</a>
+            </li>
+            <li>
+              <a class="nav-closing" onclick="enableScroll()">Closing</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+   <!------------
+    SPLASH 
+    ------------>
+
+    <section class="splash">
+      <img src="assets/imgs/pilot/splash.png" class="splash-img">
+      <div class="container small">
+        <h3 class="case-study">
+          Pilot
+        </h3>
+        <h1>“Choose a life. Choose a job. Choose a career. Choose a family. Choose a f**king big television.”</h1>
+        <p class="quote">— Mark Renton, <em>Trainspotting</em></p>
+        
+        <div class="flex">
+          <p>
+            <span>Timeline</span> 
+            <br> 
+            Aug 2022
+          </p>
+          <p>
+            <span>Platform</span>
+            <br> 
+            Smart TV Application
+          </p>
+          <p>
+            <span>Role</span>
+            <br> 
+            UI/UX Designer
+          </p>
+          <p>
+            <span>Toolkit</span> 
+            <br> 
+            Figma
+          </p>
+        </div>
+        
+        
+        <a class="btn centered" href="work/pilot.pdf" target="_blank">
+          <i class="fa-solid fa-file-pdf"></i> Process Deck
+        </a>
+      </div>
+      <div class="scroll-helper-brief"></div>
+    </section>
+
+    <!------------
+      BRIEF 
+      ------------>
+    <section class="brief">
+      <div class="container small">
+        <h3>Brief</h3>
+
+          <h6 class="subheading">Background</h6>
+          <p class="description">Pilot is a smart TV application that helps users <strong>log which shows they’ve seen, track the ones they want to watch, and discover new potential favorites</strong>. In addition to these features, which collectively serve as a personal TV diary, Pilot also aims to create a sense of community by allowing users to <strong>share their tastes and see what their friends are currently binging.</strong></p>
+
+          <h6 class="subheading">Problem Statement</h6>
+          <p class="description">While there exist a handful of popular websites to find and track TV shows, <strong>none have native smart TV support</strong>—a seemingly natural platform for such an application. In addition, many of these websites are outdated, lacking in features, or both. This leaves TV watchers of all kinds without a quick way to discover new shows they'll like, or keep tabs on everything they're still in the middle of.</p>
+
+          <h1 class="callout">"How might we make watching TV and tracking shows more <strong>enjoyable</strong> and <strong>manageable</strong>?"</h1>
+      </div>
+      <div class="scroll-helper-research"></div>
+    </section>
+
+    <!------------
+      RESEARCH 
+      ------------>
+      <section class="research">
+        <div class="container small">
+          <h3>Research</h3>
+  
+            <h6 class="subheading">Competitive Analysis</h6>
+            <p>I conducted an audit of 4 pre-existing TV tracking websites, taking note of what features they held in common to gauge the scope of Pilot. I also found a couple areas that most of these websites were lacking in, which provided ideas to implement in Pilot to give it a leg up on the competition.</p>
+            <img src="assets/imgs/pilot/competitive-analysis.png">
+
+            <h6 class="subheading">Affinity Mapping</h6>
+            <p>Armed with my findings from scoping out Pilot’s competition, I compiled potential users, features, problems, and needs for Aria as a product. This allowed me to prioritize and organize my thoughts and ideas before moving forward with the design process.</p>
+            <img src="assets/imgs/pilot/affinity-map.png">
+  
+            <h6 class="subheading">User Personas</h6>
+            <p></p>
+            <img src="assets/imgs/pilot/personas.png">
+
+        </div>
+        <div class="scroll-helper-process"></div>
+      </section>
+
+    <!------------
+      PROCESS 
+      ------------>
+      <section class="process">
+        <div class="container small">
+          <h3>Process</h3>
+  
+            <h6 class="subheading">Information Architecture</h6>
+            <p></p>
+            <img src="assets/imgs/pilot/information-architecture.png">
+
+            <h6 class="subheading">Lo-Fi Wireframes</h6>
+            <img class="no-margin shadow" src="assets/imgs/pilot/lofi1.png">
+            <img class="no-margin shadow" src="assets/imgs/pilot/lofi2.png">
+            <img class="no-margin shadow" src="assets/imgs/pilot/lofi3.png">
+            <img class="shadow" src="assets/imgs/pilot/lofi4.png">
+        </div>
+        <div class="scroll-helper-designs"></div>
+      </section>
+
+    <!------------
+      FINAL DESIGNS 
+      ------------>
+      <section class="designs">
+        <div class="container small">
+          <h3>Final Designs</h3>
+  
+            <h6 class="subheading">Dashboard</h6>
+            <p></p>
+            <img class="shadow" src="assets/imgs/pilot/hifi1.png">
+
+            <h6 class="subheading">Show Details</h6>
+            <p></p>
+            <img class="shadow" src="assets/imgs/pilot/hifi2.png">
+
+            <h6 class="subheading">Profile</h6>
+            <p></p>
+            <img class="shadow" src="assets/imgs/pilot/hifi3.png">
+
+            <h6 class="subheading">Actor Page</h6>
+            <p></p>
+            <img class="shadow" src="assets/imgs/pilot/hifi4.png">
+
+        </div>
+      </section>
+
+    <!------------
+      CLOSING
+      ------------>
+      <section class="closing">
+        <div class="container small">
+          <h3>Closing</h3>
+            <h6 class="subheading">Style Guide</h6>
+            <p>Pilot was designed with the intention of creating a <strong>sleek, clean aesthetic</strong> that would be easy on the eyes when translated to a large-scale TV screen. Glassmorphism and the color green were used as recurring motifs to <strong>convey modernity with a splash of playfulness</strong>.</p>
+            <img src="assets/imgs/pilot/style-guide.png">
+  
+            <h6 class="subheading">Takeaways</h6>
+            <p>Working on Pilot continally proved to be an extremely enriching and educational experience. Throughout its creation, I learned <strong>the importance of always keeping up-to-date with design trends</strong> (in this case, glassmorphism), <strong>designing for non-standard devices</strong> (in this case, a TV) to cater to all users, and lending consistency and efficiency to designs using the nefarious <strong>Figma auto-layout</strong> (a topic I am still convinced would require a PhD and a graphic calculator to fully understand).
+              <br><br>
+              As someone who watches TV (shocker), Pilot also showed me how important it is to <strong>be passionate about your work</strong>. Although the user came first in my designing, creating something that I personally could see myself happily using ensured that I was designing to the best of my abilities.</p>
+
+            <a class="btn centered-two" href="work/pilot.pdf" target="_blank">
+              <i class="fa-solid fa-file-pdf"></i> Process Deck
+            </a>
+
+            <p class="next">Next Case Study: <a href="aria.html" class="inline">Aria</a></p>
+
+        </div>
+      </section>
+
+    <!-- <div class="scroll-helper-contact"></div> -->
+    <div class="scroll-helper-closing"></div>
+    <script src="js/case-study.js"></script>
+  </body>
+</html>

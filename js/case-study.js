@@ -32,25 +32,32 @@ function menuOff() {
   navMenu.checked = false;
 }
 
-var nav1 = document.querySelector('.nav-hero');
+var nav1 = document.querySelector('.nav-brief');
 nav1.addEventListener('click', function() {
-  smoothScroll('.scroll-helper-top', 1500);
+  smoothScroll('.scroll-helper-brief', 1500);
 });
 
-var nav2 = document.querySelector('.nav-work');
+var nav2 = document.querySelector('.nav-research');
 nav2.addEventListener('click', function() {
-  smoothScroll('.scroll-helper-work', 1500);
+  smoothScroll('.scroll-helper-research', 1500);
 });
 
-var nav4 = document.querySelector('.nav-about');
+var nav3 = document.querySelector('.nav-process');
+nav3.addEventListener('click', function() {
+  console.log('h');
+  smoothScroll('.scroll-helper-process', 1500);
+});
+
+
+var nav4 = document.querySelector('.nav-designs');
 nav4.addEventListener('click', function() {
-  smoothScroll('.scroll-helper-about', 1500);
+  smoothScroll('.scroll-helper-designs', 1500);
 });
 
-var nav5 = document.querySelector('.nav-contact');
+var nav5 = document.querySelector('.nav-closing');
 nav5.addEventListener('click', function() {
   console.log('h');
-  smoothScroll('.scroll-helper-contact', 1500);
+  smoothScroll('.scroll-helper-closing', 1500);
 });
 
 
@@ -128,14 +135,3 @@ function enableScroll() {
   window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
   scrollEnabled = true;
 }
-
-// -----------------
-// NAVBAR CHANGING
-// -----------------
-// document.querySelector('h5').onmouseover = function() {
-//   document.querySelector('h5').innerHTML = "Back to Home";
-// }
-
-// document.querySelector('h5').onmouseleave = function() {
-//   document.querySelector('h5').innerHTML = "Rover";
-// }

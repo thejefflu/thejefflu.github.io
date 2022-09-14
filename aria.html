@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- site information -->
+    <title>Jeff Lu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- stylesheets, fonts, and fontawesome -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ygv6uzw.css">
+    <script src="https://kit.fontawesome.com/6b4fd4dffa.js" crossorigin="anonymous"></script>
+
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#333333">
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#F9FCFD">
+    <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#F9FCFD">
+  </head>
+
+  <body>
+    <!------------
+      NAVBAR 
+      ------------>
+    <nav class="nav" id="nav">
+      <div class="container">
+
+        <!-- left -->
+        <a class="nav-hero" href="index.html">
+          <img src="assets/imgs/monogram.png" alt="JL monogram logo">
+          <h5>Aria <i class="fa-solid fa-arrow-right-to-bracket"></i></h5>
+        </a>
+
+        <!-- hamburger menu (for smaller screens) -->
+        <input type="checkbox" id="nav-menu">
+        <label for="nav-menu" class="nav-btn" onclick="toggleScroll()">
+            <i></i>
+            <i></i>
+            <i></i>
+        </label>
+
+        <!-- right (for larger screens) -->
+        <div class="links">
+          <ul>
+            <li>
+              <a class="nav-brief" onclick="enableScroll()">Brief</a>
+            </li>
+            <li>
+              <a class="nav-research" onclick="enableScroll()">Research</a>
+            </li>
+            <li>
+              <a class="nav-process" onclick="enableScroll()">Process</a>
+            </li>
+            <li>
+              <a class="nav-designs" onclick="enableScroll()">Final Designs</a>
+            </li>
+            <li>
+              <a class="nav-closing" onclick="enableScroll()">Closing</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+   <!------------
+    SPLASH 
+    ------------>
+
+    <section class="splash">
+      <img src="assets/imgs/aria/splash.png" class="splash-img">
+      <div class="container small">
+        <h3 class="case-study">
+          Aria
+        </h3>
+        <h1>“Ah, music... a magic beyond all we do here!”</h1>
+        <p class="quote">— Albus Dumbledore, <em>Harry Potter and the Philosopher's Stone</em></p>
+        
+        <div class="flex">
+          <p>
+            <span>Timeline</span> 
+            <br> 
+            Aug 2022
+          </p>
+          <p>
+            <span>Platform</span>
+            <br> 
+            Web Application
+          </p>
+          <p>
+            <span>Role</span>
+            <br> 
+            UI/UX Designer
+          </p>
+          <p>
+            <span>Toolkit</span> 
+            <br> 
+            Figma
+          </p>
+        </div>
+        
+        
+        <a class="btn centered" href="work/aria.pdf" target="_blank">
+          <i class="fa-solid fa-file-pdf"></i> Process Deck
+        </a>
+      </div>
+      <div class="scroll-helper-brief"></div>
+    </section>
+
+    <!------------
+      BRIEF 
+      ------------>
+    <section class="brief">
+      <div class="container small">
+        <h3>Brief</h3>
+
+          <h6 class="subheading">Background</h6>
+          <p class="description">In 2009, California cut $109 million from music education programs, forcing music departments across over 5,000 public schools to close. And this problem is not confined in space or time—for America, the neglect of music education is a recurring phenomenon. The COVID-19 pandemic these long-standing problems. As orchestra, band, and choir groups moved online, music program quality and retention plummeted.</p>
+
+          <h6 class="subheading">Problem Statement</h6>
+          <p class="description">People looking for their own music instructor outside of school programs lack an easy way to find one. Parents of children and adult learners alike often have to rely on personal connections or “shop” through countless prospects to finally land on a suitable teacher. This can leave prospective musicians discouraged and frustrated during what should be a fulfilling and enjoyable experience.</p>
+
+          <h1 class="callout">"How might we make music education more <strong>accessible</strong> and <strong>personalized</strong>?"</h1>
+      </div>
+      <div class="scroll-helper-research"></div>
+    </section>
+
+    <!------------
+      RESEARCH 
+      ------------>
+      <section class="research">
+        <div class="container small">
+          <h3>Research</h3>
+  
+            <h6 class="subheading">Competitive Analysis</h6>
+            <p>To kick off the research process, I investigated 4 pre-existing platforms with functions similar to Aria’s. In doing so, I <strong>identified which features significantly contributed to the experience of finding a music teacher</strong>. Notably, none of these features were shared by <strong>more than 2 of the competitor sites</strong>, suggesting that these held lots of potential for Aria to stand out from the crowd.</p>
+            <img src="assets/imgs/aria/competitive-analysis.png">
+
+            <h6 class="subheading">Affinity Mapping</h6>
+            <p>Next, I created an affinity map to plan out the scope of the product. Doing so is what ultimately guided me toward the idea of a <strong>two-way app</strong>—one that doubles as a student resource and a teacher portal. It also proved to be an invaluable tool when proceeding with the remainder of the design process, as it provided a <strong>foundation from which to iterate my designs</strong>.</p>
+            <img src="assets/imgs/aria/affinity-map.png">
+  
+            <h6 class="subheading">User Personas</h6>
+            <p></p>
+            <img src="assets/imgs/aria/personas.png">
+
+            <h6 class="subheading">Key Takeaways</h6>
+            <p></p>
+            <img src="assets/imgs/aria/takeaways.png">
+
+            <h6 class="subheading">Proposed Solutions</h6>
+            <p></p>
+            <img src="assets/imgs/aria/solutions.png">
+        </div>
+        <div class="scroll-helper-process"></div>
+      </section>
+
+    <!------------
+      PROCESS 
+      ------------>
+      <section class="process">
+        <div class="container small">
+          <h3>Process</h3>
+  
+            <h6 class="subheading">User Flow</h6>
+            <p></p>
+            <img src="assets/imgs/aria/user-flow.png">
+
+            <h6 class="subheading">Lo-Fi Wireframes</h6>
+            <img class="no-margin shadow" src="assets/imgs/aria/lofi1.png">
+            <img class="no-margin shadow" src="assets/imgs/aria/lofi2.png">
+            <img class="no-margin shadow" src="assets/imgs/aria/lofi3.png">
+            <img class="no-margin shadow" src="assets/imgs/aria/lofi4.png">
+            <img class="shadow" src="assets/imgs/aria/lofi5.png">
+        </div>
+        <div class="scroll-helper-designs"></div>
+      </section>
+
+    <!------------
+      FINAL DESIGNS 
+      ------------>
+      <section class="designs">
+        <div class="container small">
+          <h3>Final Designs</h3>
+  
+            <h6 class="subheading">Onboarding</h6>
+            <p></p>
+            <img class="shadow" src="assets/imgs/aria/hifi1.png">
+
+            <h6 class="subheading">Student Homepage</h6>
+            <p></p>
+            <img class="shadow" src="assets/imgs/aria/hifi2.png">
+
+            <h6 class="subheading">Teacher Profile</h6>
+            <p></p>
+            <img class="shadow" src="assets/imgs/aria/hifi3.png">
+
+            <h6 class="subheading">Teacher Dashboard</h6>
+            <p></p>
+            <img class="shadow" src="assets/imgs/aria/hifi4.png">
+
+            <h6 class="subheading">Student Manager</h6>
+            <p></p>
+            <img class="shadow" src="assets/imgs/aria/hifi5.png">
+        </div>
+      </section>
+
+    <!------------
+      CLOSING
+      ------------>
+      <section class="closing">
+        <div class="container small">
+          <h3>Closing</h3>
+            <h6 class="subheading">Style Guide</h6>
+            <p>Philosophy: incorporate <strong>vibrant colors</strong>, frequent use of <strong>pictures</strong>, and <strong>bubbly, rounded components</strong> to create an experience that is simple to navigate for all and presents a <strong>fun and playful aesthetic</strong>.</p>
+            <img src="assets/imgs/aria/style-guide.png">
+  
+            <h6 class="subheading">Takeaways</h6>
+            <p>As a lifelong musician, working on a project like Aria was extremely fulfilling. Music education is incredibly important to me (important enough, in fact, for me to have given <a class="inline" href="https://docs.google.com/document/d/1qm6oojV7X_QaD9Sjo5nH3y0s5bvNQuN2_ltX4pgjKVw/edit?usp=sharing">a speech</a> on its importance in high school), and I hope that through design I can some day <strong>do my part in the advancement of musical literacy and accessibility</strong>.<br><br>
+              Over the course of this project, I improved my understanding and implementation of <strong>UX industry topics such as affinity mapping and user flows</strong>, and learned how they can be integrated into an <strong>effective, user-centric design process</strong>.
+              <br><br>
+              Had I been allowed more time to work on Aria, I would’ve liked to create more screens, such as a lesson scheduling page or a profile editing page. That’s not to say that I won’t come back to Aria to further develop the project, however.</p>
+
+            <a class="btn centered-two" href="work/aria.pdf" target="_blank">
+              <i class="fa-solid fa-file-pdf"></i> Process Deck
+            </a>
+
+            <p class="next">Next Case Study: <a href="rover.html" class="inline">Rover</a></p>
+
+        </div>
+      </section>
+
+    <!-- <div class="scroll-helper-contact"></div> -->
+    <div class="scroll-helper-closing"></div>
+    <script src="js/case-study.js"></script>
+  </body>
+</html>
