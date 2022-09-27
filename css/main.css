@@ -422,11 +422,11 @@ nav img {
   }
 
 .btn:nth-of-type(2) {
-  left: 14.8em;
+  left: 17em;
 }
 
 .btn:nth-of-type(3) {
-  left: 24.5em;
+  left: 26.75em;
 }
 
 #email {
@@ -859,12 +859,12 @@ section .small {
   }
 
   .btn:nth-of-type(2) {
-    bottom: 6.4em;
+    bottom: 6.2em;
     left: 0;
   }
 
   .btn:nth-of-type(3) {
-    bottom: 6.4rem;
+    bottom: 6.2rem;
     left: 9.7em;
   }
 
