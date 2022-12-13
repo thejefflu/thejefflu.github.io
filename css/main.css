@@ -65,6 +65,11 @@
 html {
   background-color: var(--aliceblue);
   position: relative;
+  overflow-x: hidden; 
+}
+
+body {
+  overflow-x: hidden; 
 }
 
 /************
@@ -338,6 +343,7 @@ nav img {
 
 .splash-img {
   margin-top: 5em;
+  width: 90%;
   max-width: 55em;
   display: block;
   margin-left: auto;
@@ -888,17 +894,39 @@ section .small {
   }
 
   .btn:nth-of-type(2) {
-    bottom: 12.4em;
+    bottom: 12.3em;
     left: 0;
   }
 
   .btn:nth-of-type(3) {
-    bottom: 7.8rem;
+    bottom: 7.7rem;
     left: 0em;
   }
 
   .contact .container {
     padding-bottom: 21em;
+  }
+
+  .splash .flex {
+    flex-wrap: wrap;
+    grid-gap: 1.2rem;
+  }
+
+  .splash .flex p {
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+    white-space: nowrap;
+  }
+
+  .centered,
+  .centered-two {
+    white-space: nowrap;
+  }
+
+  .next {
+    text-align: center;
+    white-space: nowrap;
   }
 }
 
