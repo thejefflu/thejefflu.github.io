@@ -906,7 +906,7 @@ section .small {
 
   .about,
   .contact {
-    margin-top: 2em;
+    padding-top: 5em;
   }
 
   .about img {
@@ -918,10 +918,6 @@ section .small {
   .work .grid {
     padding-bottom: 6em;
     gap: 40px;
-  }
-
-  .about {
-    padding-bottom: 5em;
   }
 
   .about .container .flex {
