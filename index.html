@@ -6,21 +6,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <meta name="title" property="og:title" content="Jeff Lu">
+    <meta property="og:type" content="website">
+    <meta name="image" property="og:image" content="https://i.ibb.co/BwfKXr9/rover.png">
+    <meta name="description" property="og:description" content="The works of Jeff Lu.">
+    <meta name="author" content="Jeff Lu">
+
     <!-- stylesheets, fonts, and fontawesome -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://use.typekit.net/ygv6uzw.css">
     <script src="https://kit.fontawesome.com/6b4fd4dffa.js" crossorigin="anonymous"></script>
 
     <!-- favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/assets/favicons/site.webmanifest">
-    <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#333333">
-    <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
-    <meta name="msapplication-TileColor" content="#F9FCFD">
-    <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#F9FCFD">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/site.webmanifest">
   </head>
 
   <body>
@@ -55,7 +56,7 @@
               <a class="nav-about" onclick="enableScroll()">About</a>
             </li>
             <li>
-              <a class="nav-contact" onclick="enableScroll()">Contact</a>
+              <a class="nav-contact" href="mailto: jeffreylu2003@ucla.edu">Contact</a>
             </li>
             <li>
               <a href="resume.pdf" target="_blank" onclick="menuOff(); enableScroll()">Resume 
@@ -73,7 +74,7 @@
     <div class="tagline">
       <div class="container">
       <h2>
-        Los Angeles based UI/UX designer dedicated to creating visually pleasing products that spark joy. 
+        Los Angeles based UI/UX designer dedicated to creating visually pleasing products that <a href="https://konmari.com/marie-kondo-rules-of-tidying-sparks-joy/" target="_blank" class="inline">spark joy</a>. 
       </h2>
       </div>
       <div class="scroll-helper-work"></div>
@@ -136,63 +137,45 @@
       <div class="container">
         
         <!-- title -->
-        <h3>About</h3>
+        <h3>Hey! <span>My name is Jeff. </span></h3>
         <div class="flex">
 
           <!-- text -->
-          <p><span>
-              <a href="https://youtu.be/AfIOBLr1NDU?t=2" target="_blank" class="inline" id="heading">
-                Hey! My name is Jeff. 
-                <i class="fa-solid fa-circle-play"></i>
-            </a></span>
-            <br>
-            I'm a sophomore at UCLA studying 
-              <a href="https://www.psych.ucla.edu" target="_blank" class="inline">Cognitive Science</a> and 
-              <a href="https://linguistics.ucla.edu" target="_blank" class="inline">Linguistics of Computer Science</a>. 
-            My mouthful of a degree plan was inspired, in large part, by my fascination with the psychology behind beauty and aesthetics. As a longtime proponent of <a href="https://konmari.com/about-the-konmari-method/" target="_blank" class="inline">the teachings of Marie Kondo</a>, I believe that good design has the power to create a world that sparks more joy!
-              <br><br>
-            I'm currently a UI/UX designer at <a href="https://transcanwork.org" target="_blank" class="inline">TransCanWork</a>, helping advance workpace inclusion by connecting trans and gender non-conforming job seekers with resources to find employment. Outside of UI/UX, I also have a background in <a href="https://www.figma.com/file/E55cYhMbiAbirE6TOaJZ8t/Scootly?node-id=55%3A6&t=z8RxClCSvPORmNN4-1" target="_blank" class="inline">UX engineering</a>, <a href="https://lablueprint.org/projects/apifm" target="_blank" class="inline">full stack development</a>,  and 
-              <a href="freelance.html" class="inline">marketing/print design</a>.
-              <br><br>
-            When I'm not designing things, I can probably be spotted hosting a board game night, solving the daily NYT crossword, or learning any instrument I can get my hands on (I'm at 5 and counting)!
-              <br>
-          </p>
+          <div class="text">
+            <p>I'm a sophomore at <a href="https://www.ucla.edu" target="_blank" class="inline">UCLA</a> studying Cognitive Science and Linguistics of Computer Science. My mouthful of a degree plan was chosen as part of my journey to explore the psychology behind beauty and aesthetics. As a longtime proponent of <a href="https://konmari.com/category/konmari-philosophy/" target="_blank" class="inline">the teachings of Marie Kondo</a>, I believe that good design has the power to create a world that sparks more joy!</p>
+
+            <p>Throughout my career, I've delivered projects for startups, non-profit organizations, businesses, and more. I'm currently a UI/UX engineer at <a href="https://transcanwork.org" target="_blank" class="inline">TransCanWork</a>, helping advance workplace inclusion by connecting trans jobseekers with resources to find employment. </p>
+            
+            <p>When I'm not designing things, I can probably be spotted hosting a board game night, solving the daily NYT crossword, or learning any instrument I can get my hands on (I'm at 6 and counting)!</p>
+
+              <div class="about-links">
+
+                <div class="primary">
+                  <a href="resume.pdf" target="_blank" class="inline"><i class="fa-solid fa-file-pdf"></i> Resume</a></br>
+
+                  <a href="mailto: jeffreylu2003@ucla.edu" class="inline"><i class="fa-solid fa-envelope"></i> Email</a></br>
+                </div>
+
+                <div class="socials">
+                  <a id="linkedin" href="https://www.linkedin.com/in/thejefflu" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>  /  
+                  <a id="github" href="https://github.com/thejefflu" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                  </a>  /  
+                  <a id="figma" href="https://www.figma.com/@thejefflu" target="_blank">
+                    <i class="fa-brands fa-figma"></i>
+                  </a>  /  
+                  <a id="instagram" href="https://www.instagram.com/thejefflu/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i> 
+                  </a>
+                </div>
+              </div>
+          </div>
 
           <!-- photo -->
           <img src="assets/imgs/about.jpeg" alt="Headshot">
         </div>
-      </div>
-    </section>
-
-    <!------------
-      contact 
-      ------------>
-    <section class="contact">
-      <div class="container">
-        
-        <!-- title -->
-        <h3>Contact</h3>
-
-        <!-- buttons -->
-        <a class="btn" id="email" href="mailto: jeffreylu2003@ucla.edu">
-          <i class="fa-solid fa-envelope"></i> jeffreylu2003@ucla.edu
-        </a>
-
-        <a class="btn" href="resume.pdf" target="_blank">
-          <i class="fa-solid fa-file-pdf"></i> Resume
-        </a>
-
-        <a class="btn linkedin" href="https://www.linkedin.com/in/thejefflu" target="_blank">
-          <i class="fa-brands fa-linkedin-in"></i> LinkedIn
-        </a>
-        </a>
-        
-        <!-- text -->
-        <p>
-          made with 
-            <i class="fa-solid fa-heart"></i> 
-          by jeff lu
-        </p>
       </div>
     </section>
 

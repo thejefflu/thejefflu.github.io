@@ -26,15 +26,14 @@
 * {
   --ming: #006D77;
   --bluegreen: #23AA9D;
-  --salmon: #9D6754;
+  --celeste: #DDF5F3; 
   --aliceblue: #F9FCFD;
   --gunmetal: #0E2F39;
   --jet: #2E2E2E;
-  /* --linkedin: #0077B5; */
-  --linkedin: #0E2F39;
-  --behance: #053EFF;
-  --dribbble: #EA4C89;
-  --medium: #000000;
+  --linkedin: #0077B5;
+  --github: #DE5C40;
+  --figma: #985DF6;
+  --instagram: #D300C5;
   --gradient: linear-gradient(120deg, var(--gunmetal) 0%, var(--bluegreen) 100%);
 }
 
@@ -72,6 +71,14 @@ body {
   overflow-x: hidden; 
 }
 
+::selection {
+  background: var(--celeste);
+}
+
+::-moz-selection {
+  background: var(--celeste);
+}
+
 /************
  TYPOGRAPHY
  ************/
@@ -102,14 +109,6 @@ h1 {
   margin-bottom: 3em;
 }
 
-h1 strong {
-  font-family: IvyPresto-Display, Manrope, Arial, Helvetica, sans-serif;
-  font-style: italic;
-  font-weight: bold;
-  color: var(--ming);
-  line-height: 1.4em;
-}
-
 h2 { /* hero secondary text */
   max-width: 45ch;
 
@@ -128,11 +127,17 @@ h2 { /* hero secondary text */
     font-weight: 700;
   }
 
-h3 { /* section headings */
+h3,
+h3 span { /* section headings */
   font-family: IvyPresto-Display, Manrope, Arial, Helvetica, sans-serif;
     font-style: italic;
-  font-size: 3rem;
-  margin-bottom: 0.25em;
+  font-size: 3.25rem;
+  margin-bottom: 0.2em;
+  font-weight: bold;
+}
+
+h3 span {
+  font-weight: 100;
 }
 
 .case-study {
@@ -153,13 +158,6 @@ h5 { /* nav menu left-hand side */
   font-size: 1.25rem;
   padding-bottom: 40px;
   margin-left: 3em;
-}
-
-p span {
-  font-weight: bold;
-  width: 100px;
-  margin: 0;
-  padding: 0;
 }
 
 .quote {
@@ -187,10 +185,71 @@ p span {
   max-width: 30ch;
 }
 
-.about p {
-  margin-bottom: 5em;
+.about .text {
+  margin-bottom: 6em;
   width: calc(100% - 19rem);
   max-width: 60ch;
+}
+
+.about .text .about-links {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  margin-top: 2em;
+}
+
+.about .text .about-links .primary {
+  margin-bottom: 0.75em;
+  line-height: 2em;
+}
+
+.about .text .about-links .primary i {
+  margin-right: 0.25em;
+}
+
+.about .text .about-links .socials {
+  letter-spacing: 0.1em;
+}
+
+.about .text .about-links .socials i {
+  transition: 0.5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+@media (hover: hover) {
+  #linkedin:hover > i,
+  #linkedin:focus > i,
+  #github:hover > i,
+  #github:focus > i,
+  #figma:hover > i,
+  #figma:focus > i,
+  #instagram:hover > i,
+  #instagram:focus > i {
+    transform: scale(1.25)
+  }
+
+  #linkedin:hover > i,
+  #linkedin:focus > i {
+    color: var(--linkedin);
+  }
+
+  #github:hover > i,
+  #github:focus > i {
+    color: var(--github);
+  }
+
+  #figma:hover > i,
+  #figma:focus > i {
+    color: var(--figma);
+  }
+
+  #instagram:hover > i,
+  #instagram:focus > i {
+    color: var(--instagram);
+  }
+}
+
+.about p {
+  margin-bottom: 1.25em;
 }
 
 .next {
@@ -272,6 +331,10 @@ h2 strong { /* inline links w hover effect */
   background-repeat: no-repeat;
 }
 
+.primary .inline {
+  color: var(--jet);
+}
+
 #heading {
   padding-bottom: 6px;
 }
@@ -318,7 +381,7 @@ h5 i {
 /* images */
 
 nav img {
-  width: 2.3rem;
+  width: 2rem;
   position: absolute;
   top: 50%;
   transform: translateY(-50%)
@@ -330,14 +393,15 @@ nav img {
   border-radius: 25px;
   object-fit: cover;
   box-shadow: 0px 5px 20px -10px var(--gunmetal);
-  margin-bottom: 5em;
-  transition: 0.4s ease
+  margin-bottom: 6em;
+  transition: 0.5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  transform: rotate(3deg);
 }
 
 @media (hover: hover) {
   .about img:hover,
   .about img:focus {
-    transform: scale(1.025);
+    transform: rotate(0deg) scale(1.05);
   }
 }
 
@@ -537,13 +601,12 @@ section {
 }
 
 .work,
-.about,
 .splash,
 .brief,
 .research,
 .process,
 .designs {
-  box-shadow: 0px 30px 70px -70px var(--gunmetal);
+  box-shadow: 0px 20px 70px -70px var(--gunmetal);
 }
 
 section .container,
@@ -698,14 +761,13 @@ section .small {
     transform: translateY(-50%);
     width: 100px;
     padding: 0;
-    right: 10%;
+    right: 12%;
     text-align: right;
   }
 
   .links li,
   nav li:not(:nth-child(1)) {
-    margin-left: 0;
-    margin-right: 4rem;
+    margin-right: 0px;
   }
 
   .links li a {
@@ -790,7 +852,7 @@ section .small {
   }
 
   #nav-menu:checked ~ .links {
-      opacity: 1;
+      opacity: 0.95;
       -webkit-user-select: auto; /* Safari */        
       -moz-user-select: auto; /* Firefox */
       -ms-user-select: auto; /* IE10+/Edge */
@@ -808,12 +870,16 @@ section .small {
       pointer-events: auto;
   }
 
+  .work .grid {
+    gap: 60px;
+  }
+
   .work .grid .container {
     width: 100%;
   }
 }
 
-@media screen and (max-width: 45em) { /* small devices - collapse grids, shrink whitespace */
+@media screen and (max-width: 50em) { /* small devices - collapse grids, shrink whitespace */
   section .container,
   .tagline .container,
   nav .container,
@@ -821,26 +887,37 @@ section .small {
     width: 85%;
   }
 
-  .links ul {
-    right: 7.5%;
-  }
-
   nav {
-    padding-top: 2em;
+    padding-top: 1em;
   }
 
   h2 {
-    padding-top: 8em;
-    width: 95%;
+    padding-top: 7em;
+    width: 90%;
+  }
+
+  h3,
+  h3 span {
+    width: 80%;
+    line-height: 1.25em;
+    text-align: center;
+    margin: 0 auto 1em auto;
   }
 
   .about,
   .contact {
-    padding-top: 4em;
+    margin-top: 2em;
+  }
+
+  .about img {
+    transform: none;
+    height: 24em;
+    width: 15em;
   }
 
   .work .grid {
     padding-bottom: 6em;
+    gap: 40px;
   }
 
   .about {
@@ -848,34 +925,21 @@ section .small {
   }
 
   .about .container .flex {
-    flex-direction: row-reverse;
-    gap: 2em;
+    flex-direction: row;
+    gap: 3em;
   }
 
   .about img {
     margin-right: auto;
     margin-bottom: 0;
+    margin: 0 auto;
   }
 
-  .about p {
+  .about .text {
     width: 100%;
     max-width: none;
     order: 2;
     margin: 0;
-  }
-
-  .btn:nth-of-type(2) {
-    bottom: 6.2em;
-    left: 0;
-  }
-
-  .btn:nth-of-type(3) {
-    bottom: 6.2rem;
-    left: 9.85em;
-  }
-
-  .contact .container {
-    padding-bottom: 15em;
   }
 }
 
@@ -887,6 +951,7 @@ section .small {
 
   .work .grid {
     padding-bottom: 5em;
+    gap: 20px;
   }
 
   .about {
@@ -954,5 +1019,19 @@ section .small {
 
   .links a {
     margin: 0.2em 0;
+  }
+}
+
+@media screen and (min-height: 55em) {
+  .about {
+    padding-top: 6em;
+  }
+
+  .work .grid {
+    padding-bottom: 7em;
+  }
+
+  .about .text {
+    margin-bottom: 7em;
   }
 }

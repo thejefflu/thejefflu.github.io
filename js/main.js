@@ -44,13 +44,14 @@ nav2.addEventListener('click', function() {
 
 var nav4 = document.querySelector('.nav-about');
 nav4.addEventListener('click', function() {
-  smoothScroll('.scroll-helper-about', 1500);
-});
-
-var nav5 = document.querySelector('.nav-contact');
-nav5.addEventListener('click', function() {
-  console.log('h');
-  smoothScroll('.scroll-helper-contact', 1500);
+  let box = document.querySelector('.about');
+  let height = box.offsetHeight;
+  const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
+  if (height >= vh) {
+    smoothScroll('.scroll-helper-about', 1500);
+  } else {
+    smoothScroll('.scroll-helper-contact', 1500);
+  }
 });
 
 
