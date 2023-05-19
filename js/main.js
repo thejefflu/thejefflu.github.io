@@ -45,7 +45,8 @@ nav2.addEventListener('click', function() {
 var nav4 = document.querySelector('.nav-about');
 nav4.addEventListener('click', function() {
   let box1 = document.querySelector('.about');
-  let box2 = document.querySelector('.nav');
+  var computedStyle = getComputedStyle(document.querySelector('.nav'));
+  let box2 = document.querySelector('.nav') - parseFloat(computedStyle.paddingTop);
   let height = box1.offsetHeight + box2.offsetHeight;
   const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
   if (height >= vh) {
