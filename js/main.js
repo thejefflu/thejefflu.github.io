@@ -32,7 +32,7 @@ function menuOff() {
   navMenu.checked = false;
 }
 
-var nav1 = document.querySelector('.nav-hero');
+var nav1 = document.querySelector('.left');
 nav1.addEventListener('click', function() {
   smoothScroll('.scroll-helper-top', 1500);
 });
@@ -42,17 +42,22 @@ nav2.addEventListener('click', function() {
   smoothScroll('.scroll-helper-work', 1500);
 });
 
-var nav4 = document.querySelector('.nav-about');
-nav4.addEventListener('click', function() {
-  let box1 = document.querySelector('.about');
-  var computedStyle = getComputedStyle(document.querySelector('.nav'));
-  let box2 = document.querySelector('.nav') - parseFloat(computedStyle.paddingTop);
-  let height = box1.offsetHeight + box2.offsetHeight;
-  const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
-  if (height >= vh) {
+var nav3 = document.querySelector('.nav-about');
+nav3.addEventListener('click', function() {
+  /* compute the height of the about section, plus the height of the nav bar (without any padding it might have) */
+  let about = document.querySelector('.about');
+  let nav = document.querySelector('.nav');
+  let navStyle = getComputedStyle(nav);
+  let navHeight = document.querySelector('.nav').offsetHeight - parseFloat(navStyle.paddingTop);
+
+  let aboutHeight = about.offsetHeight + navHeight;
+
+  let viewportHeight = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
+
+  if (aboutHeight >= viewportHeight) {
     smoothScroll('.scroll-helper-about', 1500);
   } else {
-    smoothScroll('.scroll-helper-contact', 1500);
+    smoothScroll('.scroll-helper-bottom', 1500);
   }
 });
 
@@ -131,14 +136,3 @@ function enableScroll() {
   window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
   scrollEnabled = true;
 }
-
-// -----------------
-// NAVBAR CHANGING
-// -----------------
-// document.querySelector('h5').onmouseover = function() {
-//   document.querySelector('h5').innerHTML = "Back to Home";
-// }
-
-// document.querySelector('h5').onmouseleave = function() {
-//   document.querySelector('h5').innerHTML = "Rover";
-// }

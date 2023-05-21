@@ -1,31 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- site information -->
+    <!-- metadata -->
     <title>Jeff Lu</title>
+    <meta name="title" property="og:title" content="Jeff Lu">
+    <meta name="description" property="og:description" content="Los Angeles based UI/UX designer dedicated to creating visually pleasing products that spark joy.">
+    <meta name="image" property="og:image" content="https://i.ibb.co/BwfKXr9/rover.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <meta name="title" property="og:title" content="Jeff Lu">
-    <meta property="og:type" content="website">
-    <meta name="image" property="og:image" content="https://i.ibb.co/BwfKXr9/rover.png">
-    <meta name="description" property="og:description" content="The works of Jeff Lu.">
-    <meta name="author" content="Jeff Lu">
-
-    <!-- stylesheets, fonts, and fontawesome -->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://use.typekit.net/ygv6uzw.css">
-    <script src="https://kit.fontawesome.com/6b4fd4dffa.js" crossorigin="anonymous"></script>
 
     <!-- favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
     <link rel="manifest" href="assets/favicons/site.webmanifest">
+
+    <!-- styles and fonts -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ygv6uzw.css">
+    <script src="https://kit.fontawesome.com/6b4fd4dffa.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
     <div class="scroll-helper-top"></div>
+    
     <!------------
       NAVBAR 
       ------------>
@@ -33,12 +31,12 @@
       <div class="container">
 
         <!-- left -->
-        <a class="nav-hero">
-          <img src="assets/imgs/monogram.png" alt="JL monogram logo">
-          <h5>Jeff Lu</h5>
+        <a class="left">
+          <img src="assets/imgs/monogram.png" alt="JL Monogram">
+          <p>Jeff Lu</p>
         </a>
 
-        <!-- hamburger menu (for smaller screens) -->
+        <!-- right: hamburger menu (for smaller screens) -->
         <input type="checkbox" id="nav-menu">
         <label for="nav-menu" class="nav-btn" onclick="toggleScroll()">
             <i></i>
@@ -46,8 +44,8 @@
             <i></i>
         </label>
 
-        <!-- right (for larger screens) -->
-        <div class="links">
+        <!-- right: nav bar (for larger screens) -->
+        <div class="nav-links">
           <ul>
             <li>
               <a class="nav-work" onclick="enableScroll()">Work</a>
@@ -71,14 +69,13 @@
     TAGLINE 
     ------------>
 
-    <div class="tagline">
+    <section class="tagline">
       <div class="container">
-      <h2>
-        Los Angeles based UI/UX designer dedicated to creating visually pleasing products that <a href="https://konmari.com/marie-kondo-rules-of-tidying-sparks-joy/" target="_blank" class="inline">spark joy</a>. 
-      </h2>
+        <p>Los Angeles based UI/UX designer dedicated to creating visually pleasing products that <a href="https://konmari.com/marie-kondo-rules-of-tidying-sparks-joy/" target="_blank" class="inline">spark joy</a>. 
+        </p>
       </div>
       <div class="scroll-helper-work"></div>
-    </div>
+    </section>
 
     <!------------
       WORK 
@@ -89,37 +86,37 @@
         <!-- gallery -->
         <div class="grid">
           <div class="container">
-            <a href="uclacki.html">
+            <a href="work/construction">
               <img src="assets/imgs/uclacki.png" alt="Case Study #1">
               <div class="overlay">
-                <h4>UCLA CKI</h4>
+                <h2>UCLA CKI</h2>
                 <p>A web experience for the world's largest collegiate service organization.</p>
               </div>
             </a>
           </div>
           <div class="container">
-            <a href="pilot.html">
+            <a href="work/construction">
               <img src="assets/imgs/pilot.png" alt="Case Study #2">
               <div class="overlay">
-                <h4>Pilot</h4>
+                <h2>Pilot</h2>
                 <p>A Smart TV application for anyone who uses their TV.</p>
               </div>
             </a>
           </div>
           <div class="container">
-            <a href="aria.html">
+            <a href="work/construction">
               <img src="assets/imgs/aria.png" alt="Case Study #3">
               <div class="overlay">
-                <h4>Aria</h4>
+                <h2>Aria</h2>
                 <p>A web-based SaaS product for music educators and students.</p>
               </div>
             </a>
           </div>
           <div class="container">
-            <a href="rover.html">
+            <a href="work/construction">
               <img src="assets/imgs/rover.png" alt="Case Study #4">
               <div class="overlay">
-                <h4>Rover</h4>
+                <h2>Rover</h2>
                 <p>A mobile delivery service for mankind's first colony on Mars.</p>
               </div>
             </a>
@@ -133,44 +130,47 @@
     <!------------
       ABOUT 
       ------------>
+
     <section class="about">
       <div class="container">
+        <h1>Hey! <span>My name is Jeff.</span></h1>
         
-        <!-- title -->
-        <h3>Hey! <span>My name is Jeff. </span></h3>
         <div class="flex">
-
-          <!-- text -->
+          <!-- bio paragraph -->
           <div class="text">
-            <p>I'm a sophomore at <a href="https://www.ucla.edu" target="_blank" class="inline">UCLA</a> studying Cognitive Science and Linguistics of Computer Science. My mouthful of a degree plan was chosen as part of my journey to explore the psychology behind beauty and aesthetics. As a longtime proponent of <a href="https://konmari.com/category/konmari-philosophy/" target="_blank" class="inline">the teachings of Marie Kondo</a>, I believe that good design has the power to create a world that sparks more joy!</p>
+            <p>I'm a sophomore at <a href="https://www.ucla.edu" target="_blank" class="inline">UCLA</a> studying Cognitive Science and Linguistics of Computer Science. The psychology behind beauty and aesthetics is a topic that greatly fascinates me, and it's what drew me to the world of design. As a longtime proponent of <a href="https://konmari.com/category/konmari-philosophy/" target="_blank" class="inline">the philosophy of Marie Kondo</a>, I believe that good design has the power to create a world that sparks more joy!</p>
 
-            <p>Throughout my career, I've delivered projects for startups, non-profit organizations, businesses, and more. I'm currently a UI/UX engineer at <a href="https://transcanwork.org" target="_blank" class="inline">TransCanWork</a>, helping advance workplace inclusion by connecting trans jobseekers with resources to find employment. </p>
+            <p>Currently I'm a UI/UX engineer at <a href="https://transcanwork.org" target="_blank" class="inline">TransCanWork</a>, helping advance workplace inclusion by connecting trans jobseekers with resources to find employment. </p>
             
             <p>When I'm not designing things, I can probably be spotted hosting a board game night, solving the daily NYT crossword, or learning any instrument I can get my hands on (I'm at 6 and counting)!</p>
 
-              <div class="about-links">
+            <!-- links -->
+            <div class="links">
 
-                <div class="primary">
-                  <a href="resume.pdf" target="_blank" class="inline"><i class="fa-solid fa-file-pdf"></i> Resume</a></br>
+              <div class="primary">
+                <a href="resume.pdf" target="_blank" class="inline"><i class="fa-solid fa-file-pdf"></i> Resume</a></br>
 
-                  <a href="mailto: jeffreylu2003@ucla.edu" class="inline"><i class="fa-solid fa-envelope"></i> Email</a></br>
-                </div>
-
-                <div class="socials">
-                  <a id="linkedin" href="https://www.linkedin.com/in/thejefflu" target="_blank">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                  </a>  /  
-                  <a id="github" href="https://github.com/thejefflu" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                  </a>  /  
-                  <a id="figma" href="https://www.figma.com/@thejefflu" target="_blank">
-                    <i class="fa-brands fa-figma"></i>
-                  </a>  /  
-                  <a id="instagram" href="https://www.instagram.com/thejefflu/" target="_blank">
-                    <i class="fa-brands fa-instagram"></i> 
-                  </a>
-                </div>
+                <a href="mailto: jeffreylu2003@ucla.edu" class="inline"><i class="fa-solid fa-envelope"></i> Email</a></br>
               </div>
+
+              <div class="socials">
+                <a class="social" id="linkedin" href="https://www.linkedin.com/in/thejefflu" target="_blank">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                  /  
+                <a class="social" id="github" href="https://github.com/thejefflu" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                  /  
+                <a class="social" id="figma" href="https://www.figma.com/@thejefflu" target="_blank">
+                  <i class="fa-brands fa-figma"></i>
+                </a>
+                  /  
+                <a class="social" id="instagram" href="https://www.instagram.com/thejefflu/" target="_blank">
+                  <i class="fa-brands fa-instagram"></i> 
+                </a>
+              </div>
+            </div>
           </div>
 
           <!-- photo -->
@@ -179,7 +179,7 @@
       </div>
     </section>
 
-    <div class="scroll-helper-contact"></div>
+    <div class="scroll-helper-bottom"></div>
     <script src="js/main.js"></script>
   </body>
 </html>
