@@ -110,7 +110,7 @@ h2 {
   max-width: 45ch;
   font-size: 1rem;
   font-weight: 400;
-  padding-top: 5.5em;
+  padding-top: 4.5em;
 }
 
 .overlay p {
@@ -275,7 +275,7 @@ nav {
   background-color: var(--aliceblue);
   z-index: 99;
   height: 6em;
-  padding-top: 4em;
+  padding-top: 3em;
   position: fixed;
   transition: all .4s ease;
 }
@@ -616,7 +616,7 @@ section .small {
   }
 }
 
-@media screen and (max-height: 56em) { /* short devices: decrease whitespace*/
+@media screen and (max-height: 46em) { /* short devices: decrease whitespace*/
   nav {
     padding-top: 1em;
   }
@@ -630,16 +630,12 @@ section .small {
     padding-bottom: 4em;
   }
 
-  h1 {
-    margin-bottom: 0.5em;
-  }
-
   .about {
     padding-top: 3em;
   }
 
   .about .container .flex {
-    gap: 2em;
+    gap: 2.25em;
   }
 
   .about .text {
