@@ -125,8 +125,8 @@ h2 {
 
 .about .text {
   margin-bottom: 4em;
-  width: calc(100% - 19rem);
-  max-width: 60ch;
+  width: calc(100% - 20.25rem);
+  max-width: 59ch;
 }
 
 .about p {
@@ -223,8 +223,9 @@ nav img {
 }  
 
 .about img {
-  height: 24rem;
-  width: 15rem;
+  height: 26rem;
+  width: 16.25rem;
+  max-width: 90%;
   border-radius: 25px;
   object-fit: cover;
   box-shadow: 0px 5px 20px -10px var(--gunmetal);
@@ -345,7 +346,7 @@ section .small {
 
 .about .container .flex {
   display: flex;
-  gap: 4rem;
+  gap: 3rem;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -423,6 +424,10 @@ section .small {
 @media screen and (max-width: 60em) { /* medium-width devices: collapse work grid, introduce hamburger menu */
   .work .grid .container {
     width: 100%;
+  }
+
+  .work .grid {
+    gap: 4vh;
   }
 
   .nav-links {
@@ -563,7 +568,7 @@ section .small {
   }
 }
 
-@media screen and (max-width: 50em) { /* small-width devices: collapse about grid */
+@media screen and (max-width: 55em) { /* small-width devices: collapse about grid */
   section .container,
   nav .container,
   .small {
@@ -583,8 +588,6 @@ section .small {
   }
 
   .about img {
-    height: 24em;
-    width: 15em;
     margin: 0 auto;
   }
 
@@ -600,16 +603,20 @@ section .small {
     padding-top: 5em;
   }
 
+  .tagline p {
+    padding-top: 4.5em;
+  }
+
   .work .grid {
     padding-bottom: 7em;
   }
 
   .about .text {
-    margin-bottom: 7em;
+    margin-bottom: 6em;
   }
 }
 
-@media screen and (max-height: 46em) { /* short devices: decrease whitespace*/
+@media screen and (max-height: 56em) { /* short devices: decrease whitespace*/
   nav {
     padding-top: 1em;
   }
@@ -621,7 +628,6 @@ section .small {
   .work .grid {
     padding-top: 2em;
     padding-bottom: 4em;
-    gap: 20px;
   }
 
   .about {
@@ -629,7 +635,7 @@ section .small {
   }
 
   .about .container .flex {
-    gap: 3em;
+    gap: 2.25em;
   }
 
   .about .text {
