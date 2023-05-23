@@ -630,16 +630,21 @@ section .small {
     padding-bottom: 4em;
   }
 
+  h1 {
+    margin-bottom: 0.5em;
+  }
+
   .about {
     padding-top: 3em;
   }
 
   .about .container .flex {
-    gap: 2.25em;
+    gap: 2em;
   }
 
   .about .text {
     margin-bottom: 3em;
+    font-size: 1rem;
   }
 }
 
