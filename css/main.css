@@ -109,7 +109,6 @@ h2 {
 .tagline p {
   max-width: 45ch;
   font-size: 1rem;
-  font-weight: 400;
   padding-top: 4.5em;
 }
 
@@ -124,7 +123,6 @@ h2 {
 }
 
 .about .text {
-  margin-bottom: 4em;
   width: calc(100% - 20.25rem);
   max-width: 59ch;
 }
@@ -229,7 +227,6 @@ nav img {
   border-radius: 25px;
   object-fit: cover;
   box-shadow: 0px 5px 20px -10px var(--gunmetal);
-  margin-bottom: 6em;
   transition: 0.5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
 }
 
@@ -303,7 +300,15 @@ nav input {
 }
 
 section {
-  padding-top: 4em;
+  padding: 4em 0 5em 0;
+}
+
+.work {
+  padding-bottom: 5.75em;
+}
+
+.tagline {
+  padding-bottom: 0;
 }
 
 .work,
@@ -340,8 +345,7 @@ section .small {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
-  padding-top: 3em;
-  padding-bottom: 5em;
+  padding-top: 2em;
 }
 
 .about .container .flex {
@@ -427,7 +431,7 @@ section .small {
   }
 
   .work .grid {
-    gap: 4vh;
+    gap: 7.5vw;
   }
 
   .nav-links {
@@ -580,7 +584,7 @@ section .small {
     width: 80%;
     line-height: 1.25em;
     text-align: center;
-    margin: 0 auto 1em auto;
+    margin: 0 auto 0.75em auto;
   }
 
   .tagline p {
@@ -600,47 +604,41 @@ section .small {
 
 @media screen and (min-height: 57em) { /* tall devices: increase whitespace */
   section {
-    padding-top: 5em;
+    padding: 5em 0 6em 0;
+  }
+
+  .work {
+    padding-bottom: 7em;
+  }
+
+  .tagline p {
+    padding-top: 3.5em;
+  }
+}
+
+@media screen and (max-height: 46em) { /* short devices: decrease whitespace*/
+  section {
+    padding: 3em 0 3.5em 0;
+  }
+
+  .work {
+    padding-bottom: 4em;
+  }
+
+  .about {
+    padding-bottom: 3em;
+  }
+  
+  nav {
+    padding-top: 1em;
   }
 
   .tagline p {
     padding-top: 3.5em;
   }
 
-  .work .grid {
-    padding-bottom: 7em;
-  }
-
-  .about .text {
-    margin-bottom: 6em;
-  }
-}
-
-@media screen and (max-height: 46em) { /* short devices: decrease whitespace*/
-  nav {
-    padding-top: 1em;
-  }
-
-  .tagline p {
-    padding-top: 2.5em;
-  }
-
-  .work .grid {
-    padding-top: 2em;
-    padding-bottom: 4em;
-  }
-
-  .about {
-    padding-top: 3em;
-  }
-
   .about .container .flex {
     gap: 2.25em;
-  }
-
-  .about .text {
-    margin-bottom: 3em;
-    font-size: 1rem;
   }
 }
 
