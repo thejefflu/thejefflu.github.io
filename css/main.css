@@ -109,7 +109,6 @@ h2 {
 .tagline p {
   max-width: 45ch;
   font-size: 1rem;
-  padding-top: 4.5em;
 }
 
 .overlay p {
@@ -304,11 +303,9 @@ section {
 }
 
 .work {
-  padding-bottom: 5.75em;
-}
-
-.tagline {
-  padding-bottom: 0;
+  margin-top: 8.5em;
+  padding: 0 0 5.75em 0;
+  position: relative;
 }
 
 .work,
@@ -329,15 +326,6 @@ section .container {
 section .small {
   width: 65%;
   max-width: 40rem;
-}
-
-.tagline {
-  position: relative;
-}
-
-.work {
-  position: relative;
-  padding-top: 0;
 }
 
 .work .grid {
@@ -587,6 +575,10 @@ section .small {
     margin: 0 auto 0.75em auto;
   }
 
+  .work {
+    margin-top: 8.5em;
+  }
+
   .tagline p {
     width: 90%;
   }
@@ -610,10 +602,6 @@ section .small {
   .work {
     padding-bottom: 7em;
   }
-
-  .tagline p {
-    padding-top: 3.5em;
-  }
 }
 
 @media screen and (max-height: 46em) { /* short devices: decrease whitespace*/
@@ -622,6 +610,7 @@ section .small {
   }
 
   .work {
+    margin-top: 6.5em;
     padding-bottom: 4em;
   }
 
@@ -631,10 +620,6 @@ section .small {
   
   nav {
     padding-top: 1em;
-  }
-
-  .tagline p {
-    padding-top: 3.5em;
   }
 
   .about .container .flex {

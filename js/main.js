@@ -39,7 +39,7 @@ nav1.addEventListener('click', function() {
 
 var nav2 = document.querySelector('.nav-work');
 nav2.addEventListener('click', function() {
-  smoothScroll('.scroll-helper-work', 1500);
+  smoothScroll('.scroll-helper-top', 1500);
 });
 
 var nav3 = document.querySelector('.nav-about');
