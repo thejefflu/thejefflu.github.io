@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- metadata -->
+    <title>Jeff Lu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/site.webmanifest">
+
+    <!-- styles and fonts -->
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/case-study.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ygv6uzw.css">
+    <script src="https://kit.fontawesome.com/6b4fd4dffa.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div class="scroll-helper-top"></div>
+    
+    <!------------
+      NAVBAR 
+      ------------>
+    <nav class="nav" id="nav">
+      <div class="container">
+
+        <!-- left -->
+        <a class="left">
+          <img src="../../assets/imgs/monogram.png" alt="JL Monogram">
+          <p>Scootly</p>
+        </a>
+
+        <!-- right: hamburger menu (for smaller screens) -->
+        <input type="checkbox" id="nav-menu">
+        <label for="nav-menu" class="nav-btn" onclick="toggleScroll()">
+            <i></i>
+            <i></i>
+            <i></i>
+        </label>
+
+        <!-- right: nav bar (for larger screens) -->
+        <div class="nav-links">
+          <ul>
+            <li>
+              <a class="nav-brief" onclick="enableScroll()">Brief</a>
+            </li>
+            <li>
+              <a class="nav-research" onclick="enableScroll()">Research</a>
+            </li>
+            <li>
+              <a class="nav-process" onclick="enableScroll()">Process</a>
+            </li>
+            <li>
+              <a class="nav-designs" onclick="enableScroll()">Final Designs</a>
+            </li>
+            <li>
+              <a class="nav-impact" onclick="enableScroll()">Impact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!------------
+      CLOSE BUTTON 
+      ------------>
+      <a href="../../" class="close">
+        <i class="fa-solid fa-arrow-right-to-bracket"></i>
+      </a>
+
+    <!------------
+      SPLASH 
+      ------------>
+    <section class="splash">
+      <div class="container">
+        <img src="splash.png" class="splash-img">
+        <h1>Scootly</h1>
+        <p class="main-subtitle">Creating the world’s first scooter-sharing experience from the ground up.</h3>
+        
+        <div class="specs">
+          <p>
+            <span>Timeline</span> 
+            <br> 
+            Oct - Dec 2022
+          </p>
+          <p>
+            <span>Platform</span>
+            <br> 
+            Mobile App
+          </p>
+          <p>
+            <span>Role</span>
+            <br> 
+            UI Designer
+            <br>
+            Front End Developer
+          </p>
+          <p>
+            <span>Toolkit</span> 
+            <br> 
+            Figma
+            <br> 
+            React Native
+          </p>
+        </div>
+
+        <div class="button">
+          <a href="https://www.figma.com/community/file/1242769231835608808" target="_blank">View the Project<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+        
+      </div>
+      <div class="scroll-helper-brief"></div>
+    </section>
+
+    <!------------
+      BRIEF 
+      ------------>
+    <section class="brief">
+      <div class="container">
+        <h2>Brief</h2>
+
+        <div class="subcontainer">
+          <h3>Background</h3>
+          <p>Scootly is a startup founded upon a simple idea: what if the convenience of a personal vehicle could be combined with the flexibility of a rideshare application?</p>
+          <p>Created in Fall 2022, Scootly’s mobile app assists people in renting out their personal scooters to others in the Los Angeles area. It’s the first app of its kind to promote the more widespread use of more eco-friendly transportation options.</p>
+        </div>
+
+        <div class="subcontainer">
+          <h3>Team</h3>
+          <p>I collaborated with 1 fellow "dev-signer" (<a href="https://www.linkedin.com/in/jennyecho/" class="inline">Jenny</a>) and 4 developers (<a href="https://www.linkedin.com/in/johnamii" class="inline">John</a>, <a href="https://www.linkedin.com/in/dwightbumgarner" class="inline">Dwight</a>, <a href="https://www.instagram.com/aparna.hrn/" class="inline">Aparna</a>, <a href="https://www.linkedin.com/in/madhavi-vivek/" class="inline">Madhavi</a>) to bring this project to life.</p>
+          <p>The 6 of us were were brought together by a UCLA course: CS 35L, Software Construction Laboratory. Thanks to these guys and their creativity, drive, and entrepreneurship, what was originally supposed to just a group project became something much greater!</p>
+          <div class="gallery">
+            <img src="team1.jpg" class="photo">
+            <img src="team2.jpg" class="photo">
+          </div>
+        </div>  
+
+        <div class="subcontainer">
+          <h3>Problem</h3>
+          <div class="subsubcontainer">
+            <h4><i class="fa-solid fa-building"></i>Poor Urban Planning</h4>
+            <p>Los Angeles is just one example of a prevailing pattern in the US: poor walkability and transit. Although LA is slowly making progress towards improving its public transportation system, getting around still remains a hassle for many.</p>
+          </div>
+          <div class="subsubcontainer">
+            <h4><i class="fa-solid fa-wallet"></i>The Scooter Dilemma</h4>
+            <p>People looking to get around using micromobility vehicles, especially cash-strapped college students, face a dilemma: is it better to purchase your own personal scooter? Or regularly pay for rentals? Neither option seems ideal: the former too much of a hassle, the latter simply overpriced.</p>
+          </div>
+        </div>
+        
+        <div class="callout subcontainer">
+          <i class="fa-solid fa-quote-left"></i>
+          <p class="callout-text-large">How might we encourage LA residents to make the most out of scooters as a transportation option?</p>
+          <i class="fa-solid fa-quote-right"></i>
+        </div>
+      </div>  
+      <div class="scroll-helper-research"></div>
+    </section>
+
+    <!------------
+      RESEARCH 
+      ------------>
+      <section class="research">
+        <div class="container">
+          <h2>Research</h2>
+          <div class="subcontainer">
+            <h3>Ideation</h3>
+            <p>Making an app about scooter renting wasn't an instant decision. Before anything else, we began by brainstorming various problems that people in LA face in their day-to-day lives. We came up with plenty of ideas, from a music-based dating app to an event scheduling tool, before finally deciding on Scootly.</p>
+            <img src="ideation.png">
+          </div>
+          <div class="subcontainer">
+            <h3>Proposal</h3>
+            <p>Next, we documented the outline for what would eventually become Scootly. This entailed indentifying the aspects of scooter-riding that people currently find to be the most lacking, and coming up with features that would best remedy them. Keep reading to see what we cooked up!</p>
+            <img src="proposal.png">
+          </div>
+        </div>
+        <div class="scroll-helper-process"></div>
+      </section>
+
+    <!------------
+      PROCESS 
+      ------------>
+      <section class="process">
+        <div class="container">
+          <h2>Process</h2>
+            <div class="subcontainer">
+              <h3>Design Principles</h3>
+              <div class="subsubcontainer">
+                <p>Before opening up Figma, we came up with 4 principles which would act as our anchor throughout the design process.</p>
+              </div>
+              <div class="subsubcontainer callout">
+                <i class="fa-solid fa-earth-americas"></i>
+                <h4>Environmentalism</h4>
+                <p>Scootly seeks to do its part in preventing climate change by facilitating only the rental of eco-friendly micromobility vehicles—no cars.</p>
+                
+                <i class="fa-solid fa-user-group"></i>
+                <h4>Community</h4>
+                <p>Scooter riders aren't just names on a screen. They are members of a growing cultural phenomena, and we aimed to treat them as such.</p>
+
+                <i class="fa-solid fa-stopwatch"></i>
+                <h4>Convenience</h4>
+                <p>Scootly respects that its users have places to be. Making the user flow as simple and accessible as possible was deeply engrained in our design philosophy.</p>
+
+                <i class="fa-solid fa-fire"></i>
+                <h4>Boldness</h4>
+                <p>We wanted Scootly to be as bold and street-smart as its users. When designing, we went for an urban aesthetic that would pop out and instantly engage.</p>
+              </div>
+            </div>
+
+            <div class="subcontainer">
+              <h3>Low-Fi Wireframes</h3>
+              <p>Our first order of business was to create low-fidelity mockups of our intended features. Since we had to create a functional  MVP in just two months, it was imperative that we crank these out as quickly as possible so we could have a foundation to code off of.</p>
+              <img src="lo-fi.png" class="transparent">
+            </div>
+
+            <div class="subcontainer">
+              <h3>Mid-Fi Wireframes</h3>
+              <p>The next step was to finalize our app's color scheme—getting our devs' opinions, too—and apply them to our early mockups. We also made sure to create multiple variants of the most crucial features to ensure we were proceeding with the best possible option.</p>
+              <img src="mid-fi.png" class="transparent">
+            </div>
+        </div>
+        <div class="scroll-helper-designs"></div>
+      </section>
+
+    <!------------
+      FINAL DESIGNS 
+      ------------>
+      <section class="designs">
+        <div class="container">
+          <h2>Final Designs</h2>
+  
+          <div class="subcontainer">
+            <h3>Onboarding</h3>
+            <p>People are first greeted with a log in/sign up portal that accounts for all types of users and allows for profile customization.</p>
+            <img src="onboarding.gif" class="tall">
+          </div>
+
+          <div class="subcontainer">
+            <h3>Dashboard</h3>
+            <p>To encourage discovery, people can search and filter for the exact ride they need. We included all the information necessary for renters, and nothing more.</p>
+            <img src="dashboard.gif" class="tall">
+          </div>
+
+          <div class="subcontainer">
+            <h3>Listing Management</h3>
+            <p>We didn't forget about scooter owners, either: making some side cash with your vehicle is as easy as a few taps of a screen.</p>
+            <img src="listing-management.gif" class="tall">
+          </div>
+
+          <div class="subcontainer">
+            <h3>Messaging</h3>
+            <p>Scootly users can make secure transactions and stay connected using our in-app messaging platform.</p>
+            <img src="messaging.gif" class="tall">
+          </div>
+
+          <div class="subcontainer">
+            <h3>Style Guide</h3>
+            <p>I created a UI style guide to ensure that components were implemented consistently across the app.</p>
+            <img src="style-guide.png" class="transparent">
+          </div>
+
+        </div>
+        <div class="scroll-helper-impact"></div>
+      </section>
+
+    <!------------
+      IMPACT
+      ------------>
+      <section class="impact">
+        <div class="container">
+          <h2>Impact</h2>
+            
+          <div class="subcontainer">
+            <h3>Outcomes</h3>
+            <p>John, my roommate and soon-to-be-groupmate, once asked our professor if a commercially viable product had ever come out of his class. The answer was no, and from then on, we and the rest of our project team were determined to make 35L history.</p>
+
+            <p>As of Spring 2023, we are still working hard at getting our app published on the iOS App Store! The last steps that stand in the way of our official launch are squishing a few minor bugs and adding a couple of features that Apple requires.</p>
+          </div>
+
+          <div class="subcontainer">
+            <h3>Reflections</h3>
+            <div class="subsubcontainer">
+              <h4><i class="fa-solid fa-palette"></i>Design doesn't exist in a vacuum.</h4>
+              <p>Scootly was originally created as the capstone project for a computer science course known for its difficulty. My group recieved a  rare perfect score, while others were marked down for a simple reason: they neglected their UI/UX.</p>
+              <p>Seeing this helped me realize that design has an implicit effect on all things in life. My love for this field grew even stronger after seeing how its applications are so universal, they reached even to a technical CS class!</p>
+            </div>
+
+            <div class="subsubcontainer">
+              <h4><i class="fa-solid fa-pen-ruler"></i>Defining a product from scratch isn't easy.</h4>
+              <p>Creating a fully functional app within the span of an academic term is an ambitious goal, to say the least. Through Scootly, I learned how to adjust the scope of a project (and consequently, its designs) in response to time and development constraints. </p>
+              <p>In addition, I gained a deeper understanding of the product cycle by continually ensuring that we were working toward a reasonable goal and staying on track to provide a quality delivery.</p>
+            </div>
+            <p class="shoutout">Shoutout to my team, The Sproungers, and our TA, Ayushi, for the best group project experience I could've asked for!</p>
+          </div>
+      </section>
+
+    <div class="scroll-helper-bottom"></div>
+    <script src="../../js/case-study.js"></script>
+  </body>
+</html>

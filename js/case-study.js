@@ -32,6 +32,11 @@ function menuOff() {
   navMenu.checked = false;
 }
 
+var nav0 = document.querySelector('.left');
+nav0.addEventListener('click', function() {
+  smoothScroll('.scroll-helper-top', 1500);
+});
+
 var nav1 = document.querySelector('.nav-brief');
 nav1.addEventListener('click', function() {
   smoothScroll('.scroll-helper-brief', 1500);
@@ -48,16 +53,28 @@ nav3.addEventListener('click', function() {
   smoothScroll('.scroll-helper-process', 1500);
 });
 
-
 var nav4 = document.querySelector('.nav-designs');
 nav4.addEventListener('click', function() {
   smoothScroll('.scroll-helper-designs', 1500);
 });
 
-var nav5 = document.querySelector('.nav-closing');
+var nav5 = document.querySelector('.nav-impact');
 nav5.addEventListener('click', function() {
-  console.log('h');
-  smoothScroll('.scroll-helper-closing', 1500);
+  /* compute the height of the about section, plus the height of the nav bar (without any padding it might have) */
+  let about = document.querySelector('.impact');
+  let nav = document.querySelector('.nav');
+  let navStyle = getComputedStyle(nav);
+  let navHeight = document.querySelector('.nav').offsetHeight - parseFloat(navStyle.paddingTop);
+
+  let aboutHeight = about.offsetHeight + navHeight;
+
+  let viewportHeight = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
+
+  if (aboutHeight >= viewportHeight) {
+    smoothScroll('.scroll-helper-impact', 1500);
+  } else {
+    smoothScroll('.scroll-helper-bottom', 1500);
+  }
 });
 
 

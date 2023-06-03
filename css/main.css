@@ -25,12 +25,12 @@
  ************/
 
 * {
-  --jet: #2E2E2E;
-  --gunmetal: #0E2F39;
-  --bluegreen: #23AA9D;
-  --celeste: #DDF5F3; 
-  --aliceblue: #F9FCFD;
-  --gradient: linear-gradient(120deg, var(--gunmetal) 0%, var(--bluegreen) 100%);
+  --text: #2E2E2E;
+  --accent-dark: #0E2F39;
+  --accent: #23AA9D;
+  --accent-light: #DDF5F3; 
+  --background: #F9FCFD;
+  --gradient: linear-gradient(120deg, var(--accent-dark) 0%, var(--accent) 100%);
 
   --linkedin: #0077B5;
   --github: #DE5C40;
@@ -57,18 +57,18 @@
 * {
   margin: 0;
   font-family: Manrope, sans-serif;
-  color: var(--jet);
+  color: var(--text);
   line-height: 1.9;
 }
 
 html, body {
-  background-color: var(--aliceblue);
+  background-color: var(--background);
   position: relative;
   overflow-x: hidden; 
 }
 
 ::selection {
-  background: var(--celeste);
+  background: var(--accent-light);
 }
 
 /************
@@ -77,16 +77,17 @@ html, body {
 
 /* headings */
 
-h1,
-h1 span {
+h1 {
   font-family: IvyPresto-Display, Manrope, sans-serif;
-  font-size: 3.25rem;
+  font-size: 3.5rem;
   margin-bottom: 0.2em;
-  font-weight: 600;
+  font-weight: 300;
 }
 
 h1 span {
-  font-weight: 300;
+  font-family: IvyPresto-Display, Manrope, sans-serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
 h2 {
@@ -94,7 +95,7 @@ h2 {
   overflow: hidden;
   font-weight: 700;
   font-size: 2rem;
-  color: var(--aliceblue);
+  color: var(--background);
   transition: 0.5s ease;
 }
 
@@ -112,13 +113,14 @@ h2 {
 }
 
 .overlay p {
-  color: var(--aliceblue);
+  color: var(--background);
   margin: 0 auto;
   transition: 0.5s ease;
   overflow: hidden;
   text-align: center;
   width: 80%;
   max-width: 30ch;
+  line-height: 1.75em;
 }
 
 .about .text {
@@ -159,7 +161,7 @@ nav p,
 nav a { 
   position: relative;
   background: 
-    linear-gradient(to right, var(--jet), var(--jet));
+    linear-gradient(to right, var(--text), var(--text));
   background-size: 0% 0.1em;
   background-position: 0 100%;
   transition: 0.5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
@@ -175,11 +177,11 @@ nav a {
     background-position: 0 100%;
 	transition: 0.5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
   background-repeat: no-repeat;
-  color: var(--bluegreen);
+  color: var(--accent);
 }
 
 .primary .inline {
-  color: var(--jet);
+  color: var(--text);
 }
 
 .about .links {
@@ -225,7 +227,7 @@ nav img {
   max-width: 90%;
   border-radius: 25px;
   object-fit: cover;
-  box-shadow: 0px 5px 20px -10px var(--gunmetal);
+  box-shadow: 0px 5px 20px -10px var(--accent-dark);
   transition: 0.5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
 }
 
@@ -243,9 +245,9 @@ nav img {
   left: 0;
   width: 100%;
   height: 0;
-  background-color: var(--gunmetal);
+  background-color: var(--accent-dark);
   transition: 0.5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
-  opacity: 93%;
+  opacity: 95%;
   overflow: hidden;
   border-radius: 15px;
   display: flex;
@@ -255,10 +257,10 @@ nav img {
 
 .work .grid .container {
   position: relative;
-  width: calc(50% - 10px);
+  width: calc(50% - 0.75em);
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0px 5px 25px -20px var(--gunmetal);
+  box-shadow: 0px 5px 25px -20px var(--accent-dark);
   transition: 0.5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
 }
 
@@ -268,7 +270,7 @@ nav img {
 
 nav {
   width: 100%;
-  background-color: var(--aliceblue);
+  background-color: var(--background);
   z-index: 99;
   height: 6em;
   padding-top: 3em;
@@ -292,7 +294,7 @@ nav input {
 }
 
 .sticky {
-  box-shadow: 0px 10px 30px -30px var(--gunmetal);
+  box-shadow: 0px 10px 30px -30px var(--accent-dark);
   padding-top: 0;
   height: 6em;
   position: fixed;
@@ -300,6 +302,10 @@ nav input {
 
 section {
   padding: 4em 0 5em 0;
+}
+
+.tagline {
+  position: relative;
 }
 
 .work {
@@ -314,7 +320,7 @@ section {
 .research,
 .process,
 .designs {
-  box-shadow: 0px 30px 70px -70px var(--gunmetal);
+  box-shadow: 0px 30px 70px -70px var(--accent-dark);
 }
 
 section .container {
@@ -323,15 +329,10 @@ section .container {
   margin: 0 auto;
 }
 
-section .small {
-  width: 65%;
-  max-width: 40rem;
-}
-
 .work .grid {
   width: 100%;
   display: flex;
-  gap: 20px;
+  gap: 1.5em;
   flex-wrap: wrap;
   padding-top: 2em;
 }
@@ -353,7 +354,7 @@ section .small {
   nav li a:hover,
   nav li a:focus {
     background: 
-      linear-gradient(to right, var(--jet), var(--jet));
+      linear-gradient(to right, var(--text), var(--text));
     background-size: 100% 0.1em;
     background-position: 0 100%;
     background-repeat: no-repeat;
@@ -361,7 +362,7 @@ section .small {
 
   .inline:hover,
   .inline:focus {
-    color: var(--gunmetal);
+    color: var(--accent-dark);
     background-size: 100% 0.125em;
     background-repeat: no-repeat;
   }
@@ -428,7 +429,7 @@ section .small {
     min-height: 100vh;
     top: 0;
     left: 0;
-    background: var(--aliceblue);
+    background: var(--background);
     z-index: 2;
     opacity: 0;
     transition: all .5s ease;
@@ -511,8 +512,9 @@ section .small {
       display: block;
       width: 20px;
       height: 2px;
-      background: var(--jet);
+      background: var(--text);
       transition: transform 0.4s ease;
+      margin: 0;
   }
   
   .nav-btn i:nth-child(2) {
@@ -561,14 +563,7 @@ section .small {
 }
 
 @media screen and (max-width: 55em) { /* small-width devices: collapse about grid */
-  section .container,
-  nav .container,
-  .small {
-    width: 85%;
-  }
-
-  h1,
-  h1 span {
+  h1 {
     width: 80%;
     line-height: 1.25em;
     text-align: center;
@@ -597,6 +592,10 @@ section .small {
 @media screen and (min-height: 57em) { /* tall devices: increase whitespace */
   section {
     padding: 5em 0 6em 0;
+  }
+
+  .splash {
+    padding-top: 4em;
   }
 
   .work {
