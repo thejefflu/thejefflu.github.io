@@ -430,7 +430,7 @@ section .container {
 
 @media screen and (max-width: 55em) {
   section .container {
-    width: 80%;
+    width: 85%;
   }
 
   .callout {
@@ -484,5 +484,10 @@ section .container {
     width: 40%;
     margin: 0 auto;
     white-space: nowrap;
+  }
+
+  .close {
+    bottom: 1.5em;
+    right: 1.5em;
   }
 }
