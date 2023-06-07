@@ -27,14 +27,13 @@
  ************/
 
 * {
-  --text: #2E2E2E;
   --accent-dark: #483e1c;
-  --accent-dark-transparent: rgba(72, 62, 28, 0.25);
-  --accent: #e6b60b;
+  --shadow: #483e1c2f;
+  --accent-readable: #daad07;
+  --accent: #FBD85D;
   --grey: #CCCCCC;
   --accent-light: #f8f0d5; 
   --background: #fdfcf9;
-  --gradient: linear-gradient(120deg, var(--accent-dark) 0%, var(--accent) 100%);
 }
 
 /************
@@ -49,6 +48,7 @@
   text-align: center;
   margin-bottom: 0.25em;
   line-height: 1.25em;
+  width: 100%;
 }
 
 h2 { /* section headings */
@@ -57,6 +57,8 @@ h2 { /* section headings */
   text-align: left;
   font-family: IvyPresto-Display, Manrope, sans-serif;
   color: var(--text);
+  line-height: 1.25em;
+  margin-bottom: 0.25em;
 }
 
 h3 { /* subheadings */
@@ -115,11 +117,15 @@ h4 i {
   text-align: center;
 }
 
+.inline {
+  color: var(--accent-readable);
+}
+
 /* callout sections */
 
 .callout h4 {
   font-family: Manrope, sans-serif;
-  color: #FBD85D;
+  color: var(--accent);
   margin: 0.5em auto;
   padding: 0 !important;
   text-align: center;
@@ -156,7 +162,7 @@ h4 i {
 }
 
 .callout i {
-  color: #FBD85D;
+  color: var(--accent);
   font-size: 1.5rem;
   display: block;
   text-align: center;
@@ -184,7 +190,7 @@ h4 i {
   position: fixed;
   right: 2.5em;
   bottom: 2.5em;
-  box-shadow: 0px 0px 15px -5px var(--accent-dark);
+  box-shadow: var(--small-shadow);
   border-radius: 100%;
   background-color: var(--text);
   z-index: 9999;
@@ -200,7 +206,7 @@ h4 i {
   font-size: 1.5em;
   margin: 0 auto;
   color: var(--background);
-  transition: 0.3s ease;
+  transition: var(--ease-fast);
   transition-delay: 0s;
 }
 
@@ -209,13 +215,13 @@ h4 i {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #FBD85D;
+  background-color: var(--accent);
   border-radius: 50%;
   height: 100%;
   width: 100%;
   transform: scale(0);
   z-index: -1;
-  transition: 0.5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  transition: var(--bouncy);
 }
 
 /* buttons */
@@ -229,15 +235,15 @@ h4 i {
   font-weight: bold;
   margin: 1em 0;
   display: inline-block;
-  transition: 0.5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
-  box-shadow: 0px 0px 15px -5px var(--accent-dark);
+  transition: var(--bouncy);
+  box-shadow: var(--small-shadow);
   overflow: hidden;
 }
 
 .button a,
 .button i {
   color: var(--background);
-  transition: 0.3s ease;
+  transition: var(--ease-fast);
   transition-delay: 0s;
 }
 
@@ -254,8 +260,8 @@ h4 i {
   height: 0;
   width: 100%;
   z-index: -1;
-  transition: 0.5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
-  background-color:#FBD85D;
+  transition: var(--bouncy);
+  background-color:var(--accent);
 }
 
 /* callout sections */
@@ -267,8 +273,8 @@ h4 i {
   width: 100%;
   padding: 4em 0;
   position: relative;
-  transition: 0.5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
-  box-shadow: 0px 15px 40px 0px var(--accent-dark-transparent);
+  transition: var(--bouncy);
+  box-shadow: var(--large-shadow);
 }
 
 /* images */
@@ -289,30 +295,28 @@ h4 i {
 }
 
 .gallery img {
-  width: calc(50%);
+  width: calc(50% - 0.5em);
 }
 
-.brief img,
-.research img,
-.process img,
-.designs img,
-.impact img {
-  margin: 1em auto 0em auto;
+img {
   max-width: 100%;
+  margin: 1.5em auto 0em auto;
+}
+
+.nav img {
+  margin: 0;
+}
+
+.graphic,
+.photo {
   border-radius: 20px;
-  box-shadow: 0px 15px 40px 0px var(--accent-dark-transparent);
-  transition: 0.5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  box-shadow: var(--large-shadow);
+  transition: var(--bouncy);
 }
 
 .tall {
   object-fit: cover;
   height: 40em;
-}
-
-.transparent {
-  box-shadow: none !important;
-  border-radius: 0px !important;
-  margin: 2em 0 !important;
 }
 
 /************
@@ -364,15 +368,10 @@ section .container {
     transform: scale(1.05);
   }
 
-  .transparent:hover,
-  .transparent:focus {
-    transform: none !important;
-  }
-
   .close:hover,
   .close:focus {
-    background-color: #FBD85D;
-    transition: 0.5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+    background-color: var(--accent);
+    transition: var(--bouncy);
   }
 
   .close:hover::before,
@@ -389,7 +388,7 @@ section .container {
   .button:focus {
     transform: scale(1.05);
     color: var(--text);
-    background-color: #FBD85D;
+    background-color: var(--accent);
     cursor: pointer;
   }
 
@@ -407,16 +406,10 @@ section .container {
     color: var(--text);
   }
 
-  .brief img:hover,
-  .brief img:focus,
-  .research img:hover,
-  .research img:focus,
-  .process img:hover,
-  .process img:focus,
-  .designs img:hover,
-  .designs img:focus,
-  .impact img:hover,
-  .impact img:focus {
+  .graphic:hover,
+  .graphic:focus,
+  .photo:hover,
+  .photo:focus {
     transform: scale(1.05);
     filter: grayscale(0);
   }   
@@ -464,6 +457,14 @@ section .container {
 }
 
 @media screen and (max-width: 40em) {
+  h1 {
+    font-size: 3.5em;
+  }
+
+  .main-subtitle {
+    font-size: 1.75em;
+  }
+
   .gallery {
     flex-direction: column;
     gap: 7.5vw;
