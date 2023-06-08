@@ -333,7 +333,7 @@ section .container {
 }
 
 .splash {
-  margin-top: 6em;
+  margin-top: 5em;
 }
 
 .splash .specs {
@@ -422,10 +422,6 @@ section .container {
 }
 
 @media screen and (max-width: 55em) {
-  .splash {
-    margin-top: 4em;
-  }
-
   section .container {
     width: 85%;
   }
@@ -496,5 +492,11 @@ section .container {
   .close {
     bottom: 1.5em;
     right: 1.5em;
+  }
+}
+
+@media screen and (max-height: 46em) {
+  .splash {
+    margin-top: 2.5em;
   }
 }

@@ -43,7 +43,7 @@
     0px 10px 25px var(--shadow),
     0px 20px 50px var(--shadow);
 
-  --ease-slow: 0.25s ease;
+  --ease-slow: 0.5s ease;
   --ease-fast: 0.25s ease;
   --bouncy: 0.5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
 
@@ -618,7 +618,7 @@ section .container {
 
 @media screen and (max-height: 46em) { /* short devices: decrease whitespace*/
   section {
-    padding: 4.5em 0 4.5em 0;
+    padding: 3.5em 0 4.5em 0;
     box-shadow: 0px 125px 150px -150px var(--accent-dark);
   }
 
