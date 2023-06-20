@@ -31,9 +31,8 @@
   --shadow: #483e1c1c;
   --accent-readable: #daad07;
   --accent: #FBD85D;
-  --grey: #CCCCCC;
-  --accent-light: #f8f0d5; 
-  --background: #fdfcf9;
+  --accent-light: #fbf5e4; 
+  --background: #fefefd;
 }
 
 /************
@@ -240,7 +239,7 @@ h4 i {
   overflow: hidden;
 }
 
-.button a,
+.button p,
 .button i {
   color: var(--background);
   transition: var(--ease-fast);
@@ -342,20 +341,16 @@ section .container {
   justify-content: space-between;
   padding: 1.5em 0 1.5em 0;
   margin: 2em 0;
-  border-top: 1px solid var(--grey);
-  border-bottom: 1px solid var(--grey);
+  border-top: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
 }
 
 .container .subcontainer:not(:last-child) { /* all subcontainers but the last of each section */
   margin-bottom: 4em;
 }
 
-.subsubcontainer {
-  margin-bottom: 2em;
-}
-
-.subcontainer .subsubcontainer:last-child { /* all subsubcontainers but the last */
-  margin-bottom: 4em;
+.subcontainer .subsubcontainer:not(:last-child) {
+  margin-bottom: 1.5em;
 }
 
 /************
@@ -399,8 +394,8 @@ section .container {
     bottom: unset;
   }
 
-  .button:hover a,
-  .button:focus a,
+  .button:hover p,
+  .button:focus p,
   .button:hover i,
   .button:focus i {
     color: var(--text);
@@ -462,8 +457,11 @@ section .container {
     font-size: 3.5em;
   }
 
-  .main-subtitle,
   h3 {
+    font-size: 2em;
+  }
+
+  .main-subtitle {
     font-size: 1.75em;
   }
 
@@ -497,6 +495,6 @@ section .container {
 
 @media screen and (max-height: 46em) {
   .splash {
-    margin-top: 2.5em;
+    margin-top: 3.5em;
   }
 }
