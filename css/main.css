@@ -317,7 +317,8 @@ nav input {
 }
 
 section {
-  padding: 4.5em 0 0 0;
+  padding: 4.5em 0 5.5em 0;
+  box-shadow: 0px 100px 325px -325px var(--accent-dark);
 }
 
 .tagline {
@@ -326,7 +327,7 @@ section {
 
 .work {
   margin-top: 8.5em;
-  padding-top: 0;
+  padding: 0 0 5.75em 0;
   position: relative;
 }
 
@@ -334,11 +335,6 @@ section .container {
   width: 80%;
   max-width: 65em;
   margin: 0 auto;
-  box-shadow: 0px 2em 8em -8em var(--accent-dark);
-}
-
-section > .container {
-  padding: 0 0 5.75em 0;
 }
 
 .work .grid {
@@ -433,6 +429,10 @@ section > .container {
 
   .work .grid {
     gap: 7.5vw;
+  }
+
+  section {
+    box-shadow: 0px 75px 175px -175px var(--accent-dark);
   }
 
   section .container,
@@ -609,43 +609,36 @@ section > .container {
 
 @media screen and (max-width: 30em) {
   section {
-    box-shadow: 0 1em 5em -5em var(--accent-dark);
+    box-shadow: 0px 75px 150px -150px var(--accent-dark);
   }
 }
 
 @media screen and (min-height: 57em) { /* tall devices: increase whitespace */
   section {
-    padding: 5em 0 0 0;
+    padding: 5em 0 6em 0;
   }
 
   .splash {
     padding-top: 4em;
   }
 
-  section > .container {
-    padding-bottom: 6em;
-  }
-
-  .work > .contianer {
+  .work {
     padding-bottom: 7em;
   }
 }
 
 @media screen and (max-height: 46em) { /* short devices: decrease whitespace*/
   section {
-    padding: 3.5em 0 0 0;
+    padding: 3.5em 0 4.5em 0;
   }
 
   .work {
     margin-top: 6.5em;
-  }
-
-  section > .container {
-    padding-bottom: 4.5em;
-  }
-
-  .work > .container {
     padding-bottom: 5em;
+  }
+
+  .about {
+    padding-bottom: 3em;
   }
   
   nav {
