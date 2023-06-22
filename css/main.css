@@ -141,7 +141,7 @@ h2 {
 
 .about .text {
   width: calc(100% - 20.25rem);
-  max-width: 59ch;
+  max-width: 69ch;
 }
 
 .about p {
@@ -296,7 +296,7 @@ nav {
 
 nav .container {
   width: 80%;
-  max-width: 60rem;
+  max-width: 65em;
   height: 100%;
   margin: 0 auto;
   display: flex;
@@ -333,7 +333,7 @@ section {
 
 section .container {
   width: 80%;
-  max-width: 60rem;
+  max-width: 65em;
   margin: 0 auto;
 }
 
@@ -418,7 +418,7 @@ section .container {
   
   .work .grid .container:hover,
   .work .grid .container:focus {
-    transform: scale(1.025);
+    transform: scale(1.05);
   }
 }
 
@@ -433,6 +433,11 @@ section .container {
 
   section {
     box-shadow: 0px 75px 175px -175px var(--accent-dark);
+  }
+
+  section .container,
+  nav .container {
+    width: 85%;
   }
 
   .nav-links {
@@ -599,11 +604,6 @@ section .container {
     width: 100%;
     max-width: none;
     order: 2;
-  }
-
-  section .container,
-  nav .container {
-    width: 85%;
   }
 }
 

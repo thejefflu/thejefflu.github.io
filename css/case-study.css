@@ -328,7 +328,7 @@ section {
 
 section .container {
   width: 65%;
-  max-width: 40rem;
+  max-width: 45rem;
 }
 
 .splash {
@@ -414,13 +414,13 @@ section .container {
   .nav-links ul {
     width: 140px;
   }
-}
 
-@media screen and (max-width: 55em) {
   section .container {
     width: 85%;
   }
+}
 
+@media screen and (max-width: 55em) {
   .callout {
     padding: 4em 0;
   }
