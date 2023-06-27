@@ -1,39 +1,24 @@
 /************
  TABLE OF CONTENTS
- 1. custom properties
- 2. typography
-    2.1 headings
-    2.2 paragraphs
-    2.3 specs
-    2.4 links
-    2.5 callout sections
- 3. components
-    3.1 floating close button
-    3.2 buttons
-    3.3 callout sections
-    3.4 images
- 4. structural
- 5. media queries
-    5.1 hover devices
-    5.2 medium-width devices
-    5.3 small-width devices
-    5.4 tall devices
-    5.5 short devices
+ 1. typography
+    1.1 headings
+    1.2 paragraphs
+    1.3 specs
+    1.4 links
+    1.5 callout sections
+ 2. components
+    2.1 floating close button
+    2.2 buttons
+    2.3 callout sections
+    2.4 images
+ 3. structural
+ 4. media queries
+    4.1 hover devices
+    4.2 medium-width devices
+    4.3 small-width devices
+    4.4 tall devices
+    4.5 short devices
  ************/
-
-
-/************
- CUSTOM PROPERTIES
- ************/
-
-* {
-  --accent-dark: #483e1c;
-  --shadow: #483e1c1c;
-  --accent-readable: #daad07;
-  --accent: #FBD85D;
-  --accent-light: #fbf5e4; 
-  --background: #fefefd;
-}
 
 /************
  TYPOGRAPHY
