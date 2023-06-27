@@ -654,23 +654,33 @@ section .container {
  SCROLL HELPERS
  ************/
 
- .scroll-helper-work,
- .scroll-helper-about,
- .scroll-helper-brief,
- .scroll-helper-research,
- .scroll-helper-process,
- .scroll-helper-designs {
-   height: 5.8em;
-   width: 100%;
-   position: absolute;
-   bottom: 0;
-   z-index: -99;
- }
+.overscroll {
+  position: fixed;
+  z-index: -100;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background);
+}
+
+.scroll-helper-work,
+.scroll-helper-about,
+.scroll-helper-brief,
+.scroll-helper-research,
+.scroll-helper-process,
+.scroll-helper-designs {
+  height: 5.8em;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: -99;
+}
  
- .scroll-helper-bottom {
-   height: 100vh;
-   width: 0;
-   position: absolute;
-   bottom: 0;
-   z-index: -99;
- }
+.scroll-helper-bottom {
+  height: 100vh;
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  z-index: -99;
+}
