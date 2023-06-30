@@ -47,12 +47,12 @@ h2 { /* section headings */
 
 h3 { /* subheadings */
   font-family: IvyPresto-Display, Manrope, sans-serif;
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   font-weight: 300;
 }
 
 h4 { /* list titles */
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin: 0.25em 0 0.25em 0;
   text-transform: uppercase;
 }
@@ -74,8 +74,8 @@ h4 i {
   margin: 0 auto 1.5em auto;
 }
 
-.subcontainer p:not(:last-child) {
-  padding-bottom: 0.75em;
+.subcontainer p ~ p {
+  padding-top: 0.75em;
 }
 
 .shoutout {
@@ -110,12 +110,12 @@ h4 i {
 .callout h4 {
   font-family: Manrope, sans-serif;
   color: var(--accent);
-  margin: 0.5em auto;
+  margin: 0.5em auto 0.25em auto;
   padding: 0 !important;
   text-align: center;
   max-width: 30ch;
   line-height: 1.5em;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .callout p {
@@ -137,8 +137,14 @@ h4 i {
   margin: 0 auto !important;
   padding: 0 !important;
   text-align: center;
-  max-width: 30ch !important;
+  max-width: 33ch !important;
   line-height: 1.5em;
+}
+
+.callout .callout-quote-author {
+  margin: 0.5em auto 0 auto !important;
+  padding: 0;
+  font-style: italic;
 }
 
 .callout p:not(:last-child) {
@@ -261,12 +267,24 @@ h4 i {
   box-shadow: var(--large-shadow);
 }
 
+.two-column {
+  display: flex;
+  gap: 4em;
+  flex-wrap: wrap;
+  padding: 4em 4em;
+  width: calc(100% - 8em)
+}
+
+.grid-item {
+  width: calc(50% - 2em);
+}
+
 /* images */
 
 .gallery {
   display: flex;
   width: 100%;
-  gap: 1em;
+  gap: 1.5em;
 }
 
 .splash img {
@@ -279,12 +297,12 @@ h4 i {
 }
 
 .gallery img {
-  width: calc(50% - 0.5em);
+  width: calc(50% - 0.75em);
 }
 
 img {
   max-width: 100%;
-  margin: 1.5em auto 0em auto;
+  margin: 0 auto;
 }
 
 .nav img {
@@ -292,10 +310,24 @@ img {
 }
 
 .graphic,
+.photo,
+.diagram {
+  transition: var(--bouncy);
+}
+
+.graphic,
 .photo {
   border-radius: 20px;
   box-shadow: var(--large-shadow);
-  transition: var(--bouncy);
+}
+
+.diagram {
+  margin-top: 1em;
+}
+
+.small {
+  width: 75%;
+  display: block;
 }
 
 .tall {
@@ -331,7 +363,7 @@ section .container {
 }
 
 .container .subcontainer:not(:last-child) { /* all subcontainers but the last of each section */
-  margin-bottom: 4em;
+  margin-bottom: 5em;
 }
 
 .subcontainer .subsubcontainer:not(:last-child) {
@@ -389,7 +421,9 @@ section .container {
   .graphic:hover,
   .graphic:focus,
   .photo:hover,
-  .photo:focus {
+  .photo:focus,
+  .diagram:hover,
+  .diagram:focus {
     transform: scale(1.05);
     filter: grayscale(0);
   }   
@@ -410,8 +444,12 @@ section .container {
     padding: 4em 0;
   }
 
-  .callout p {
-    width: 75%;
+  .two-column {
+    padding: 4em;
+  }
+
+  .callout-text-large {
+    width: 80%;
   }
 
   .fa-quote-left,
@@ -424,11 +462,11 @@ section .container {
   }
 
   .fa-quote-left {
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
   }
 
   .fa-quote-right {
-    margin-top: 0.5em;
+    margin-top: 1em;
   }
 
   .shoutout {
@@ -459,6 +497,16 @@ section .container {
   .gallery img {
     width: 100%;
     margin: 0;
+  }
+
+  .two-column {
+    display: relative;
+    width: 100%;
+    padding: 4em 0;
+  }
+  
+  .grid-item {
+    width: 100%;
   }
 
   .splash .specs {

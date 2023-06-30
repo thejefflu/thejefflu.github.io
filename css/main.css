@@ -126,7 +126,7 @@ h2 {
   overflow: hidden;
   text-align: center;
   width: 80%;
-  max-width: 30ch;
+  max-width: 35ch;
   line-height: 1.75em;
 }
 
@@ -285,11 +285,15 @@ nav {
   transition: var(--ease-slow);
 }
 
-nav .container {
+nav .container,
+.splash-image-container {
   width: 80%;
   max-width: 65em;
-  height: 100%;
   margin: 0 auto;
+}
+
+nav .container {
+  height: 100%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
