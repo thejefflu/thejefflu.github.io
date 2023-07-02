@@ -335,6 +335,10 @@ img {
   height: 40em;
 }
 
+.extra-space {
+  margin-bottom: 4em !important;
+}
+
 /************
  STRUCTURAL
  ************/
@@ -367,6 +371,10 @@ section .container {
 }
 
 .subcontainer .subsubcontainer:not(:last-child) {
+  margin-bottom: 1.5em;
+}
+
+.extra-spacing {
   margin-bottom: 1.5em;
 }
 
@@ -440,10 +448,6 @@ section .container {
 }
 
 @media screen and (max-width: 55em) {
-  .callout {
-    padding: 4em 0;
-  }
-
   .two-column {
     padding: 4em;
   }
@@ -474,18 +478,39 @@ section .container {
   }
 }
 
+@media screen and (max-width: 50em) {
+  .splash .specs {
+    flex-wrap: wrap;
+    grid-gap: 1.5rem;
+  }
+
+  .splash .specs p {
+    width: 40%;
+    margin: 0 auto;
+    white-space: nowrap;
+  }
+}
+
 @media screen and (max-width: 40em) {
   h1, 
   h2 {
-    font-size: 3.5em;
+    font-size: 3.5rem;
   }
 
   h3 {
-    font-size: 2em;
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1rem;
   }
 
   .main-subtitle {
     font-size: 1.75em;
+  }
+
+  .splash .specs p {
+    font-size: 0.9rem;
   }
 
   .gallery {
@@ -509,25 +534,34 @@ section .container {
     width: 100%;
   }
 
-  .splash .specs {
-    flex-wrap: wrap;
-    grid-gap: 1.5rem;
-  }
-
-  .splash .specs p {
-    width: 40%;
-    margin: 0 auto;
-    white-space: nowrap;
-  }
-
   .close {
     bottom: 1.5em;
     right: 1.5em;
+  }
+
+  .small {
+    width: 100%;
+  }
+
+  .callout-text-large {
+    font-size: 1.3rem !important;
   }
 }
 
 @media screen and (max-height: 46em) {
   .splash {
     margin-top: 3.5em;
+  }
+
+  .callout {
+    padding: 2.75em 0;
+  }
+
+  .fa-quote-left {
+    margin-bottom: 0.75em;
+  }
+
+  .fa-quote-right {
+    margin-top: 0.75em;
   }
 }
