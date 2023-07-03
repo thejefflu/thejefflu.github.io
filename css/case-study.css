@@ -481,11 +481,11 @@ section .container {
 @media screen and (max-width: 50em) {
   .splash .specs {
     flex-wrap: wrap;
-    grid-gap: 1.5rem;
+    grid-gap: 2rem 0;
   }
 
   .splash .specs p {
-    width: 40%;
+    width: 50%;
     margin: 0 auto;
     white-space: nowrap;
   }
