@@ -239,6 +239,10 @@ nav img {
   transition: var(--bouncy);
 }
 
+.mobile {
+  display: none;
+}
+
 /* cards */
 
 .work img {
@@ -605,6 +609,14 @@ section .container {
     width: 100%;
     height: 85vw;
     transform: rotate(0);
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
   }
 
   .about .text {
