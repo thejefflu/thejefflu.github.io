@@ -601,6 +601,7 @@ section .container {
   .about h1 {
     text-align: left;
     margin: 0 0 0.5em 0;
+    width: 100%;
   }
 
   .about img {
