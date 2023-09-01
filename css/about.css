@@ -1,0 +1,160 @@
+/************
+ TABLE OF CONTENTS
+ 1. typography
+ 2. images
+ 3. structural
+ 4. media queries
+ ************/
+
+
+/************
+ TYPOGRAPHY
+ ************/
+
+h1,
+h1 span {
+  font-family: IvyPresto-Display, Manrope, sans-serif;
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 1.25em;
+  margin: 0.25em 0 0.5em 0;
+}
+
+h1 span {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.about .text {
+  width: calc(100% - 21.75rem);
+  max-width: 69ch;
+}
+
+.about p {
+  margin-bottom: 1.25em;
+}
+
+.about .links {
+  margin: 0;
+  padding: 0;
+  margin-top: 2em;
+}
+
+.about .links .primary {
+  line-height: 2em;
+  font-weight: 600;
+}
+
+.primary a,
+.primary i {
+  font-size: 1.2rem;
+  margin-bottom: 0.6em;
+}
+
+.about .links .primary i {
+  margin-right: 0.25em;
+}
+
+/************
+ IMAGES
+ ************/
+
+.mobile {
+  display: none;
+}
+
+.about img {
+  height: 30rem;
+  width: 18.75rem;
+  max-width: 90%;
+  border-radius: 25px;
+  object-fit: cover;
+  box-shadow: var(--large-shadow);
+  transition: var(--bouncy);
+}
+
+/************
+ STRUCTURAL
+ ************/
+
+.about {
+  margin-top: 10em;
+  padding: 0 0 4em 0;
+  position: relative;
+}
+
+.about .container .flex {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/************
+ MEDIA QUERIES
+ ************/
+
+@media (hover: hover) {
+  .about img {
+    transform: rotate(3deg);
+  }  
+
+  .about img:hover,
+  .about img:focus {
+    transform: rotate(0deg) scale(1.05);
+  }
+}
+
+@media screen and (max-width: 55em) { /* small-width devices: collapse about grid */
+  .about h1,
+  .about h1 span {
+    text-align: left;
+    margin: 0 0 0.5em 0;
+    width: 100%;
+  }
+
+  .about img {
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+    height: 85vw;
+    transform: rotate(0);
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .about .text {
+    width: 100%;
+    max-width: none;
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  .about h1,
+  .about h1 span {
+    font-size: 3.25rem;
+  }
+}
+
+@media screen and (max-height: 46em) { /* short devices: decrease whitespace*/
+  .about {
+    margin-top: 8em;
+  }
+
+  .about .container .flex {
+    gap: 2.25em;
+  }
+}
+
+@media screen and (min-height: 57em) { /* tall devices: increase whitespace */
+  .about {
+    margin-top: 11em;
+  }
+}

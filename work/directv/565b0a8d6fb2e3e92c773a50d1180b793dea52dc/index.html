@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- metadata -->
+    <title>DirecTV</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/site.webmanifest">
+
+    <!-- styles and fonts -->
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/case-study.css">
+    <link rel="stylesheet" href="../../../css/directv.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ygv6uzw.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6b4fd4dffa.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div class="scroll-helper-top"></div>
+    
+    <!------------
+      NAVBAR 
+      ------------>
+    <nav class="nav" id="nav">
+      <div class="container">
+
+        <!-- left -->
+        <a class="left">
+          <img src="../../../assets/imgs/monogram.png" alt="JL Monogram">
+          <p>DirecTV</p>
+        </a>
+
+        <!-- right: hamburger menu (for smaller screens) -->
+        <input type="checkbox" id="nav-menu">
+        <label for="nav-menu" class="nav-btn" onclick="toggleScroll()">
+            <i></i>
+            <i></i>
+            <i></i>
+        </label>
+
+        <!-- right: nav bar (for larger screens) -->
+        <div class="nav-links">
+          <ul>
+            <li>
+              <a class="nav-brief" onclick="enableScroll()">Brief</a>
+            </li>
+            <li>
+              <a class="nav-research" onclick="enableScroll()">Research</a>
+            </li>
+            <li>
+              <a class="nav-process" onclick="enableScroll()">Process</a>
+            </li>
+            <li>
+              <a class="nav-designs" onclick="enableScroll()">Final Designs</a>
+            </li>
+            <li>
+              <a class="nav-impact" onclick="enableScroll()">Impact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!------------
+      CLOSE BUTTON 
+      ------------>
+      <a href="../../../" class="close">
+        <i class="fa-solid fa-arrow-right-to-bracket"></i>
+      </a>
+
+    <!------------
+      SPLASH 
+      ------------>
+    <section class="splash">
+      <div class="splash-image-container">
+        <img src="splash.png">
+      </div>
+      <div class="container">
+        <h1>DirecTV</h1>
+        <p class="main-subtitle">Saving $400,000 in yearly costs through a reimagining of equipment management.</h3>
+        
+        <div class="specs">
+          <p>
+            <span>Timeline</span> 
+            <br> 
+            Jun 2023 - Present
+          </p>
+          <p>
+            <span>Platform</span>
+            <br> 
+            Responsive Website
+          </p>
+          <p>
+            <span>Role</span>
+            <br> 
+            UI/UX Design Intern
+          </p>
+          <p>
+            <span>Toolkit</span> 
+            <br> 
+            Figma
+          </p>
+        </div>
+
+        <a href="https://www.figma.com/file/Nz1sntOcgWskKwUNQmtYAw/DirecTV?type=design&node-id=0%3A1&mode=design&t=Fck87svMv28PAP6Q-1" target="_blank" class="button">
+          <p>View the Project<i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+        </a>
+        
+      </div>
+      <div class="scroll-helper-brief"></div>
+    </section>
+
+    <!------------
+      BRIEF 
+      ------------>
+    <section class="brief">
+      <div class="container">
+        <h2 class="reveal">Brief</h2>
+
+        <div class="subcontainer">
+          <h3>Background</h3>
+          <p><span class="highlight">DirecTV is a major television programming distribution company</span> that delivers entertainment solutions to households, businesses, and airlines throughout America. While they were founded upon (and continue to provide) service via satellite dishes, DirecTV is currently pivoting their business model towards aggregation of on-demand streaming content. As of August 2023, they serve <span class="highlight">12 million customers across the nation</span>.</p>
+        </div>
+
+        <div class="subcontainer">
+          <h3>Team</h3>
+          <div class="subsubcontainer">
+            <p>For the duration of this project, <span class="highlight">I worked closely with a senior UI/UX designer</span> (<a href="https://www.linkedin.com/in/sharifyork/" class="inline" target="_blank">Sharif</a>). I collaborated with many others along the way, including members of the UX research team, my work leader (<a href="https://www.linkedin.com/in/karla-radle-rei-dl-7bb0081/" class="inline" target="_blank">Karla</a>), and my fellow interns in the IT department (pictured below)!</p>
+          </div>
+          <div class="gallery subsubcontainer">
+            <img src="team1.jpg" class="photo">
+            <img src="team2.jpg" class="photo">
+          </div>
+        </div>  
+
+        <div class="subcontainer">
+          <h3>Problem</h3>
+
+          <div class="subsubcontainer">
+            <h4><i class="fa-solid fa-hourglass-end"></i>The old equipment management experience was outdated.</h4>
+            <p>DirecTV recently went through the whirlwind of getting acquired by AT&T, then becoming independent once more. Since then, <span class="highlight">significant strides had been made towards re-establishing DirecTV as a separate entity, but their website did not entirely reflect this</span>.</p>
+          </div>
+
+          <div class="subsubcontainer">
+            <h4><i class="fa-solid fa-money-bill-trend-up"></i>DirecTV’s workflow was getting expensive to maintain.</h4>
+            <p>Another byproduct of DirecTV’s acquisition was that <span class="highlight">many elements of DirecTV’s website existed purely because of lift-and-shift, rather than any practical functionality</span>. Some of these vestigial elements relied on costly API’s, and the process to order a new receiver box even required a visit to the call center. Combined, this meant that <span class="highlight">the old website used hundreds of thousands of dollars a year on costs that could be avoided</span>.</p>
+          </div>
+        </div>
+      
+
+        <div class="subcontainer">
+          <h3>Goals</h3>
+          <div class="subsubcontainer">
+            <h4><i class="fa-solid fa-pen-fancy"></i>Design a distinctive new UI.</h4>
+            <p>In addition to improving the user experience of the account management side of DirecTV’s website, I was also tasked with <span class="highlight">implementing DirecTV’s new design system, Fusion</span>. Doing so would not only help distinguish the brand as a standalone company, but also <span class="highlight">ensure that the entire website would feel cohesive and modernized</span>.</p>
+          </div>
+          <div class="subsubcontainer">
+            <h4><i class="fa-solid fa-trash"></i>Determine what users need, and what they don't.</h4>
+            <p>After seeing how much DirecTV spent on its website, I hypothesized that there ought to be some unnecessary costs. I thus aimed to <span class="highlight">have users validate my conjectures about which features could be removed, so that DirecTV could refocus its money and resources</span> on other, more meaningful things.</p>
+          </div>
+
+          <div class="callout subsubcontainer">
+            <i class="fa-solid fa-quote-left"></i>
+            <p class="callout-text-large">How might we make DirecTV account management a more seamless and intuitive experience for our customers?</p>
+            <i class="fa-solid fa-quote-right"></i>
+          </div>
+        </div>
+      </div>  
+      <div class="scroll-helper-research"></div>
+    </section>
+
+    <!------------
+      RESEARCH 
+      ------------>
+      <section class="research">
+        <div class="container">
+          <h2 class="reveal">Research</h2>
+
+          <div class="subcontainer">
+            <h3>Contextual Inquiry</h3>
+            <p class="subsubcontainer">My first steps were to <span class="highlight">investigate how users were currently interacting with DirecTV’s website</span>. A look into DirecTV’s internal user data (courtesy of Google’s Looker Studio) revealed some key opportunities for possible UX improvements. Most notably, <span class="highlight">the conversion rate for managing a receiver was only 20.7%</span> (this includes actions like refreshing or purchasing a new receiver). Similarly, <span class="highlight">the conversion rate for rescheduling an appointment with a technician came in at 51.0%</span>.</p>
+
+            <img src="contextual-inquiry.png" class="photo subsubcontainer">
+          </div>
+
+          <div class="subcontainer">
+            <h3>Audit</h3>
+            <p class="subsubcontainer">Next, <span class="highlight">I took a deep dive into the current account overview experience, taking note of aspects that could be improved upon</span>. This involved screen-grabbing and compiling comprehensive flows in order to cover all my bases and ensure that no bad piece of UX was left unturned. In the process, made sure to <span class="highlight">consider the nuances between different types of users</span>, such as satellite versus stream customers. </p>
+            <img src="audit.png" class="subsubcontainer diagram">
+        </div>
+        <div class="scroll-helper-process"></div>
+      </section>
+
+    <!------------
+      PROCESS 
+      ------------>
+      <section class="process">
+        <div class="container">
+          <h2 class="reveal">Process</h2>
+          <div class="subcontainer">
+            <h3>User Flow</h3>
+            <p class="subsubcontainer">Before I started to design, I created a user flow charting the potential paths a user could take once entering the account overview screen. In doing so, I was able to <span class="highlight">determine which flows to prioritize based on customer needs and use frequency</span>, since I wouldn’t be able to cover everything in the course of one summer!</p>
+
+            <img src="user-flow.png" class="subsubcontainer diagram">
+
+            <div class="center-wrapper">
+              <a href="https://www.figma.com/file/0oxf3YL0yCPdieIrpfGK6W/DirecTV-User-Flow?type=whiteboard&node-id=0%3A1&t=AHBVMmYafQMpt23K-1" target="_blank" class="button secondary">
+                <p>View in FigJam<i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+              </a>
+            </div>
+          </div>
+
+          <div class="subcontainer">
+            <h3>Initial Wireframes</h3>
+            <div class="subsubcontainer">
+              <p>Afterwards, it was time to jump straight into ideating! <span class="highlight">I took a different approach than usual: incorporating the design system first</span> before considering possible UX improvements. <span class="highlight">Doing so allowed me to better envision the redesign in the context of the entire website</span>, which ultimately helped me decide how to move forward!</p>
+            </div>
+            <img src="initial-wireframes.png" class="subsubcontainer diagram">
+          </div>
+
+          <div class="subcontainer">
+            <h3>Explorations</h3>
+            <p class="subsubcontainer">As I began building upon my initial designs, I frequently consulted my notes from the audit I conducted earlier in order to improve upon the old website. In the process, I used lots of rapid experimentation. My goal was to <span class="highlight">fail fast, so that I could improve faster</span>.</p>
+            <img src="explorations.png" class="subsubcontainer diagram">
+          </div>
+
+          <div class="subcontainer">
+            <h3>Design System Contributions</h3>
+            <p>Although I was working under a well-constructed and established design system, <span class="highlight">I encountered some issues with the modal side-sheet component</span> as I continued designing. When scrolling in a Figma prototype, the component’s header and actions bar did not remain fixed in place as intended. To make matters worse, the component didn’t allow for more than one piece of content within it, restricting what you could use it for without de-componentizing it.</p>
+            <p class="extra-spacing">Seeing as how I was making extensive use of the modal for my redesign, <span class="highlight">I took it upon myself to reconfigure the component to remove these limitations</span>. Doing so ended up cutting down my design speed significantly and <span class="highlight">allowed me to prototype twice as quickly</span>!</p>
+  
+            <div class="video-container">
+              <video autoplay muted loop>
+                <source src="design-system-contributions.mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="subcontainer">
+            <h3>Usability Testing</h3>
+            <p class="subsubcontainer alert">At the time of writing this (August 2023), usability testing for this project is still ongoing! Stay tuned for insights and results.</p>
+          </div>
+
+          <!-- <div class="subcontainer">
+            <h3>Feedback Implementation</h3>
+            <div class="subsubcontainer">
+              <h4><i class="fa-solid fa-person-digging"></i>Unbury the dark mode toggle.</h4>
+              <p><span class="highlight">Participants reacted positively to the new dark mode!</span> However, without putting much thought into it, I’d hid the toggle button as a dropdown option under the user’s profile picture—an element that was rarely used in Bruinwalk’s current flow. During usability testing, this strategy failed spectacularly: <span class="highlight">switching to dark mode received an average easiness rating of 2/5</span>. Obviously, this was not ideal, so I <span class="highlight">surfaced the toggle to be displayed directly on the landing page</span>, and designed a custom sun/moon toggle to represent it.</p>
+            </div>
+
+            <img src="usability-test-change1.png" class="subsubcontainer diagram extra-space">
+
+            <div class="extra-spacing"></div>
+
+            <div class="subsubcontainer">
+              <h4><i class="fa-solid fa-graduation-cap"></i>Keep the focus on academics.</h4>
+              <p>Although Bruinwalk is constantly adding features that branch out from classes and instructors, <span class="highlight">the student body at large still sees Bruinwalk first and foremost as a site for academics</span>. As such, when participants saw the new Apartments section I’d added at the bottom of the page, it came off as jarring, out-of-place, and almost like an advertisement. After seeing this, I reasoned that <span class="highlight">placing a floating notification on the corner of the screen would be a more subtle yet effective way to introduce the new feature</span>.</p>
+            </div>
+
+            <img src="usability-test-change2.png" class="subsubcontainer diagram extra-space">
+
+            <div class="extra-spacing"></div>
+
+            <div class="subsubcontainer">
+              <h4><i class="fa-solid fa-computer-mouse"></i>Provide indication for clickable elements.</h4>
+              <p>One of the key features I added as part of my redesign was the clickable enrollment distributions component, where users could enter a class and instantly see its past enrollment data. However, <span class="highlight">only 27% of testing participants realized the tool was interactive</span>. Looking back, it’s easy to see why: there was no indication that the tool wasn’t just a static image. To remedy this, I <span class="highlight">added iconography and verbiage to help clarify the feature for users</span>.</p>
+            </div>
+
+            <img src="usability-test-change3.png" class="subsubcontainer diagram extra-space">
+          </div> -->
+        </div>
+        <div class="scroll-helper-designs"></div>
+      </section>
+
+    <!------------
+      FINAL DESIGNS 
+      ------------>
+      <section class="designs">
+        <div class="container">
+          <h2 class="reveal">Final Designs</h2>
+
+          <div class="subcontainer">
+            <p>These do not represent the final iteration of this project, only the designs as they stand as of August 2023.</p>
+          </div>
+  
+          <div class="subcontainer">
+            <h3>Device Management</h3>
+            <p class="extra-spacing">Users now manage their equipment with a revamped page designed to <span class="highlight">reduce the cognitive overwhelm</span> that users were previously faced with. It utilizes a new card design that <span class="highlight">dynamically changes based on the status of the device</span>. To this end, the page comes in two main varieties, to account for the differences in Satellite and Stream devices.</p>
+            
+            <div class="video-container">
+              <video autoplay muted loop>
+                <source src="device-management.mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="subcontainer">
+            <h3>Purchases & Checkout</h3>
+            <p class="extra-spacing">I created an all-new flow to browse and purchase TV service receivers, <span class="highlight">replacing the current call-in ordering system</span>. With this new system, the process of buying a new device feels more integrated and up-to-date, and <span class="highlight">DirecTV saves thousands in call center costs</span>!</p>
+
+            <div class="video-container">
+              <video autoplay muted loop>
+                <source src="purchases-and-checkout.mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="subcontainer">
+            <h3>Protection Plans</h3>
+            <p class="extra-spacing">To better display DirecTV’s selection of equipment protection plans, I rearranged them in a side-by-side layout to <span class="highlight">allow users to more easily shop and compare plans at a glance</span>. I also <span class="highlight">updated the infrastructure of the protection plan model with more user-friendly language</span>—our user research found that “Ultimate” rolled off the tongue better than “DirecTV Protection Plan Premier with Accidental Damage from Handling”!</p>
+            
+            <img src="protection-plans.png" class="graphic">
+          </div>
+
+          <div class="subcontainer">
+            <h3>Orders</h3>
+            <p class="extra-spacing">For the past orders page, I created a new table layout that <span class="highlight">provides more relevant and visually engaging content at a glance</span>. Instead of being sent down a rabbit hole of tabs and support articles, users can now easily track their package or return an unwanted purchase with the click of a button.</p>
+
+            <div class="video-container">
+              <video autoplay muted loop>
+                <source src="orders.mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="subcontainer">
+            <h3>Appointments</h3>
+            <p class="extra-spacing">One key discovery of my preliminary user testing was that <span class="highlight">people didn’t care much for the technician tracking feature on the appointments page—a feature that cost DirecTV $400,000 a year</span> due to the APIs it ran on! Along with my supervisors, I made the business decision to remove the feature, and I also took care to <span class="highlight">give more structure and hierarchy</span> to the page for improved scanability.</p>
+            
+            <img src="appointments.png" class="graphic">
+          </div>
+
+        </div>
+        <div class="scroll-helper-impact"></div>
+      </section>
+
+    <!------------
+      IMPACT
+      ------------>
+      <section class="impact">
+        <div class="container">
+          <h2 class="reveal">Impact</h2>
+            
+          <div class="subcontainer">
+            <h3>Outcomes</h3>
+            <p class="alert">Because this redesign is still underway, it has not yet been deployed! That being said, the contents of this case study are slated to launch to DirecTV’s 12 million customers very soon.</p>
+
+            <!-- <div class="callout subsubcontainer">
+              <i class="fa-solid fa-quote-left"></i>
+              <p class="callout-text-large">The new page looks so much better and more clear… Both modes look great, and the new dark mode will be so helpful!
+              </p>
+              <p class="callout-quote-author">— Arielle, public affairs student
+              </p>
+              <i class="fa-solid fa-quote-right"></i>
+            </div> -->
+          </div>
+
+          <div class="subcontainer">
+            <h3>Reflections</h3>
+            <div class="subsubcontainer">
+              <h4><i class="fa-solid fa-fish-fins"></i>Be the Shark.</h4>
+              <p>Throughout our internship, me and the other IT interns were always told by our lovely supervisor Abbie to “be the Shark.” Inspired by Jon Gordon’s <a href="https://www.goodreads.com/book/show/6575329-the-shark-and-the-goldfish" class="inline" target="_blank">The Shark and the Goldfish</a>, this was a mantra that reminded us to always be an exemplary worker: <span class="highlight">to embrace and ride waves of change, to choose faith over fear, to never your possibilities be limited by anyone else</span>. It’s a mindset that truly defined my experience at DirecTV, and one that I’ll never forget.</p>
+            </div>
+
+            <div class="subsubcontainer">
+              <h4><i class="fa-solid fa-handshake"></i>Don’t be afraid to reach out.</h4>
+              <p>I found one of the most extraordinary things about DirecTV to be the supportive and ready-to-help environment. Thanks to this, throughout my internship, I learned to get over my worries that I was just being an annoying intern and just ask for help when I needed it. Whether it was asking for more tasks, or asking for clarification on my project, I realized that <span class="highlight">reaching out isn’t a sign of weakness—in fact, it’s quite the opposite, and just another part of the Shark mentality</span>.</p>
+            </div>
+          </div>
+      </section>
+
+    <!------------
+      FOOTER 
+      ------------>
+
+      <section class="footer">
+        <div class="container">
+          <p>Proudly designed & handcoded by Jeff Lu</p>
+          <div class="socials">
+            <a class="social" id="linkedin" href="https://www.linkedin.com/in/thejefflu" target="_blank">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+              /  
+            <a class="social" id="github" href="https://github.com/thejefflu" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+              /  
+            <a class="social" id="figma" href="https://www.figma.com/@thejefflu" target="_blank">
+              <i class="fa-brands fa-figma"></i>
+            </a>
+              /  
+            <a class="social" id="instagram" href="https://www.instagram.com/thejefflu/" target="_blank">
+              <i class="fa-brands fa-instagram"></i> 
+            </a>
+          </div>
+        </div>
+      </section>
+
+    <div class="scroll-helper-bottom"></div>
+
+    <script src="../../../js/case-study.js"></script>
+  </body>
+</html>

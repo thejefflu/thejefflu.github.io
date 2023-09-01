@@ -1,0 +1,10 @@
+* {
+  --accent-dark: #102641;
+  --shadow: #1026411c;
+  --accent-readable: #7c89a2;
+  --accent: #b6c8e6;
+  --accent-highlight: #d2dff7;
+  --accent-light: #ecf1fc; 
+  --background: #fbfcfe;
+  --background-opaque: #fbfcfed6;
+}

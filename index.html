@@ -5,7 +5,7 @@
     <title>Jeff Lu</title>
     <meta name="title" property="og:title" content="Jeff Lu">
     <meta name="description" property="og:description" content="Los Angeles based UI/UX designer dedicated to creating visually pleasing products that spark joy!">
-    <meta name="image" property="og:image" content="https://i.ibb.co/Q6rbLTH/thumbnail.png">
+    <meta name="image" property="og:image" content="https://i.ibb.co/PQMNLFz/thumbnail.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fafcfc">
@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/ygv6uzw.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6b4fd4dffa.js" crossorigin="anonymous"></script>
   </head>
 
@@ -35,7 +35,7 @@
       <div class="container">
 
         <!-- left -->
-        <a class="left">
+        <a href="." class="left">
           <img src="assets/imgs/monogram.png" alt="JL Monogram">
           <p>Jeff Lu</p>
         </a>
@@ -52,13 +52,13 @@
         <div class="nav-links">
           <ul>
             <li>
-              <a class="nav-work" onclick="enableScroll()">Work</a>
+              <a href=".">Work</a>
             </li>
             <li>
-              <a class="nav-about" onclick="enableScroll()">About</a>
+              <a href="about">About</a>
             </li>
             <li>
-              <a class="nav-contact" href="mailto: jeffreylu2003@ucla.edu">Contact</a>
+              <a href="mailto: jeffreylu2003@ucla.edu">Contact</a>
             </li>
             <li>
               <a href="resume.pdf" target="_blank" onclick="menuOff(); enableScroll()">Resume 
@@ -86,101 +86,76 @@
         <!-- gallery -->
         <div class="grid">
           <div class="container">
-            <a href="work/construction">
-              <img src="assets/imgs/directv.png" alt="Case Study #1">
-              <div class="overlay">
+            <a href="work/directv">
+              <img src="assets/imgs/directv.png">
+              <div class="card-text">
                 <h2>DirecTV</h2>
-                <p>Summer 2023 internship.</br>Stay tuned!</p>
+                <p class="label">Account Management Tools <i class="fa-solid fa-lock"></i></p>
+                <p>Saving $400,000 in yearly costs through a reimagining of equipment management.</p>
               </div>
             </a>
           </div>
           <div class="container">
             <a href="work/transcanwork">
-              <img src="assets/imgs/transcanwork.png" alt="Case Study #2">
-              <div class="overlay">
+              <img src="assets/imgs/transcanwork.png">
+              <div class="card-text">
                 <h2>TransCanWork</h2>
+                <p class="label">Responsive Web Application</p>
                 <p>Increasing jobseeker satisfaction by 81% with an interactive employment roadmap.</p>
               </div>
             </a>
           </div>
           <div class="container">
-            <a href="work/construction">
-              <img src="assets/imgs/bruinwalk.png" alt="Case Study #3">
-              <div class="overlay">
+            <a href="work/bruinwalk">
+              <img src="assets/imgs/bruinwalk.png">
+              <div class="card-text">
                 <h2>Bruinwalk</h2>
-                <p>Revamping the landing page of UCLA's official reviews site.</p>
+                <p class="label">Landing Page Redesign</p>
+                <p>Boosting conversion rates by 89% on the landing page of UCLA's official reviews site.</p>
               </div>
             </a>
           </div>
           <div class="container">
             <a href="work/scootly">
-              <img src="assets/imgs/scootly.png" alt="Case Study #4">
-              <div class="overlay">
+              <img src="assets/imgs/scootly.png">
+              <div class="card-text">
                 <h2>Scootly</h2>
+                <p class="label">Mobile UI</p>
                 <p>Creating the world’s first scooter-sharing experience from the ground up.</p>
               </div>
             </a>
           </div>
         </div>
-
-        <div class="scroll-helper-about"></div>
       </div>
     </section>
 
     <!------------
-      ABOUT 
+      FOOTER 
       ------------>
 
-    <section class="about">
-      <div class="container">
-        <h1><span>Hey!</span> My name is Jeff.</h1>
-        
-        <div class="flex">
-          <!-- bio paragraph -->
-          <div class="text">
-            <p>I'm a junior at <a href="https://www.ucla.edu" target="_blank" class="inline">UCLA</a> studying Cognitive Science and Linguistics of Computer Science. The psychology behind beauty and aesthetics is a topic that greatly fascinates me, and it's what drew me to the world of design. As a longtime proponent of <a href="https://konmari.com/category/konmari-philosophy/" target="_blank" class="inline">the philosophy of Marie Kondo</a>, I believe that good design has the power to create a world that sparks more joy!</p>
-
-            <p>Currently I'm a UI/UX design intern at <a href="https://www.directv.com" target="_blank" class="inline">DirecTV</a>, helping distribute entertainment solutions to households across the nation.</p>
-            
-            <p>When I'm not designing things, I can probably be spotted hosting a board game night, solving the daily NYT crossword, or learning any instrument I can get my hands on (I'm at 6 and counting)!</p>
-
-            <!-- links -->
-            <div class="links">
-
-              <div class="primary">
-                <a href="resume.pdf" target="_blank" class="inline"><i class="fa-solid fa-file-pdf"></i> Resume</a></br>
-
-                <a href="mailto: jeffreylu2003@ucla.edu" class="inline"><i class="fa-solid fa-envelope"></i> Email</a></br>
-              </div>
-
-              <div class="socials">
-                <a class="social" id="linkedin" href="https://www.linkedin.com/in/thejefflu" target="_blank">
-                  <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-                  /  
-                <a class="social" id="github" href="https://github.com/thejefflu" target="_blank">
-                  <i class="fa-brands fa-github"></i>
-                </a>
-                  /  
-                <a class="social" id="figma" href="https://www.figma.com/@thejefflu" target="_blank">
-                  <i class="fa-brands fa-figma"></i>
-                </a>
-                  /  
-                <a class="social" id="instagram" href="https://www.instagram.com/thejefflu/" target="_blank">
-                  <i class="fa-brands fa-instagram"></i> 
-                </a>
-              </div>
-            </div>
+      <section class="footer">
+        <div class="container">
+          <p>Proudly designed & handcoded by Jeff Lu</p>
+          <div class="socials">
+            <a class="social" id="linkedin" href="https://www.linkedin.com/in/thejefflu" target="_blank">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+              /  
+            <a class="social" id="github" href="https://github.com/thejefflu" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+              /  
+            <a class="social" id="figma" href="https://www.figma.com/@thejefflu" target="_blank">
+              <i class="fa-brands fa-figma"></i>
+            </a>
+              /  
+            <a class="social" id="instagram" href="https://www.instagram.com/thejefflu/" target="_blank">
+              <i class="fa-brands fa-instagram"></i> 
+            </a>
           </div>
-
-          <!-- photo -->
-          <img src="assets/imgs/headshot-desktop.jpg" class="desktop" alt="Headshot">
-          <img src="assets/imgs/headshot-mobile.jpg" class="mobile" alt="Headshot">
         </div>
-      </div>
-    </section>
+      </section>
 
-    <div class="scroll-helper-bottom"></div>
     <script src="js/main.js"></script>
   </body>
 </html>

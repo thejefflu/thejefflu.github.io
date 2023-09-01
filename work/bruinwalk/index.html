@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- metadata -->
+    <title>Bruinwalk</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/site.webmanifest">
+
+    <!-- styles and fonts -->
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/case-study.css">
+    <link rel="stylesheet" href="../../css/bruinwalk.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ygv6uzw.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6b4fd4dffa.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div class="scroll-helper-top"></div>
+    
+    <!------------
+      NAVBAR 
+      ------------>
+    <nav class="nav" id="nav">
+      <div class="container">
+
+        <!-- left -->
+        <a class="left">
+          <img src="../../assets/imgs/monogram.png" alt="JL Monogram">
+          <p>Bruinwalk</p>
+        </a>
+
+        <!-- right: hamburger menu (for smaller screens) -->
+        <input type="checkbox" id="nav-menu">
+        <label for="nav-menu" class="nav-btn" onclick="toggleScroll()">
+            <i></i>
+            <i></i>
+            <i></i>
+        </label>
+
+        <!-- right: nav bar (for larger screens) -->
+        <div class="nav-links">
+          <ul>
+            <li>
+              <a class="nav-brief" onclick="enableScroll()">Brief</a>
+            </li>
+            <li>
+              <a class="nav-research" onclick="enableScroll()">Research</a>
+            </li>
+            <li>
+              <a class="nav-process" onclick="enableScroll()">Process</a>
+            </li>
+            <li>
+              <a class="nav-designs" onclick="enableScroll()">Final Designs</a>
+            </li>
+            <li>
+              <a class="nav-impact" onclick="enableScroll()">Impact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!------------
+      CLOSE BUTTON 
+      ------------>
+      <a href="../../" class="close">
+        <i class="fa-solid fa-arrow-right-to-bracket"></i>
+      </a>
+
+    <!------------
+      SPLASH 
+      ------------>
+    <section class="splash">
+      <div class="splash-image-container">
+        <img src="splash.png">
+      </div>
+      <div class="container">
+        <h1>Bruinwalk</h1>
+        <p class="main-subtitle">Boosting conversion rates by 89% on the landing page of UCLA's official reviews site.</h3>
+        
+        <div class="specs">
+          <p>
+            <span>Timeline</span> 
+            <br> 
+            Apr - Aug 2023
+          </p>
+          <p>
+            <span>Platform</span>
+            <br> 
+            Website
+          </p>
+          <p>
+            <span>Role</span>
+            <br> 
+            UI/UX Designer
+          </p>
+          <p>
+            <span>Toolkit</span> 
+            <br> 
+            Figma
+          </p>
+        </div>
+
+        <a href="https://www.figma.com/community/file/1277498902072838529/Bruinwalk" target="_blank" class="button">
+          <p>View the Project<i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+        </a>
+        
+      </div>
+      <div class="scroll-helper-brief"></div>
+    </section>
+
+    <!------------
+      BRIEF 
+      ------------>
+    <section class="brief">
+      <div class="container">
+        <h2 class="reveal">Brief</h2>
+
+        <div class="subcontainer">
+          <h3>Background</h3>
+          <p><span class="highlight">Bruinwalk is UCLA’s official website for students to share anonymous reviews of courses, instructors, and apartments.</span> Put simply, it’s the UCLA version of <a href="https://www.ratemyprofessors.com" target="_blank" class="inline">Rate My Professors</a>! Bruinwalk’s mission is to help create a comprehensive snapshot of life at UCLA, for the betterment of all current and future students. It takes its name from Bruin Walk, the main campus thoroughfare that UCLA students use to walk to class each day.</p>
+        </div>
+
+        <div class="subcontainer">
+          <h3>Team</h3>
+          <div class="subsubcontainer">
+            <p><span class="highlight">Although all research and designing for this project was done solo, I had 2 other UI/UX designers by my side</span> (<a href="https://www.linkedin.com/in/abigalenickels/" class="inline" target="_blank">Gale</a>, <a href="https://www.linkedin.com/in/rachel-c-6b5171174/" class="inline" target="_blank">Rachel</a>) with whom I could bounce ideas off and receive feedback. Being the youngest of the team, I was fortunate to be able to learn a lot about college, life, and the design industry through them!</p>
+          </div>
+          <div class="gallery subsubcontainer">
+            <img src="team1.jpg" class="photo">
+            <img src="team2.jpg" class="photo">
+          </div>
+        </div>  
+
+        <div class="subcontainer">
+          <h3>Problem</h3>
+
+          <div class="subsubcontainer">
+            <p>During the 2022-23 school year, a significant amount of <span class="highlight">users began switching to Bruinwalk’s main competitor, Hotseat, after they released their enrollment trends feature</span> That is, with Hotseat, students would have the ability to view a graph of how quickly spots in classes fill up, based on past enrollment data. But there’s another problem here: <span class="highlight">Bruinwalk also had enrollment trends—people just didn’t know about it.</span></p>
+          </div>
+
+          <img src="old-landing-page.png" class="photo subsubcontainer">
+          <p class="caption">Bruinwalk’s landing page, pre-redesign. Enrollment trends nowhere to be seen :(</p>
+        </div>
+      
+
+        <div class="subcontainer">
+          <h3>Goals</h3>
+          <div class="subsubcontainer">
+            <h4><i class="fa-solid fa-thumbs-up"></i>Increase content relevancy.</h4>
+            <p>Beyond the central search bar, Bruinwalk’s old home page had nothing more than a carousel displaying “Featured” (read: seemingly randomly generated) courses. As a result, <span class="highlight">the old landing page left users with more questions than answers</span> by failing to include relevant content. Part of the challenge with my redesign, then, was determining what features were most valued and frequently used by students. This way, I could <span class="highlight">ensure that the most important features get surfaced appropriately (spoiler alert: enrollment trends were indeed one of them!)</span></p>
+          </div>
+          <div class="subsubcontainer">
+            <h4><i class="fa-solid fa-paint-roller"></i>Give the UI a makeover.</h4>
+            <p>Hotseat launched in 2021, while Bruinwalk has been around since 1998. Although Bruinwalk’s website had undergone redesigns since then, it still wasn’t quite up to par with Hotseat’s more modern look. <span class="highlight">Since aesthetics were cited as a secondary factor in the decision to use Hotseat over Bruinwalk, I knew I wanted to revamp Bruinwalk’s landing page to give an all-new, enticing first impression</span> that would stand as a worthy adversary in this beauty pageant of the digital age.</p>
+          </div>
+
+          <div class="callout subsubcontainer">
+            <i class="fa-solid fa-quote-left"></i>
+            <p class="callout-text-large">How might we redesign the face of Bruinwalk to help reinforce ourselves as UCLA’s premier reviews site?</p>
+            <i class="fa-solid fa-quote-right"></i>
+          </div>
+        </div>
+      </div>  
+      <div class="scroll-helper-research"></div>
+    </section>
+
+    <!------------
+      RESEARCH 
+      ------------>
+      <section class="research">
+        <div class="container">
+          <h2 class="reveal">Research</h2>
+
+          <div class="subcontainer">
+            <h3>Contextual Inquiry</h3>
+            <p class="subsubcontainer">Although I had my personal opinions about the old landing page, my first course of action was to see what other people thought about it. My goal was to first <span class="highlight">validate that the landing page actually presented a problem space in the first place</span>, then hear thoughts directly from the UCLA community about how the page could be improved. <span class="highlight">I advocated for getting insights from as diverse a range of voices as possible</span>, since I knew that different students might have different expectations and reasons for using Bruinwalk.</p>
+
+            <img src="contextual-inquiry.png" class="diagram subsubcontainer">
+          </div>
+
+          <div class="subcontainer">
+            <h3>Affinity Mapping</h3>
+            <p class="subsubcontainer">Hearing from over 30 interviewees meant that I was given a lot of data to work with—some responses even contradicted others! In order to <span class="highlight">garner actionable insights from the tangle of information</span>, I laid every data point out into an affinity map, where <span class="highlight">a few distinct “categories” of feedback came into view</span>, making research synthesis much easier.</p>
+            <img src="affinity-map.png" class="subsubcontainer diagram">
+
+            <div class="center-wrapper">
+              <a href="https://www.figma.com/file/gAVyPvSlZ1jeWNGy4i2pdC/Bruinwalk-Affinity-Mapping?type=whiteboard&node-id=0%3A1&t=JEaooIMzewPBODHW-1" target="_blank" class="button secondary">
+                <p>View in FigJam<i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+              </a>
+            </div>
+          </div>
+
+          <div class="subcontainer">
+            <h3>Key Takeaways</h3>
+            <div class="subsubcontainer">
+              <div class="subsubcontainer">
+                <h4><i class="fa-solid fa-cubes-stacked"></i>Keep it simple… but not too simple.</h4>
+                <p>While some praised the current landing page for its minimalist and clean aesthetic, <span class="highlight">49% of participants expressed that the current design was plain, lacked character, or had too much whitespace</span>. Therefore, I made it a goal to preserve the landing page’s to-the-point simplicity, while making additions to breathe new life into the page and <span class="highlight">embody UCLA’s reputation as school that works hard <em>and</em> plays hard</span>.</p>
+              </div>
+
+              <div class="callout subsubcontainer">
+                <i class="fa-solid fa-quote-left"></i>
+                <p class="callout-text-large">It's a little bit too simple. There's just a lot of space... I wouldn't necessarily call it welcoming at all. It's functional, but not that amazing.</p>
+                <p class="callout-quote-author">— Marina, linguistics student
+                </p>
+                <i class="fa-solid fa-quote-right"></i>
+              </div>
+
+              <div class="extra-space"></div>
+
+              <h4><i class="fa-solid fa-file-circle-question"></i>Demystify the Featured section.</h4>
+              <p><span class="highlight">45% of respondents pointed to the Featured section as a major source of untapped potential.</span> Most of the time, the section’s so-called “featured” courses were in subjects <span class="highlight">completely unrelated to the viewer’s major</span>, creating an experience that felt impersonal at best, and bewildering at worst. Upon realizing this, I made it a mission to turn the Featured section into a place where students could truly go to find course recommendations.</span></p>
+            </div>
+
+            <div class="callout subsubcontainer">
+              <i class="fa-solid fa-quote-left"></i>
+              <p class="callout-text-large">I feel like the "featured" section could use a bit more explanation. I was confused as to what it was recommending.
+
+              </p>
+              <p class="callout-quote-author">— Diya, computer engineering student
+              </p>
+              <i class="fa-solid fa-quote-right"></i>
+            </div>
+          </div>
+
+        </div>
+        <div class="scroll-helper-process"></div>
+      </section>
+
+    <!------------
+      PROCESS 
+      ------------>
+      <section class="process">
+        <div class="container">
+          <h2 class="reveal">Process</h2>
+
+            <div class="subcontainer">
+              <h3>Initial Wireframes</h3>
+              <div class="subsubcontainer">
+                <p>Using the current landing page as a starting point, I began making changes to both the visuals and content. Behind every alteration was a desire to <span class="highlight">make the page align with the design goals I set out in the beginning, and build upon the insights I gained from initial user interviews</span>. To this end, I kept the visual design simple, but enhanced it with new personalized and relevant features.</p>
+              </div>
+              <img src="initial-wireframe.png" class="subsubcontainer graphic">
+            </div>
+
+            <div class="subcontainer">
+              <h3>Explorations</h3>
+              <p class="subsubcontainer">After getting my preliminary ideas down, I <span class="highlight">presented the initial wireframe to some end users, as well as to my Bruinwalk colleagues</span>. After hearing some of their thoughts in these informal feedback sessions, I felt more confident refining what I’d come up with thus far and <span class="highlight">iterating upon aspects that needed more clarity</span>.</p>
+              <img src="explorations1.png" class="subsubcontainer diagram">
+
+              <p class="subsubcontainer">At this point, I also began experimenting with creating a dark mode for landing page! Although it came somewhat from out of the blue, I figured this feature might be worth exploring since I was <span class="highlight">inspired by past interactions with people who prefer to use dark mode whenever they can</span> on their devices and apps. Even if it got scrapped, <span class="highlight">I figured it wouldn’t hurt to explore the possibility!</span></p>
+              <img src="explorations2.png" class="subsubcontainer graphic">
+            </div>
+
+            <div class="subcontainer">
+              <h3>Usability Testing</h3>
+              <p class="subsubcontainer">Next, I assembled a working prototype—complete with a dark mode toggle—and <span class="highlight">gathered 12 participants</span> to try out my designs. For this step I opted to use Maze, a testing software previously unfamiliar to me. Although I missed the back-and-forth communication that comes with live moderated testing, with the help of Maze <span class="highlight">I generated a heatmap of how users interacted with the design. This proved to be a fascinating insight in and of itself: only 12% of people were still engaged by the time you get to the bottom Apartments section!</span></p>
+
+              <img src="usability-test.png" class="subsubcontainer graphic">
+            </div>
+
+            <div class="subcontainer">
+              <h3>Feedback Implementation</h3>
+              <div class="subsubcontainer">
+                <h4><i class="fa-solid fa-person-digging"></i>Unbury the dark mode toggle.</h4>
+                <p><span class="highlight">Participants reacted positively to the new dark mode!</span> However, without putting much thought into it, I’d hid the toggle button as a dropdown option under the user’s profile picture—an element that was rarely used in Bruinwalk’s current flow. During usability testing, this strategy failed spectacularly: <span class="highlight">switching to dark mode received an average easiness rating of 2/5</span>. Obviously, this was not ideal, so I <span class="highlight">surfaced the toggle to be displayed directly on the landing page</span>, and designed a custom sun/moon toggle to represent it.</p>
+              </div>
+
+              <img src="usability-test-change1.png" class="subsubcontainer diagram extra-space">
+
+              <div class="extra-spacing"></div>
+
+              <div class="subsubcontainer">
+                <h4><i class="fa-solid fa-graduation-cap"></i>Keep the focus on academics.</h4>
+                <p>Although Bruinwalk is constantly adding features that branch out from classes and instructors, <span class="highlight">the student body at large still sees Bruinwalk first and foremost as a site for academics</span>. As such, when participants saw the new Apartments section I’d added at the bottom of the page, it came off as jarring, out-of-place, and almost like an advertisement. After seeing this, I reasoned that <span class="highlight">placing a floating notification on the corner of the screen would be a more subtle yet effective way to introduce the new feature</span>.</p>
+              </div>
+
+              <img src="usability-test-change2.png" class="subsubcontainer diagram extra-space">
+
+              <div class="extra-spacing"></div>
+
+              <div class="subsubcontainer">
+                <h4><i class="fa-solid fa-computer-mouse"></i>Provide indication for clickable elements.</h4>
+                <p>One of the key features I added as part of my redesign was the clickable enrollment distributions component, where users could enter a class and instantly see its past enrollment data. However, <span class="highlight">only 27% of testing participants realized the tool was interactive</span>. Looking back, it’s easy to see why: there was no indication that the tool wasn’t just a static image. To remedy this, I <span class="highlight">added iconography and verbiage to help clarify the feature for users</span>.</p>
+              </div>
+
+              <img src="usability-test-change3.png" class="subsubcontainer diagram extra-space">
+            </div>
+        </div>
+        <div class="scroll-helper-designs"></div>
+      </section>
+
+    <!------------
+      FINAL DESIGNS 
+      ------------>
+      <section class="designs">
+        <div class="container">
+          <h2 class="reveal">Final Designs</h2>
+  
+          <div class="subcontainer">
+            <h3>Before and After</h3>
+            <p class="extra-spacing"><span class="highlight">Before the redesign, Bruinwalk’s landing page didn’t do justice to everything the website had to offer.</span> In revamping it, I hope that I’ve kept its original charms while helping it better represent the awesome school that is UCLA!</span></p>
+            <img src="before-and-after.png" class="subsubcontainer graphic">
+          </div>
+
+          <div class="subcontainer">
+            <h3>Smarter Searching</h3>
+            <p class="extra-spacing">Brand new <span class="highlight">quality of life updates including past searches, more relevant quick links, and improved natural language processing</span> (i.e. allowing users to type “CS” instead of “COM SCI”, as it’s called in UCLA’s registry) help get users where they need to be more quickly. Although it’s a small component, this search bar is really Bruinwalk’s bread and butter, so I emphasized implementing these additions to <span class="highlight">make searching feel as seamless and user-friendly as possible.</span></p>
+
+            <div class="video-container">
+              <video autoplay muted loop>
+                <source src="smarter-searching.mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="subcontainer">
+            <h3>Featured Courses</h3>
+            <p class="extra-spacing">Gone are the days of irrelevant (and frankly, bewildering) content in the Featured section! It now contains courses directly applicable to the user, based on the major and graduation requirements associated with their account. With this change, the landing page <span class="highlight">feels more personalized</span>, and students can interface with it directly to <span class="highlight">quickly find suggestions for classes to take</span>.</p>
+            
+            <div class="video-container">
+              <video autoplay muted loop>
+                <source src="featured-courses.mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="subcontainer">
+            <h3>Enrollment Distributions</h3>
+            <p class="extra-spacing">While this feature was already in Bruinwalk, tucked away when viewing the page for a specific  course, one of my goals from the outset of this project was to bring more focus onto it. However, I didn’t want to stop at simply moving it. For the first time, the tool <span class="highlight">allows users to quickly search for and compare the distributions for different courses or instructors: a common use case for enrollment data.</p>
+
+            <div class="video-container">
+              <video autoplay muted loop>
+                <source src="enrollment-distributions.mp4">
+              </video>
+            </div>
+          </div>
+
+          <div class="subcontainer">
+            <h3>Dark Mode</h3>
+            
+            <div class="video-container">
+              <video autoplay muted loop>
+                <source src="dark-mode.mp4">
+              </video>
+            </div>
+          </div>
+          
+          <!-- <div class="subcontainer">
+            <h3>Prototype Demo</h3>
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FrVYvb28xOXz7H8JsoNyRIW%2FBruinwalk%3Fpage-id%3D104%253A1623%26type%3Ddesign%26node-id%3D104-1686%26viewport%3D505%252C411%252C0.16%26t%3DyyUeStmG0NTwGcjY-1%26scaling%3Dscale-down%26mode%3Ddesign" allowfullscreen></iframe>
+          </div> -->
+
+          <div class="subcontainer">
+            <h3>Style Guide</h3>
+            <p class="subsubcontainer">Creating a style guide that could adapt to both “halves” of the website proved challenging. As I would quickly realize, adjustments had to be made at every corner in order to <span class="highlight">maintain accessibility and a pleasant viewing experience across both modes</span>, like adding subtle borders to  search bars in dark mode to ensure clarity as to where the element starts and ends. As the design system grew, I turned to Figma’s new variables feature to ensure consistent implementation of styles, <span class="highlight">halving the time it took me to wireframe and prototype!</span></p>
+            <img src="style-guide.png" class="subsubcontainer graphic">
+          </div>
+
+        </div>
+        <div class="scroll-helper-impact"></div>
+      </section>
+
+    <!------------
+      IMPACT
+      ------------>
+      <section class="impact">
+        <div class="container">
+          <h2 class="reveal">Impact</h2>
+            
+          <div class="subcontainer">
+            <h3>Outcomes</h3>
+            <img src="outcomes.png" class="subsubcontainer diagram">
+
+            <div class="callout subsubcontainer">
+              <i class="fa-solid fa-quote-left"></i>
+              <p class="callout-text-large">The new page looks so much better and more clear… Both modes look great, and the new dark mode will be so helpful!
+              </p>
+              <p class="callout-quote-author">— Arielle, public affairs student
+              </p>
+              <i class="fa-solid fa-quote-right"></i>
+            </div>
+          </div>
+
+          <div class="subcontainer">
+            <h3>Reflections</h3>
+            <div class="subsubcontainer">
+              <h4><i class="fa-solid fa-microchip"></i>Never stop keeping up with new technologies.</h4>
+              <p>This project was truly a testament to the importance of staying up to date with the latest news in the world of design. <span class="highlight">By learning and taking advantage Figma’s new advanced prototyping and variable tools, I did a favor for my future self by making the design process much easier</span>, and making sure that components would be implemented consistently in the process! </p>
+              <p>Although familiarizing myself with these new features was challenging, my background in software development helped me more quickly grasp concepts like tokenization, which also <span class="highlight">opened my eyes to the ever-increasing interplay between design and development</span>. Figma (and design as a whole) is moving in a very exciting direction, and I cannot wait to see where it goes next!</p>
+            </div>
+
+            <div class="subsubcontainer">
+              <h4><i class="fa-solid fa-heart"></i>Do what you love, for what you love.</h4>
+              <p>One remarkable thing about my work with Bruinwalk was that I was always excited to tell the people around me about it. The fact that I was working on a project for an official UCLA site—a site that would be used by thousands of students, my own friends among them—was an amazing experience. In a way, <span class="highlight">this project was like my own small way of giving back to the school that’s given so much to me</span>.</p>
+              <p>My enthusiasm made me realize that I create my best work when I’m designing for something that I’m truly passionate about. Bruinwalk showed me that <span class="highlight">design becomes filled with new wonder and excitement when it’s combined with another thing that I love</span>. It’s a lesson that I’ll hold onto and apply to not just my career, but my life.</p>
+            </div>
+          </div>
+      </section>
+
+    <!------------
+      FOOTER 
+      ------------>
+
+      <section class="footer">
+        <div class="container">
+          <p>Proudly designed & handcoded by Jeff Lu</p>
+          <div class="socials">
+            <a class="social" id="linkedin" href="https://www.linkedin.com/in/thejefflu" target="_blank">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+              /  
+            <a class="social" id="github" href="https://github.com/thejefflu" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+              /  
+            <a class="social" id="figma" href="https://www.figma.com/@thejefflu" target="_blank">
+              <i class="fa-brands fa-figma"></i>
+            </a>
+              /  
+            <a class="social" id="instagram" href="https://www.instagram.com/thejefflu/" target="_blank">
+              <i class="fa-brands fa-instagram"></i> 
+            </a>
+          </div>
+        </div>
+      </section>
+
+    <div class="scroll-helper-bottom"></div>
+
+    <script src="../../js/case-study.js"></script>
+  </body>
+</html>

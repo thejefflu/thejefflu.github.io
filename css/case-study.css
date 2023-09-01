@@ -47,14 +47,13 @@ h2 { /* section headings */
 
 h3 { /* subheadings */
   font-family: IvyPresto-Display, Manrope, sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 300;
 }
 
 h4 { /* list titles */
-  font-size: 1.1rem;
+  font-weight: 600;
   margin: 0.25em 0 0.1em 0;
-  text-transform: uppercase;
 }
 
 h4 i {
@@ -79,7 +78,14 @@ h4 i {
 }
 
 .shoutout {
-  margin-top: 4em;
+  margin: 4em 0 1em 0;
+  font-style: italic;
+}
+
+.caption {
+  text-align: center;
+  color: var(--gray);
+  font-size: 0.9rem;
   font-style: italic;
 }
 
@@ -91,8 +97,7 @@ h4 i {
 }
 
 .splash .specs span {
-  font-weight: bold;
-  text-transform: uppercase;
+  font-weight: 600;
 }
 
 /* links */
@@ -115,7 +120,6 @@ h4 i {
   text-align: center;
   max-width: 30ch;
   line-height: 1.5em;
-  font-size: 1rem;
 }
 
 .callout p {
@@ -130,14 +134,14 @@ h4 i {
 }
 
 .callout .callout-text-large {
-  font-weight: 300;
+  font-weight: 200;
   font-size: 1.5rem;
   font-family: Manrope, sans-serif;
   color: var(--background);
   margin: 0 auto !important;
   padding: 0 !important;
   text-align: center;
-  max-width: 33ch !important;
+  max-width: 36ch !important;
   line-height: 1.5em;
 }
 
@@ -183,7 +187,7 @@ h4 i {
   box-shadow: var(--small-shadow);
   border-radius: 100%;
   background-color: var(--text);
-  z-index: 9999;
+  z-index: 99;
   height: 4em;
   width: 4em;
   display: flex;
@@ -216,13 +220,15 @@ h4 i {
 
 /* buttons */
 
+.center-wrapper {
+  text-align: center;
+}
+
 .button {
-  font-size: 1rem;
   border-width: 1px;
   background-color: var(--text);
   padding: 1.25em 2em;
   border-radius: 1em;
-  font-weight: bold;
   margin: 1em 0 0 0;
   display: inline-block;
   transition: var(--bouncy);
@@ -230,11 +236,22 @@ h4 i {
   overflow: hidden;
 }
 
+.button.secondary {
+  background-color: var(--background);
+  margin-top: 0;
+}
+
 .button p,
 .button i {
   color: var(--background);
   transition: var(--ease-fast);
   transition-delay: 0s;
+  font-weight: 600;
+}
+
+.button.secondary p,
+.button.secondary i {
+  color: var(--text);
 }
 
 .button i {
@@ -254,6 +271,7 @@ h4 i {
   background-color:var(--accent);
 }
 
+
 /* callout sections */
 
 .callout {
@@ -264,7 +282,7 @@ h4 i {
   padding: 4em 0;
   position: relative;
   transition: var(--bouncy);
-  box-shadow: var(--large-shadow);
+  box-shadow: var(--medium-shadow);
 }
 
 .two-column {
@@ -311,14 +329,23 @@ img {
 
 .graphic,
 .photo,
-.diagram {
+.diagram,
+iframe,
+video {
   transition: var(--bouncy);
 }
 
 .graphic,
-.photo {
+.photo,
+iframe,
+video {
   border-radius: 20px;
-  box-shadow: var(--large-shadow);
+  box-shadow: var(--medium-shadow);
+}
+
+.diagram,
+video {
+  width: 100%;
 }
 
 .diagram {
@@ -328,11 +355,6 @@ img {
 .small {
   width: 75%;
   display: block;
-}
-
-.tall {
-  object-fit: cover;
-  height: 40em;
 }
 
 .extra-space {
@@ -345,6 +367,14 @@ img {
 
 section {
   position: relative;
+}
+
+.splash,
+.brief,
+.research,
+.process,
+.designs {
+  box-shadow: 0px 100px 325px -325px var(--accent-dark);
 }
 
 section .container {
@@ -361,8 +391,8 @@ section .container {
   justify-content: space-between;
   padding: 1.5em 0 1.5em 0;
   margin: 2em 0;
-  border-top: 1px solid #CCCCCC;
-  border-bottom: 1px solid #CCCCCC;
+  border-top: 1px solid var(--light-gray);
+  border-bottom: 1px solid var(--light-gray);
 }
 
 .container .subcontainer:not(:last-child) { /* all subcontainers but the last of each section */
@@ -375,6 +405,19 @@ section .container {
 
 .extra-spacing {
   margin-bottom: 1.5em;
+}
+
+.subcontainer,
+h2 {
+  opacity: 0;
+  transition: var(--ease-slower);
+  transform: translateY(3rem);
+}
+
+.subcontainer.shown,
+h2.shown {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /************
@@ -430,15 +473,27 @@ section .container {
   .photo:hover,
   .photo:focus,
   .diagram:hover,
-  .diagram:focus {
+  .diagram:focus,
+  iframe:hover,
+  iframe:focus,
+  .video-container:hover video,
+  .video-container:focus video {
     transform: scale(1.05);
     filter: grayscale(0);
-  }   
+  }
 }
 
 @media screen and (max-width: 60em) {
   .nav-links ul {
-    width: 140px;
+    width: 130px;
+  }
+
+  .splash,
+  .brief,
+  .research,
+  .process,
+  .designs {
+    box-shadow: 0px 75px 175px -175px var(--accent-dark);
   }
 
   section .container {
@@ -473,7 +528,7 @@ section .container {
   }
 
   .shoutout {
-    margin-bottom: 3em;
+    margin: 1em 0 3em 0;
   }
 }
 
@@ -491,47 +546,25 @@ section .container {
 }
 
 @media screen and (max-width: 40em) {
-  h1,
-  .main-subtitle {
-    text-align: left;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .splash .container {
-    text-align: left;
-  }
-
-  .splash .specs {
-    /* border: none; */
-    flex-wrap: wrap;
-    gap: 2em;
-    width: 18em;
-  }
-
-  .splash .specs p {
-    width: 100vw;
-    text-align: left;
+  .splash .specs p,
+  .splash .specs p span {
+    font-size: 0.9rem !important;
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 3.25rem;
   } 
 
   h2 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   h3 {
-    font-size: 2rem;
-  }
-
-  h4 {
-    font-size: 1rem;
+    font-size: 1.8rem;
   }
 
   .main-subtitle {
-    font-size: 1.5em;
+    font-size: 1.6em;
   }
 
   .splash .specs p {
@@ -554,6 +587,10 @@ section .container {
     width: 100%;
     padding: 4em 0;
   }
+
+  .two-column p {
+    width: 80%;
+  }
   
   .grid-item {
     width: 100%;
@@ -570,6 +607,16 @@ section .container {
 
   .callout-text-large {
     font-size: 1.3rem !important;
+  }
+}
+
+@media screen and (max-width: 30em) {
+  .splash,
+  .brief,
+  .research,
+  .process,
+  .designs {
+    box-shadow: 0px 75px 150px -150px var(--accent-dark);
   }
 }
 
@@ -592,5 +639,9 @@ section .container {
 
   .fa-quote-right {
     margin-top: 0.75em;
+  }
+
+  .impact {
+    padding-bottom: 2em;
   }
 }

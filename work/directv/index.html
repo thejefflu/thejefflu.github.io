@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- metadata -->
+    <title>DirecTV</title>
+    <meta name="title" property="og:title" content="Jeff Lu">
+    <meta name="description" property="og:description" content="Los Angeles based UI/UX designer dedicated to creating visually pleasing products that spark joy!">
+    <meta name="image" property="og:image" content="https://i.ibb.co/PQMNLFz/thumbnail.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fafcfc">
+
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/site.webmanifest">
+
+    <!-- styles and fonts -->
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ygv6uzw.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6b4fd4dffa.js" crossorigin="anonymous"></script>
+  </head>
+
+<style>
+  .container {
+    text-align: center;
+    width: 90%;
+    margin: 10em auto 0 auto;
+  }
+
+  h1 {
+    margin-bottom: 0.25em;
+  }
+
+  p {
+    max-width: 50ch;
+    margin: 0 auto;
+  }
+
+  input {
+    border: none;
+    box-shadow: var(--small-shadow);
+    padding: 0 1.25em;
+    border-radius: 8px;
+    width: 20em;
+    height: 4em;
+    background-color: var(--background);
+  }
+
+  button {
+    background-color: var(--background);
+    box-shadow: var(--small-shadow);
+    border: none;
+    color: var(--text);
+    height: 4em;
+    width: 4em;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4em;
+    margin-top: 1em;
+  }
+</style>
+
+<body>
+
+	<div id="loginbox" class="lightbox">
+		<div class="container">
+      <h1>Password Required</h1>
+      <p>This case study is protected by an NDA! Feel free to <a href="mailto: jeffreylu2003@ucla.edu" class="inline">contact me</a> to request access, or go back to the <a href="../../" class="inline">home page</a>.</p>
+      <div class="box">
+        <input style="margin: 16px;" id="password" type="password" placeholder="Enter password..." /> <br />
+        <button id="loginbutton" type="button"><i class="fa-solid fa-chevron-right"></i></button>
+        <p id="wrongPassword" style="display: none">Wrong password!</p>
+      </div>
+		</div>
+	</div>
+
+
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+
+	 <script type="text/javascript" src="https://rawcdn.githack.com/chrisveness/crypto/7067ee62f18c76dd4a9d372a00e647205460b62b/sha1.js"></script>
+
+	<script type="text/javascript">
+	"use strict";
+
+
+	function loadPage(pwd) {
+
+		var hash= pwd;
+		hash= Sha1.hash(pwd);
+		var url= hash + "/index.html";
+
+		$.ajax({
+			url : url,
+			dataType : "html",
+			success : function(data) {
+
+				window.location= url;
+
+			},
+			error : function(xhr, ajaxOptions, thrownError) {
+
+
+				parent.location.hash= hash;
+
+				//$("#wrongPassword").show();
+				$("#password").attr("placeholder","Wrong password!");
+				$("#password").val("");
+			}
+		});
+	}
+
+
+	$("#loginbutton").on("click", function() {
+		loadPage($("#password").val());
+	});
+	$("#password").keypress(function(e) {
+		if (e.which == 13) {
+
+			loadPage($("#password").val());
+		}
+	});
+	$("#password").focus();
+
+	</script>
+
+</body>
+</html>

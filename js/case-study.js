@@ -1,4 +1,27 @@
 // -----------------
+// ON-SCROLL EFFECTS
+// -----------------
+
+window.addEventListener('scroll', reveal);
+
+function reveal(){
+  var reveals = document.querySelectorAll('.highlight,.subcontainer,h2');
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var revealTop = reveals[i].getBoundingClientRect().top;
+    var revealPoint = 100;
+
+    if (revealTop < windowHeight - revealPoint) {
+      reveals[i].classList.add('shown');
+    } else {
+      reveals[i].classList.remove('shown');
+    }
+  }
+}
+
+
+// -----------------
 // SMOOTH SCROLLING
 // -----------------
 
@@ -6,7 +29,7 @@ function smoothScroll(target, duration) {
   navMenu.checked = false;
   target = document.querySelector(target);
   let targetPosition = target.getBoundingClientRect().top;
-  let startPosition = window.pageYOffset;
+  let startPosition = window.scrollY;
   let startTime = null;
 
   function animation(currentTime) {
@@ -49,7 +72,6 @@ nav2.addEventListener('click', function() {
 
 var nav3 = document.querySelector('.nav-process');
 nav3.addEventListener('click', function() {
-  console.log('h');
   smoothScroll('.scroll-helper-process', 1500);
 });
 
@@ -143,6 +165,7 @@ function toggleScroll() {
     window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
     scrollEnabled = true;
   }
+  console.log(scrollEnabled);
 }
 
 function enableScroll() {
