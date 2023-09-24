@@ -17,7 +17,7 @@ h1 span {
   font-size: 4rem;
   font-weight: 300;
   line-height: 1.25em;
-  margin: 0.25em 0 0.5em 0;
+  margin: 0.25em 0 0.3em 0;
 }
 
 h1 span {
@@ -26,7 +26,7 @@ h1 span {
 }
 
 .about .text {
-  width: calc(100% - 21.75rem);
+  width: calc(100% - 21rem);
   max-width: 69ch;
 }
 
@@ -64,8 +64,8 @@ h1 span {
 }
 
 .about img {
-  height: 30rem;
-  width: 18.75rem;
+  height: 28.8rem;
+  width: 18rem;
   max-width: 90%;
   border-radius: 25px;
   object-fit: cover;
