@@ -255,6 +255,10 @@ nav img {
   transition: var(--bouncy);
 }
 
+.work .grid .upcoming {
+  cursor: not-allowed;
+}
+
 /************
  STRUCTURAL
  ************/
