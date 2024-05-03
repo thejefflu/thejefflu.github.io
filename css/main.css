@@ -28,14 +28,15 @@
   --text: #2E2E2E;
   --accent-dark: #0E2F39;
   --shadow: #0e2f3924;
-  --accent: #23AA9D;
-  --accent-highlight: #c5efea;
-  --accent-light: #DDF5F3; 
+  --accent: #6A8581;
+  --accent-highlight: #C8E1DD;
+  --accent-light: #E5F3F2; 
   --gray: #999999;
   --light-gray: #CCCCCC;
   --background: #fafcfc;
   --background-opaque: #fafcfcd6;
-  --gradient: linear-gradient(120deg, var(--accent-dark) 0%, var(--accent) 100%);
+  --gradient-text: linear-gradient(120deg, var(--text) 0%, var(--text) 100%);
+  --gradient-accent: linear-gradient(120deg, var(--text) 0%, var(--text) 100%);
 
   --small-shadow: 
     0px 0px 5px var(--shadow),
@@ -51,6 +52,7 @@
   --ease-slow: 0.5s ease;
   --ease-fast: 0.25s ease;
   --bouncy: 0.5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  --bouncy-timeless: cubic-bezier(0.5, 1.6, 0.4, 0.7);
 
   --linkedin: #0077B5;
   --github: #DE5C40;
@@ -62,13 +64,25 @@
  GLOBAL STYLES
  ************/
 
+@font-face {
+  font-family: Founders Grotesk;
+  src: url(../assets/fonts/FoundersGrotesk-Light.otf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Founders Grotesk;
+  src: url(../assets/fonts/FoundersGrotesk-Medium.otf);
+  font-weight: 500;
+}
+
 * {
   margin: 0;
-  font-family: Manrope, sans-serif;
-  font-weight: 400;
-  font-size: 0.975rem;
+  font-family: Founders Grotesk, sans-serif;
+  font-weight: 300;
   color: var(--text);
-  line-height: 1.9;
+
+  line-height: 1.5;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -90,24 +104,10 @@ html, body {
 
 /* headings */
 
-h1,
-h1 span {
-  font-family: IvyPresto-Display, Manrope, sans-serif;
-  font-size: 3.5rem;
-  font-weight: 300;
-  line-height: 1em;
-  margin: 0.25em 0 0.5em 0;
-}
-
-h1 span {
-  font-weight: 400;
-  font-style: italic;
-}
-
-h2 {
-  font-family: IvyPresto-Display, Manrope, sans-serif;
+h1 {
+  font-family: IvyPresto-Display, Founders Grotesk, sans-serif;
+  letter-spacing: -0.025rem;
   font-size: 2rem;
-  font-weight: 300;
   line-height: 2.75rem;
 }
 
@@ -116,13 +116,11 @@ h2 {
 .label,
 .footer p {
   text-transform: uppercase;
-  font-size: 0.85rem;
+  font-size: 0.875rem;
   color: var(--gray);
-  font-weight: 600;
-}
-
-.label {
-  margin-bottom: 0.5em;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  margin: 0.3em 0 0.6em 0;
 }
 
 .label i {
@@ -133,13 +131,13 @@ h2 {
 
 .footer p {
   text-align: center;
-  margin-bottom: 0.25em;
+  margin-bottom: 0.5em;
 }
 
 .left p {
   font-size: 1.25rem;
-  margin-left: 2.75em;
-  font-weight: 700;
+  margin: 0.15em 0 0 2.75em;
+  font-weight: 500;
 }
 
 .tagline p {
@@ -155,15 +153,15 @@ h2 {
 .highlight {
   background: 
   linear-gradient(to right, var(--accent-highlight), var(--accent-highlight));
-  background-size: 0 100%;
-  background-position: 0 100%;
+  background-size: 0 40%;
+  background-position: 0 60%;
   background-repeat: no-repeat;
   transition: var(--ease-slower);
   transition-delay: 0.25s;
 }
 
 .highlight.shown {
-  background-size: 100% 100%;
+  background-size: 100% 40%;
 }
 
 /* links */
@@ -190,22 +188,18 @@ nav a {
   position: relative;
   background: 
     linear-gradient(to right, var(--text), var(--text));
-  background-size: 0% 2px;
+  background-size: 0% 1px;
   background-position: 0 100%;
   transition: var(--bouncy);
   background-repeat: no-repeat;
-  padding: 4px 0px
 }
 
 .inline {
-  font-weight: 600;
-  padding-bottom: 3px;
-  background: var(--gradient);
-    background-size: 0 2px;
-    background-position: 0 100%;
+  background: var(--gradient-text);
+    background-size: 100% 1px;
+    background-position: 100% 100%;
 	transition: var(--bouncy);
   background-repeat: no-repeat;
-  color: var(--accent);
 }
 
 .primary .inline {
@@ -214,12 +208,11 @@ nav a {
 
 .socials a i,
 .socials {
-  font-size: 1.2rem;
-  margin-bottom: 0.6em;
+  font-size: 1.25rem;
   color: var(--gray);
-  letter-spacing: 0.1em;
   transition: var(--ease-fast);
   text-align: center;
+  letter-spacing: 0.1rem;
 }
 
 /************
@@ -267,7 +260,7 @@ nav {
   width: 100%;
   background-color: var(--background-opaque);
   z-index: 99;
-  height: 6em;
+  height: 5em;
   padding-top: 3em;
   position: fixed;
   transition: var(--ease-slow);
@@ -297,7 +290,7 @@ nav input {
 .sticky {
   box-shadow: 0px 10px 35px -35px var(--accent-dark);
   padding-top: 0;
-  height: 6em;
+  height: 5em;
   position: fixed;
 }
 
@@ -310,7 +303,7 @@ section {
 }
 
 .work {
-  margin-top: 8.5em;
+  margin-top: 7.9em;
   padding: 0 0 4em 0;
   position: relative;
 }
@@ -348,21 +341,26 @@ section .container {
   nav li a:hover,
   nav li a:focus {
     background: linear-gradient(to right, var(--text), var(--text));
-    background-size: 100% 2px;
     background-position: 0 100%;
     background-repeat: no-repeat;
   }
 
+  .left:hover > p, 
+  .left:focus > p,
+  nav li a:hover,
+  nav li a:focus {
+    background-size: 100% 1px;
+  }
+
   .inline:hover,
   .inline:focus {
-    color: var(--accent-dark);
-    background-size: 100% 2px;
-    background-repeat: no-repeat;
+    color: var(--accent);
+    background-size: 0 1px;
   }
 
   .social:hover > i,
   .social:focus > i {
-    transform: scale(1.25);
+    transform: scale(1.1);
   }
 
   #linkedin:hover > i,
@@ -389,6 +387,14 @@ section .container {
   .work .grid .container:focus {
     transform: scale(1.05);
   }
+}
+
+.work .grid .container:active {
+  transform: scale(1);
+}
+
+.socials a i:active {
+  transform: scale(0.95);
 }
 
 @media screen and (max-width: 60em) { /* medium-width devices: collapse work grid, introduce hamburger menu */
@@ -549,15 +555,8 @@ section .container {
 }
 
 @media screen and (max-width: 55em) { /* small-width devices: collapse about grid */
-  h1 {
-    width: 80%;
-    line-height: 1.25em;
-    margin: 0 auto 0.75em auto;
-    text-align: center;
-  }
-
   .work {
-    margin-top: 8.5em;
+    margin-top: 7.9em;
   }
 
   .tagline p {
@@ -585,7 +584,7 @@ section .container {
   }
 
   .work {
-    margin-top: 6.5em;
+    margin-top: 5.9em;
     padding-bottom: 4em;
   }
   
@@ -604,7 +603,7 @@ section .container {
 .scroll-helper-process,
 .scroll-helper-designs,
 .scroll-helper-impact {
-  height: 5.8em;
+  height: 4.9em;
   width: 100%;
   position: absolute;
   bottom: 0;

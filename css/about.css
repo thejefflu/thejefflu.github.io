@@ -13,15 +13,13 @@
 
 h1,
 h1 span {
-  font-family: IvyPresto-Display, Manrope, sans-serif;
-  font-size: 4rem;
-  font-weight: 300;
+  font-family: IvyPresto-Display, Founders Grotesk, sans-serif;
+  font-size: 3rem;
   line-height: 1.25em;
-  margin: 0.25em 0 0.3em 0;
+  margin: 0.25em 0 0.35em 0;
 }
 
 h1 span {
-  font-weight: 400;
   font-style: italic;
 }
 
@@ -40,15 +38,14 @@ h1 span {
   margin-top: 2em;
 }
 
-.about .links .primary {
-  line-height: 2em;
-  font-weight: 600;
+.about .links .primary a {
+  line-height: 2.1em;
+  font-weight: 500;
 }
 
 .primary a,
 .primary i {
-  font-size: 1.2rem;
-  margin-bottom: 0.6em;
+  font-size: 1.25rem;
 }
 
 .about .links .primary i {
@@ -133,13 +130,6 @@ h1 span {
     width: 100%;
     max-width: none;
     order: 2;
-  }
-}
-
-@media screen and (max-width: 40em) {
-  .about h1,
-  .about h1 span {
-    font-size: 3.25rem;
   }
 }
 
