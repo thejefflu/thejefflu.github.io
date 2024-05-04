@@ -116,17 +116,16 @@ h1 {
 .label,
 .footer p {
   text-transform: uppercase;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   color: var(--gray);
   font-weight: 500;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.025rem;
   margin: 0.3em 0 0.6em 0;
 }
 
 .label i {
   color: var(--gray);
-  font-size: 0.75rem;
-  margin-left: 0.3em;
+  margin-left: 0.25em;
 }
 
 .footer p {
@@ -362,6 +361,10 @@ section .container {
   .social:focus > i {
     transform: scale(1.1);
   }
+  
+  .social:active > i {
+    transform: scale(0.95);
+  }
 
   #linkedin:hover > i,
   #linkedin:focus > i {
@@ -385,16 +388,12 @@ section .container {
   
   .work .grid .container:hover,
   .work .grid .container:focus {
-    transform: scale(1.05);
+    transform: scale(1.025);
   }
-}
 
-.work .grid .container:active {
-  transform: scale(1);
-}
-
-.socials a i:active {
-  transform: scale(0.95);
+  .work .grid .container:active {
+    transform: scale(0.975);
+  }
 }
 
 @media screen and (max-width: 60em) { /* medium-width devices: collapse work grid, introduce hamburger menu */

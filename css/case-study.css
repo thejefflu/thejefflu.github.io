@@ -27,7 +27,7 @@
 /* headings */
 
  h1 { /* main title */
-  font-size: 4em;
+  font-size: 4rem;
   text-align: center;
   margin: 0 0 0.15em 0;
   line-height: 1.25em;
@@ -35,7 +35,7 @@
 }
 
 h2 { /* section headings */
-  font-size: 3em;
+  font-size: 3rem;
   font-family: IvyPresto-Display, Founders Grotesk, sans-serif;
   margin-bottom: 0.5em;
 }
@@ -45,7 +45,7 @@ h3 { /* subheadings */
   margin-bottom: 0.1em;
   font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.025rem;
 }
 
 h4 { /* list titles */
@@ -83,7 +83,7 @@ h4 i {
 .caption {
   text-align: center;
   color: var(--gray);
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-style: italic;
 }
 
@@ -112,8 +112,7 @@ h4 i {
 .callout h4 {
   font-family: Founders Grotesk, sans-serif;
   color: var(--accent);
-  margin: 0.5em auto 0.25em auto;
-  padding: 0 !important;
+  margin: 0.5em auto 0em auto;
   text-align: center;
   max-width: 30ch;
   line-height: 1.5em;
@@ -122,34 +121,28 @@ h4 i {
 .callout p {
   font-family: Founders Grotesk, sans-serif;
   color: var(--background);
-  padding: 0 !important;
   text-align: center;
   max-width: 45ch;
-  line-height: 1.75em;
   margin: 0 auto;
 }
 
 .callout .callout-text-large {
   font-size: 1.5rem;
   color: var(--background);
-  margin: 0.25em auto 0 auto !important;
-  padding: 0 !important;
   text-align: center;
-  max-width: 32ch !important;
+  margin: 0.25em auto 0 auto;
+  padding: 0;
+  max-width: 32ch;
   line-height: 1.4em;
 }
 
 .callout .callout-quote-author {
-  margin: 0.5em auto 0 auto !important;
+  margin: 0.5em auto 0 auto;
   padding: 0;
   text-transform: uppercase;
-  font-size: 0.875rem;
-  letter-spacing: 0.05rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.025rem;
   color: var(--light-gray);
-}
-
-.callout p:not(:last-child) {
-  margin: 0 auto 3em auto;
 }
 
 .callout i {
@@ -235,7 +228,6 @@ h4 i {
 
 .button.secondary {
   background-color: var(--background);
-  margin-top: 0;
 }
 
 .button p,
@@ -246,8 +238,8 @@ h4 i {
   font-weight: 500;
   margin-top: 0.2em;
   text-transform: uppercase;
-  letter-spacing: 0.05rem;
-  font-size: 0.875rem;
+  letter-spacing: 0.025rem;
+  font-size: 0.75rem;
 }
 
 .button.secondary p,
@@ -256,8 +248,8 @@ h4 i {
 }
 
 .button i {
-  margin: 0 0 0.5em 0.6em;
-  font-size: 0.75rem;
+  margin-left: 0.6em;
+  font-size: 0.625rem;
 }
 
 .button::before {
@@ -359,10 +351,6 @@ video {
   display: block;
 }
 
-.extra-space {
-  margin-bottom: 4em !important;
-}
-
 /************
  STRUCTURAL
  ************/
@@ -385,6 +373,7 @@ section .container {
 
 .splash {
   margin-top: 5em;
+  padding-bottom: 6em;
 }
 
 .splash .specs {
@@ -406,7 +395,11 @@ section .container {
 }
 
 .extra-spacing {
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
+}
+
+.spacer {
+  height: 2em;
 }
 
 .subcontainer,
@@ -422,9 +415,15 @@ h2.shown {
   transform: translateY(0);
 }
 
-.button-container a {
-  margin: 1em 0.25em 3em 0.25em;
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
 }
+
+/* .button-container a {
+  margin: 1em 0.25em 3em 0.25em;
+} */
 
 .columns {
   display: flex;
@@ -451,11 +450,24 @@ h2.shown {
     transform: scale(1.05);
   }
 
+  .button:hover,
+  .button:focus {
+    transform: scale(1.05);
+    color: var(--text);
+    background-color: var(--accent);
+    cursor: pointer;
+  }
+
   .close:hover,
   .close:focus {
     background-color: var(--accent);
     transition: var(--bouncy);
-    transform: scale(1.05);
+    transform: scale(1.1);
+  }
+
+  .button:active,
+  .close:active {
+    transform: scale(0.95);
   }
 
   .close:hover::before,
@@ -466,14 +478,6 @@ h2.shown {
   .close:hover i,
   .close:focus i {
     color: var(--text);
-  }
-
-  .button:hover,
-  .button:focus {
-    transform: scale(1.05);
-    color: var(--text);
-    background-color: var(--accent);
-    cursor: pointer;
   }
 
   .button:hover::before,
@@ -503,12 +507,6 @@ h2.shown {
     transform: scale(1.05);
     filter: grayscale(0);
   }
-}
-
-.callout:active,
-.button:active,
-.close:active {
-  transform: scale(1);
 }
 
 @media screen and (max-width: 60em) {
@@ -578,11 +576,6 @@ h2.shown {
 }
 
 @media screen and (max-width: 40em) {
-  .splash .specs p,
-  .splash .specs p span {
-    font-size: 0.875rem !important;
-  }
-
   h1 {
     font-size: 3rem;
   } 
@@ -595,8 +588,8 @@ h2.shown {
     font-size: 1.5rem;
   }
 
-  .splash .specs p {
-    font-size: 0.875rem;
+  .main-subtitle {
+    font-size: 1.25rem;
   }
 
   .gallery {
@@ -632,13 +625,26 @@ h2.shown {
   .small {
     width: 100%;
   }
-
-  .callout-text-large {
-    font-size: 1.3rem !important;
-  }
 }
 
 @media screen and (max-width: 30em) {
+  .splash .specs p,
+  .splash .specs p span {
+    font-size: 0.75rem;
+  }
+
+  .callout .callout-text-large {
+    font-size: 1.25rem;
+  }
+
+  .button-container {
+    display: block;
+  }
+
+  .button-container .button.secondary {
+    margin-top: 0.5em;
+  }
+  
   .splash,
   .brief,
   .research,

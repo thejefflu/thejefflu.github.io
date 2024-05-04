@@ -46,6 +46,7 @@ h1 span {
 .primary a,
 .primary i {
   font-size: 1.25rem;
+  transition: var(--bouncy);
 }
 
 .about .links .primary i {
@@ -99,6 +100,11 @@ h1 span {
   .about img:hover,
   .about img:focus {
     transform: rotate(0deg) scale(1.05);
+  }
+
+  .primary a:hover i,
+  .primary a:focus i {
+    color: var(--accent);
   }
 }
 
