@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- metadata -->
+    <title>IDONTMIND</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/site.webmanifest">
+
+    <!-- styles and fonts -->
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/case-study.css">
+    <link rel="stylesheet" href="../../css/idontmind.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ygv6uzw.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <script src="https://kit.fontawesome.com/6b4fd4dffa.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div class="scroll-helper-top"></div>
+    
+    <!------------
+      NAVBAR 
+      ------------>
+    <nav class="nav" id="nav">
+      <div class="container">
+
+        <!-- left -->
+        <a class="wordmark" href="../../">
+          <img src="../../assets/imgs/monogram.png" alt="JL Monogram">
+          <p>IDONTMIND <i class="fa-solid fa-arrow-right-to-bracket"></i></p>
+        </a>
+
+        <!-- right: hamburger menu (for smaller screens) -->
+        <input type="checkbox" id="nav-menu">
+        <label for="nav-menu" class="nav-btn" onclick="toggleScroll()">
+            <i></i>
+            <i></i>
+            <i></i>
+        </label>
+
+        <!-- right: nav bar (for larger screens) -->
+        <div class="nav-links">
+          <ul>
+            <li>
+              <a class="nav-brief" onclick="enableScroll()">Brief</a>
+            </li>
+            <li>
+              <a class="nav-research" onclick="enableScroll()">Research</a>
+            </li>
+            <li>
+              <a class="nav-process" onclick="enableScroll()">Process</a>
+            </li>
+            <li>
+              <a class="nav-testing" onclick="enableScroll()">Testing</a>
+            </li>
+            <li>
+              <a class="nav-designs" onclick="enableScroll()">Final Designs</a>
+            </li>
+            <li>
+              <a class="nav-impact" onclick="enableScroll()">Impact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!------------
+      SPLASH 
+      ------------>
+
+    <section class="splash">
+      <div class="image-container-outer">
+        <div class="image-container">
+          <img src="splash.mov">
+        </div>
+      </div>
+      <div class="scroll-helper-brief"></div>
+    </section>
+
+    <!------------
+      BRIEF 
+      ------------>
+
+    <section class="brief">
+      <div class="container">
+        <div class="left">
+          <h2 id="always-shown">Summary</h2>
+        </div>
+        <div class="right">
+          <p class="title-large">IDONTMIND <span class="gray">is a nonprofit with a mission to inspire open conversations about mental health. They wanted our help bringing their resources to an all-new platform more conducive to wellness.</span></p>
+          
+          <div class="specs">
+            <div class="topmost">
+              <p>Role</p> 
+              <p>Lead Design Engineer</p>
+            </div>
+            <div>
+              <p>Contributions</p> 
+              <p>Product Strategy · Project Management · UX Research · Design System</p>
+            </div>
+            <div>
+              <p>Toolkit</p>
+              <p>Figma · FigJam · React Native · Notion</p>
+            </div>
+            <div>
+              <p>Team</p>
+              <p>4 Designers · 10 Developers</p>
+            </div>
+            <div>
+              <p>Timeline</p> 
+              <p>11 Months (Sep 2023 – Aug 2024)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="left">
+          <h2>Problem Statement</h2>
+        </div>
+        <div class="right">
+          <p class="title-small">"We have a pretty substantial Instagram following, but we struggle to get engagement on our website, where our resources exist in full."</p>
+          <div class="flex">
+            <div class="subcontainer">
+              <p>During our early conversations, <a href="https://www.linkedin.com/in/kbenoist/" target="_blank" class="inline">Kristina from IDONTMIND</a> shared with me that they <span class="highlight">lacked a way for their community to engage interactively with their mental health resources</span>, making it difficult for IDONTMIND to provide support in a manner that felt personal and empowering.</p>
+              <p>These resources existed in two spaces: their Instagram, which sacrificed depth of information, and their website, which didn't get nearly much traffic and even lacked a search feature.</p>
+          </div>
+          <div class="image-container subcontainer">
+            <img src="problem-statement.png" class="photo">
+          </div>
+        </div>
+        <div class="subcontainer">
+          <a class="button secondary nav-designs2" onclick="enableScroll()">
+            <p>Jump to Solution</p>
+          </a>
+        </div>
+      </div>
+      <div class="scroll-helper-research"></div>
+    </section>
+
+    <!------------
+      RESEARCH 
+      ------------>
+      <section class="research">
+        <div class="image-container-outer">
+          <div class="image-container">
+            <img src="research.png" class="banner">
+          </div>
+        </div>
+        <div class="container">
+          <div class="left">
+            <h2>Competitive Analysis</h2>
+          </div>
+          <div class="right subcontainer">
+            <p class="title-small">Going undercover: 8 apps, 7 days each.</p>
+            <div class="flex subcontainer">
+              <div>
+                <p>To take a hands-on approach to understanding the current state of the market, we downloaded 8 competitor apps and used each of them for a period of 7 days.</p>
+                <p>We found that despite mental health support apps being in no short supply, they consistently stuggled with:</p></br>
+
+                <div class="subcontainer">
+                  <p class="subheading"><i class="fa-solid fa-circle-question"></i> Intentionality</p>
+                  <p class="short">7/8 competitors failed to motivate users with a reason <span class="highlight">why they should use the app in the first place</span>.</p>
+                </div>
+                <div class="subcontainer">
+                  <p class="subheading"><i class="fa-solid fa-heart-crack"></i> Personalization</p>
+                  <p class="short">7/8 competitors didn’t take into account <span class="highlight">users’ individual mental health needs</span> when presenting resources.</p>
+                </div>
+                <div class="subcontainer">
+                  <p class="subheading"><i class="fa-solid fa-sack-dollar"></i> Affordability</p>
+                  <p class="short">5/8 competitors <span class="highlight">hid features behind a paywall</span>, creating a financial barrier to mental health support.</p>
+                </div>
+                <div class="subcontainer">
+                  <a href="https://docs.google.com/spreadsheets/d/1plzAxNMAhxsGOiG6mNlIQJ0rsEnn0WDWItvQSXyrA1Q/edit?usp=sharing" target="_blank" class="button secondary">
+                    <p>Full Analysis<i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+                  </a>
+                </div>
+              </div>
+              <div class="thin">
+                <img src="competitive-analysis.png" class="diagram">
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="container">
+          <div class="left">
+            <h2>Contextual Inquiry</h2>
+          </div>
+          <div class="right">
+            <p class="title-small">"The social media space is overwhelmingly crowded with so much content, including IDONTMIND's... it makes it hard to find resources that are personalized to me."</p>
+            <p></p>
+            <div class="flex subcontainer">
+              <div>
+                <p>To better understand the range of our audience’s perspectives and experiences regarding mental health technology, we got in touch with the 4 members of IDONTMIND’s Youth Impact Team: a group of mental health advocates from all different walks of life. One remarkable pattern we found was that <span class="highlight">0/4 members of the Youth Impact Team actively sought out specific IDONTMIND resources, as this required either finding content on an oversaturated Instagram feed, or navigating a dated website</span>.</p>
+                <p>Our conversations gave rise to several other key points that would guide the direction of our app:<br><br></p>
+              </div>
+              <img src="contextual-inquiry.png" class="diagram">
+            </div>
+            <div class="flex">
+              <div class="subcontainer">
+                <p class="subheading">Avoid the 'social platform' route.</p>
+                <p class="short"><em>"Social media definitely affects my sleep and physical health because of <span class="highlight">mindless scrolling</span>... I wish it could have less of an impact on my day."</em></p>
+                <p class="label">— Catherine</p>
+              </div>
+              <div class="subcontainer">
+                <p class="subheading">Don't forget about the human touch.</p>
+                <p class="short"><em>"<span class="highlight">I always prefer to reach out to a friend</span> when I need to rant, but sometimes I don't want to feel like I'm a burden on them, so I journal on my own."</em></p>
+                <p class="label">— Caileigh</p>
+              </div>
+            </div>
+            <div class="flex">
+              <div class="subcontainer">
+                <p class="subheading">Be mindful of potential triggers.</p>
+                <p class="short"><em>"Using an app for diet tracking has negatively impacted my mental health in the past. It could easily be taken out of context and <span class="highlight">unintentionally trigger an eating disorder</span>."</em></p>
+                <p class="label">— Alyssa</p>
+              </div>
+              <div class="subcontainer">
+                <p class="subheading">Make it feel invisible.</p>
+                <p class="short"><em>"Being an entrepeneur, I'm always on the go. If I'm going to use another app, it should strike a balance between being <span class="highlight">routine-based, but not chore-like</span>."</em></p>
+                <p class="label">— Marcus</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="left">
+            <h2>Affinity Mapping</h2>
+          </div>
+          <div class="right embed">
+            <p class="title-small">Putting it all together.</p>
+
+            <div class="subcontainer">
+              <p class="shorter">Our chats with the Youth Impact Team yielded many more insights than just the ones above—feel free to take a look!</p>
+              <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" src="https://embed.figma.com/board/McY2LMZgO2XRm5asM8vb2q/Affinity-Map?node-id=0-1&embed-host=share" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="left">
+            <h2>User Personas</h2>
+          </div>
+          <div class="right">
+            <p class="title-small">Empathizing with people, not bullet points.</p>
+            <div class="subcontainer">
+              <p>As an exercise in research synthesis, we further analyzed our interview findings to come up with some archetypal users. These served as a handy tool to <span class="highlight">remind ourselves of the broad spectrum of mental health journeys to account for when designing</span>.</p>
+            </div>
+            <div class="subcontainer">
+              <img src="user-personas.png"  class="diagram">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="left">
+            <h2>Proposed Solution</h2>
+          </div>
+          <div class="right">
+            <p class="title-small">Introducing: the mental health companion you'll delete with confidence.</p>
+            <div class="subcontainer">
+              <p>After much discussion, both within my team and with IDONTMIND stakeholders, we eventually decided on some <span class="highlight">core functionalities that filled in gaps we observed in the market and addressed the pain points we heard about from our interviewees</span>. We tied these all together into a concept for a friendly mobile companion app with the following design philosophies:</p>
+            </div>
+            <div class="flex">
+              <div class="subcontainer">
+                <p class="subheading"><i class="fa-solid fa-earth-americas"></i> Design for a quick turnover.</p>
+                <p class="short">Instead of trying to keep users hooked, design with the intention of <span class="highlight">easing users off the app and back into the real world</span> in a more positive, healthy state of mind.</p>
+              </div>
+              <div class="subcontainer">
+                <p class="subheading"><i class="fa-solid fa-chart-simple"></i> Tailor the experience.</p>
+                <p class="short">Compile <span class="highlight">actionable, personalized resources and trend analyses</span> based on check-in responses so that users get info on all the topics they'd like, and nothing more.</p>
+              </div>
+            </div>
+            <div class="flex">
+              <div class="subcontainer">
+                <p class="subheading"><i class="fa-solid fa-heart"></i> Remember the human.</p>
+                <p class="short">Evoke <span class="highlight">the feeling of catching up with a good friend</span> (who’s done their psychology homework!) in a familiar, easy-access mobile format. Payment method need not apply.</p>
+              </div>
+              <div class="subcontainer">
+                <p class="subheading"><i class="fa-solid fa-clipboard-question"></i> Listen without judging.</p>
+                <p class="short">Provide a <span class="highlight">no-judgement space for users to reflect</span> with holistic wellness check-ins and journal prompts. The power of technology, without the stress of perfection.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-helper-process"></div>
+      </section>
+
+    <!------------
+      PROCESS 
+      ------------>
+      <section class="process">
+        <div class="image-container-outer">
+          <div class="image-container">
+            <img src="process.png" class="banner">
+          </div>
+        </div>
+        <div class="container">
+          <div class="left">
+            <h2>User Flow</h2>
+          </div>
+          <div class="right embed">
+            <p class="title-small">Establishing an overview of the app for designers and developers alike.</p>
+            <div class="subcontainer">
+              <p class="shorter">Before diving into wireframing, we created some <span class="highlight">information architecture</span> to guide the structure of the app and how its features would interact with each other.</p>
+              <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" src="https://embed.figma.com/board/nKZzpFWHyId0ITM6htV4JB/User-Flow?node-id=0-1&embed-host=share" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="left">
+            <h2>Professional Consultation</h2>
+          </div>
+          <div class="right embed">
+            <p class="title-small">Creating a proprietary algorithm for mental health recovery.</p>
+            <div class="subcontainer">
+              <p>In order to maintain the scientific integrity (and usefulness) of our product, we got in touch with <span class="highlight">IDONTMIND’s network of mental health professionals</span> to design an algorithm that would <span class="highlight">determine how much support a user needs based on their check-in activity</span>. In line with our established design goals, the algorithm was designed with the ultimate goal of letting the user go, once they've gotten all the guidance and growth they need from the app!</p>
+              <p>These professionals also helped guide the content and copywriting of the app, to ensure we were <span class="highlight">providing quality resources and using sensitive, inclusive language</span>.</p>
+            </div>
+            <div class="subcontainer">
+              <img src="professional-consultation-1.png" class="diagram">
+            </div>
+            <div class="subcontainer">
+              <img src="professional-consultation-2.png" class="diagram">
+            </div>
+            <!-- <div class="subcontainer button-container">
+              <a href="https://docs.google.com/document/d/16F4f4iYyEk11mUVfiAQbkbmek6lF_3Yt2Zm2Z5x5-ro/edit?usp=sharing" target="_blank" class="button secondary subcontainer">
+                <p>Algorithm Documentation<i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+              </a>
+              <a href="https://docs.google.com/spreadsheets/d/1Z3SiFawUom7JnjJw7Vhxc8sisNiF2QTgxROsOCgvUdQ/edit?usp=sharing" target="_blank" class="button secondary subcontainer">
+                <p>Content Master Document<i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+              </a>
+            </div> -->
+          </div>
+        </div>
+        <div class="container">
+          <div class="left">
+            <h2>Iterative Wireframing</h2>
+          </div>
+          <div class="right embed">
+            <p class="title-small">Putting metaphorical pen to paper.</p>
+            <div class="subcontainer">
+              <p>Once we'd done our due diligence—brainstorming features that served our users' needs, consulting the relevant healthcare professionals, and double-checking everything with our developers and the folks at IDONTMIND—it was time to design!</p>
+            </div>
+            
+            
+            <div class="subcontainer">
+              <img src="lo-fis-1.png" class="diagram">
+            </div>
+            <div class="subcontainer">
+              <img src="lo-fis-2.png" class="diagram">
+            </div>
+            <div class="subcontainer">
+              <img src="lo-fis-3.png" class="diagram">
+            </div>
+            <div class="subcontainer">
+              <img src="lo-fis-4.png" class="diagram">
+            </div>
+            <div class="subcontainer">
+              <img src="lo-fis-5.png" class="diagram">
+            </div>
+
+            <div class="subcontainer">
+              <p>Right away, we ran into some critical design questions. Here are a handful of them, and how we answered them through our early wireframes:</p>
+            </div>
+            
+            <div class="subcontainer">
+              <p class="subheading">How might we set users up to use the app with intention?</p>
+              <p>We included an <span class="highlight">interactive explanation of the app's overarching goal</span> (support when you need it, independence when you're ready) as part of the onboarding process after account creation. We also sprinkled in <span class="highlight">data-backed research on the benefits of habits encouraged by the app</span> including reflection and sleep hygiene.</p>
+            </div>
+
+            <div class="subcontainer">
+              <p class="subheading">How might we prevent check-ins from feeling like a chore?</p>
+              <p>We <span class="highlight">randomized and shuffled the prompts</span> shown in each check-in, with the exception of three core questions (determined by our expert therapist consultants) which target mood, sleep, and energy. To <span class="highlight">minimize any pressure and expectations that might induce additional stress</span>, we also provided an option to skip a day's check-in and come back to it later.</p>
+            </div>
+
+            <div class="subcontainer">
+              <p class="subheading">How might we display IDONTMIND's vast library of content?</p>
+              <p>We worked with IDONTMIND to file all content under one or more relevant tags (e.g. Burnout, Meditation, Anxiety). For easy discovery, we provided users with the ability to <span class="highlight">search, filter, and browse content by tag</span>. These tools <span class="highlight">combine the convenience of IDONTMIND's Instagram with the depth of their website</span> for a best-of-both-worlds platform.</p>
+            </div>
+
+            <div class="subcontainer">
+              <p>Moving onto mid-fidelity designs, <span class="highlight">I encouraged each of my designers to explore their own visual design style</span> within their features, without worrying about cohesion across the entire app just yet.</p>
+            </div>
+            
+            <div class="subcontainer">
+              <img src="mid-fis-1.png" class="diagram">
+            </div>
+            <div class="subcontainer">
+              <img src="mid-fis-2.png" class="diagram">
+            </div>
+            <div class="subcontainer">
+              <img src="mid-fis-3.png" class="diagram">
+            </div>
+            <div class="subcontainer">
+              <img src="mid-fis-4.png" class="diagram">
+            </div>
+            <div class="subcontainer">
+              <img src="mid-fis-5.png" class="diagram">
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="left">
+            <h2>Design System</h2>
+          </div>
+          <div class="right">
+            <p class="title-small">Combining four styles into one design system.</p>
+            <div class="subcontainer">
+              <p>Next, I was faced with the gargantuan task of auditing everyone's assets—text, colors, cards, you name it—and distilling everything into one comprehensive design system. I took care to choose bits and pieces from everyone's designs to ensure that <span class="highlight">each designer's voice shone through in the final product</span>, for something that felt distinctly IDONTMIND.</p>
+              <p>This part of the product quickly became my pride and joy, complete with a <span class="highlight">changelog, usage notes, and documentation which smoothed out the design and development processes in equal measure</span>. Here are just some of the 30+ components you'll find in it!</p>
+            </div>
+            <div class="subcontainer">
+              <img src="design-system.png" class="diagram">
+            </div>
+          </div>
+        </div>
+        <div class="scroll-helper-testing"></div>
+      </section>
+
+    <!------------
+      TESTING 
+      ------------>
+      <section class="process">
+        <div class="image-container-outer">
+          <div class="image-container">
+            <img src="testing.png" class="banner">
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="left">
+            <h2>Usability Testing</h2>
+          </div>
+          <div class="right">
+            <p class="title-small">Translating our design goals into measurable questions.</p>
+            <div class="flex subcontainer">
+              <div>
+                <p>Once we had a working prototype of the app up and running, we shared it with 6 users to gather their thoughts and see where we had room for improvement.</p>
+                <p>While scriptwriting, we made sure to keep our original design goals in mind. For example, <span class="highlight">5/6 participants indicated that the app's intention of guiding its users towards outgrowing the app was made clear</span>, which was reassuring for us!</p>
+                <p>More importantly, however, we received some invaluable feedback regarding the usability of the app that we'd then iterate upon.</p>
+              </div>
+              <img src="usability-testing.png" class="diagram">
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="left">
+            <h2>Feedback Implementation #1</h2>
+          </div>
+          <div class="right embed">
+            <p class="title-small">Creating Check-Ins that meet users where they're at through thoughtful copywriting.</p>
+            <div class="subcontainer">
+              <p>The first thing a user will see upon opening the app is a welcome screen leading to the check-in. Although we had included a 'Skip' button, <span class="highlight">users expressed confusion over the iconography we chose, mistaking it for a 'Back' button</span> when there was nothing to go back to.</p>
+              <p class="subheading">Solution</p>
+              <p>We remedied this with some explanatory copy, <span class="highlight">written with the intention of reducing pressure to complete the check-in immediately</span>. Although this was a simple change, it got us thinking about other ways we could make the splash screen more welcoming and less repetitive. We created copy and graphics that would greet the user and change throughout the day, to <span class="highlight">guide the tone of the app more towards the friendly vibe we were aiming for</span>!</p>
+            </div>
+            <div class="subcontainer">
+              <img src="feedback-implementation-1.png" class="diagram">
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="left">
+            <h2>Feedback Implementation #2</h2>
+          </div>
+          <div class="right embed">
+            <p class="title-small">Rethinking the way we presented IDONTMIND's expansive Content Library.</p>
+            <div class="subcontainer">
+              <p>Participants found the sheer amount of resources in the app overwhelming, to the point where they <span class="highlight">omitted browsing the Content Library entirely and went straight to the search feature</span>.</p>
+              <p class="subheading">Solution</p>
+              <p>I encouraged my designer who'd made this screen to <span class="highlight">explore different ways of displaying content that wouldn't require as much vertical scrolling</span>, so that users could browse content with greater ease. We also explored ways to visually reinforce the hierarchical distinction between content tags and "supertags," which grouped the app's 100+ tags into 9 categories for easier navigation.</p>
+            </div>
+            <div class="subcontainer">
+              <img src="feedback-implementation-2.png" class="diagram">
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="left">
+            <h2>Feedback Implementation #3</h2>
+          </div>
+          <div class="right embed">
+            <p class="title-small">Bringing clarity and flexibility to the Journal feature.</p>
+            <div class="subcontainer">
+              <p>Participants expressed that they <span class="highlight">wouldn't necessarily always want to title their free-write journal entries</span>, and also brought an important question to our attention that we hadn't previously considered: <span class="highlight">what types of attachments would be supported</span> by the journal feature?</p>
+              <p class="subheading">Solution</p>
+              <p>To <span class="highlight">allow users to write for the sake of writing</span>, without being forced to pin on the label of a title, we made titling journal entries optional. We also <span class="highlight">worked with our team of developers to determine what types of media would be feasible</span> to attach in journal entries (we settled on images and videos).</p>
+            </div>
+            <div class="subcontainer">
+              <img src="feedback-implementation-3.png" class="diagram">
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="left">
+            <h2>Feedback Implementation #4</h2>
+          </div>
+          <div class="right embed">
+            <p class="title-small">Adapting Trends to both users' and developers' feedback.</p>
+            <div class="subcontainer">
+              <p>Participants were <span class="highlight">thrown off by the visual communication on the trends overview page</span>, expressing confusion over whether the circular rings were meant to be tappable and what the percentages underneath each ring meant.</p>
+              <p class="subheading">Solution</p>
+              <p>To <span class="highlight">more clearly demarcate interactivity</span>, and to <span class="highlight">address developer constraints that were brought to our attention</span> around the same time, we opted for a descriptive card design that was easier to implement, and would also allow for more flexibility in the kinds of trends shown to the user.</p>
+            </div>
+            <div class="subcontainer">
+              <img src="feedback-implementation-4.png" class="diagram">
+            </div>
+          </div>
+        </div>
+
+        <div class="scroll-helper-designs"></div>
+      </section>
+
+    <!------------
+      FINAL DESIGNS 
+      ------------>
+      <section class="designs">
+        <div class="image-container-outer">
+          <div class="image-container">
+            <img src="final-designs.png" class="banner">
+          </div>
+        </div>
+
+        <div class="container left-text">
+          <div class="subcontainer">
+            <p class="title-large">Onboarding</p>
+            <p class="title-small gray">A welcoming account creation process that allows users to tailor the app to their needs and preferences, right from the get-go.</p>
+          </div>
+          <div class="subcontainer">
+            <img src="onboarding.mov" class="diagram">
+          </div>
+          </div>
+        </div>
+
+        <div class="container right-text">
+          <div class="subcontainer">
+            <p class="title-large">Check-Ins</p>
+            <p class="title-small gray">An unobtrusive, holistic wellness check-in that starts daily and tapers off as users show signs of improvement, giving them the freedom to outgrow the app once they're ready.</p>
+          </div>
+          <div class="subcontainer">
+            <img src="check-ins.mov" class="diagram">
+          </div>
+          </div>
+        </div>
+
+        <div class="container left-text">
+          <div class="subcontainer">
+            <p class="title-large">Content</p>
+            <p class="title-small gray">A collection of therapist Q&As, educational articles, empowering personal stories, and other resources. Users can browse at their leisure, or view content that's hand-picked based on their check-in responses.</p>
+          </div>
+          <div class="subcontainer">
+            <img src="content.mov" class="diagram">
+          </div>
+          </div>
+        </div>
+
+        <div class="container right-text">
+          <div class="subcontainer">
+            <p class="title-large">Journal</p>
+            <p class="title-small gray">A space for users to write about what's on their mind, either with therapist-curated prompts or by free-writing. For future reflection, entries are saved in a personal diary that can be freely searched and filtered through.</p>
+          </div>
+          <div class="subcontainer">
+            <img src="journal.mov" class="diagram">
+          </div>
+          </div>
+        </div>
+
+        <div class="container left-text">
+          <div class="subcontainer">
+            <p class="title-large">Trends</p>
+            <p class="title-small gray">A dashboard of week and month-long trends that allows users to see how their wellness has changed over time. Depending on what trends arise, curated resources and further guidance are also provided, to either reinforce or to redirect.</p>
+          </div>
+          <div class="subcontainer">
+            <img src="trends.mov" class="diagram">
+          </div>
+          </div>
+        </div>
+
+        <div class="button-container subcontainer">
+          <a href="https://www.figma.com/proto/xYRrQJ6C07AHRg1rhWXFCy/IDONTMIND?page-id=543%3A19155&node-id=543-20158&viewport=272%2C133%2C0.04&t=bYfbdzQ1HHtQO6Pi-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=543%3A20154&show-proto-sidebar=1" target="_blank" class="button secondary">
+            <p>Full Prototype<i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+          </a>
+        </div>
+        
+        
+        <div class="scroll-helper-impact"></div>
+      </section>
+
+    <!------------
+      IMPACT
+      ------------>
+      <section class="impact">
+        <div class="image-container-outer">
+          <div class="image-container">
+            <img src="impact.png" class="banner">
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="left">
+            <h2>Outcomes</h2>
+          </div>
+          <div class="right">
+            <p class="title-small">"The incorporation of all of our wild ideas, the Youth Impact Team's feedback, and the therapists' input is incredible. It has come together beautifully, and it's even better than we could've imagined."</p>
+            
+            <div class="subcontainer">
+              <p class="label large">Testimonial from Kristina, Director of Programs and Communications @ IDONTMIND.</p>
+            </div>
+
+            <div class="subcontainer">
+              <p>As of January 2025, my team's contracted partnership with IDONTMIND has come to a close! We have shipped our final product and eagerly anticipate its release on the Apple and Google Play stores.</p>
+            </div>
+
+            <div class="subcontainer no-space">
+              <img src="outcomes-1.png" class="diagram">
+            </div>
+
+            <div class="subcontainer">
+              <img src="outcomes-2.png" class="diagram">
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="left">
+            <h2>Reflections</h2>
+          </div>
+          <div class="right">
+            <div class="subcontainer">
+              <p class="subheading">
+                There's no substitute for collaboration.
+              </p>
+              <p>Every design project I've taken on prior to this has been done—for the most part—solo. I carried this attitude into IDONTMIND, but quickly realized that with a team of designers in front of me, there might be a better way to do things. <span class="highlight">I reached out to some of my designer friends asking how to foster a more collaborative environment and began implementing their advice at future meetings</span>, facilitating group discussions where we could bounce ideas off of each other or iterate on each other's designs. Acting as a mentor in this way for less experienced designers was one of the best parts of this journey, and it's where some of the best parts of the final product came from. I only wish I had started doing it sooner!</p>
+            </div>
+            <div class="subcontainer">
+              <p class="subheading">
+                Design is a balancing act.
+              </p>
+              <p>Being the lead design engineer for an end-to-end product came with a lot of responsibility. <span class="highlight">Each decision struck a delicate balance between the needs of my users, the requests of the lovely folks at IDONTMIND, and the constraints I had on the home front with my developers and designers.</span> As challenging as it may have been, being at the head of the direction of this project has been the single most rewarding experience I've had in my design career thus far, and it was a fantastic look into what it takes to be a leader in design!</p>
+            </div>
+            <div class="subcontainer">
+              <p class="subheading">
+                Always work towards a goal.
+              </p>
+              <p>Having a north star (or three or four) established right away based on my team's preliminary research was a fantastic foundation for the rest of our journey. <span class="highlight">Once our design goals were chosen based on business and user needs, nearly everything else fell in place.</span> We were able to make even the smallest of design decisions with intention—just how IDONTMIND would want us to! It's a practice I'll carry forward in all my future projects.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="left">
+            <h2></h2>
+          </div>
+          <div class="right">
+            <p class="title-small">
+              And to my team...
+            </p>
+            <div class="subcontainer">
+              <p>Thank you for trusting me as your team lead: a role that looking back, I was woefully unprepared for, but that I hope I grew into with time. Although this journey certainly came with its hardships, they seem so small when I think instead about our countless team outings, birthday celebrations, and wonderfully chaotic work sessions. If someone told me I had to do it all over again, my response, in a heartbeat, would be a resounding "I don't mind."</p>
+            </div>
+            <div class="subcontainer">
+              <div class="image-container">
+                <img src="dedication.jpg" class="photo">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="button-container">
+          <a class="button" href="../transcanwork/index.html">
+            <p>Next Case Study</p>
+          </a>
+          <a class="button secondary nav-top" onclick="enableScroll()">
+            <p>Back to the top</p>
+          </a>
+        </div>
+        
+      </section>
+
+    <!------------
+      FOOTER 
+      ------------>
+
+      <section class="footer">
+        <div>
+          <p>Proudly designed & handcoded by Jeff Lu</p>
+          <div class="socials">
+            <a class="social" id="linkedin" href="https://www.linkedin.com/in/thejefflu" target="_blank">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+              /  
+            <a class="social" id="github" href="https://github.com/thejefflu" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+              /  
+            <a class="social" id="figma" href="https://www.figma.com/@thejefflu" target="_blank">
+              <i class="fa-brands fa-figma"></i>
+            </a>
+              /  
+            <a class="social" id="instagram" href="https://www.instagram.com/thejefflu/" target="_blank">
+              <i class="fa-brands fa-instagram"></i> 
+            </a>
+          </div>
+        </div>
+      </section>
+
+    <script src="../../js/idontmind.js"></script>
+  </body>
+</html>

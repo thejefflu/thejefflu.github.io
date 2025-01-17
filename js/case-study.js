@@ -55,11 +55,6 @@ function menuOff() {
   navMenu.checked = false;
 }
 
-var nav0 = document.querySelector('.left');
-nav0.addEventListener('click', function() {
-  smoothScroll('.scroll-helper-top', 1500);
-});
-
 var nav1 = document.querySelector('.nav-brief');
 nav1.addEventListener('click', function() {
   smoothScroll('.scroll-helper-brief', 1500);

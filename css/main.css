@@ -31,7 +31,7 @@
   --accent: #6A8581;
   --accent-highlight: #C8E1DD;
   --accent-light: #E5F3F2; 
-  --gray: #999999;
+  --gray: #888888;
   --light-gray: #CCCCCC;
   --background: #fafcfc;
   --background-opaque: #fafcfcd6;
@@ -133,7 +133,7 @@ h1 {
   margin-bottom: 0.5em;
 }
 
-.left p {
+.wordmark p {
   font-size: 1.25rem;
   margin: 0.15em 0 0 2.75em;
   font-weight: 500;
@@ -152,15 +152,15 @@ h1 {
 .highlight {
   background: 
   linear-gradient(to right, var(--accent-highlight), var(--accent-highlight));
-  background-size: 0 40%;
-  background-position: 0 60%;
+  background-size: 0 80%;
+  background-position: 0 0;
   background-repeat: no-repeat;
   transition: var(--ease-slower);
   transition-delay: 0.25s;
 }
 
 .highlight.shown {
-  background-size: 100% 40%;
+  background-size: 100% 80%;
 }
 
 /* links */
@@ -267,6 +267,12 @@ nav {
   -webkit-backdrop-filter: blur(7px);
 }
 
+nav:has(#nav-menu:checked) {
+  transition: linear 0s;
+  backdrop-filter: unset;
+  -webkit-backdrop-filter: unset;
+}
+
 nav .container,
 .splash-image-container {
   width: 80%;
@@ -330,13 +336,13 @@ section .container {
  ************/
 
 @media (hover: hover) { /* hover devices: hover animations */
-  nav {
+  /* nav {
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7px);
-  }
+  } */
 
-  .left:hover > p, 
-  .left:focus > p,
+  .wordmark:hover > p, 
+  .wordmark:focus > p,
   nav li a:hover,
   nav li a:focus {
     background: linear-gradient(to right, var(--text), var(--text));
@@ -344,8 +350,8 @@ section .container {
     background-repeat: no-repeat;
   }
 
-  .left:hover > p, 
-  .left:focus > p,
+  .wordmark:hover > p, 
+  .wordmark:focus > p,
   nav li a:hover,
   nav li a:focus {
     background-size: 100% 1px;
@@ -493,6 +499,11 @@ section .container {
     transition-property: transform, opacity, background;
     transition-delay: .5s, .5s, 0s;
   }
+
+  .nav-links li:nth-child(6) a {
+    transition-property: transform, opacity, background;
+    transition-delay: .6s, .6s, 0s;
+  }
   
   .nav-btn {
       cursor: pointer;
@@ -568,10 +579,6 @@ section .container {
     padding: 5em 0 4em 0;
   }
 
-  .splash {
-    padding-top: 4em;
-  }
-
   .work {
     padding-bottom: 7em;
   }
@@ -580,6 +587,10 @@ section .container {
 @media screen and (max-height: 46em) { /* short devices: decrease whitespace*/
   section {
     padding: 3.5em 0 4.5em 0;
+  }
+
+  .splash {
+    padding-top: 4.5em;
   }
 
   .work {
@@ -600,6 +611,7 @@ section .container {
 .scroll-helper-brief,
 .scroll-helper-research,
 .scroll-helper-process,
+.scroll-helper-testing,
 .scroll-helper-designs,
 .scroll-helper-impact {
   height: 4.9em;

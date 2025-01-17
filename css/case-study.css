@@ -41,10 +41,9 @@ h2 { /* section headings */
 }
 
 h3 { /* subheadings */
-  font-size: 1.5rem;
-  margin-bottom: 0.1em;
+  font-size: 1.25rem;
+  margin-bottom: 0.25em;
   font-weight: 500;
-  text-transform: uppercase;
   letter-spacing: 0.025rem;
 }
 
@@ -105,6 +104,12 @@ h4 i {
 
 .inline {
   color: var(--text);
+}
+
+.wordmark i {
+  transform: scale(0);
+  transition: var(--ease-fast);
+  margin-left: 0.125em;
 }
 
 /* callout sections */
@@ -415,6 +420,10 @@ h2.shown {
   transform: translateY(0);
 }
 
+/* .button {
+  margin: 0;
+} */
+
 .button-container {
   display: flex;
   justify-content: center;
@@ -440,6 +449,11 @@ h2.shown {
  ************/
 
 @media (hover: hover) {
+  .wordmark:hover i,
+  .wordmark:focus i {
+    transform: scale(0.875);
+  }
+
   .inline:hover,
   .inline:focus {
     color: var(--accent-readable);
@@ -447,12 +461,13 @@ h2.shown {
 
   .callout:hover,
   .callout:focus {
-    transform: scale(1.05);
+    transform: scale(1.025);
   }
 
   .button:hover,
   .button:focus {
     transform: scale(1.05);
+    transition: var(--ease-slow);
     color: var(--text);
     background-color: var(--accent);
     cursor: pointer;
@@ -467,7 +482,8 @@ h2.shown {
 
   .button:active,
   .close:active {
-    transform: scale(0.95);
+    transition: var(--ease-slow);
+    transform: scale(0.975);
   }
 
   .close:hover::before,
@@ -641,9 +657,9 @@ h2.shown {
     display: block;
   }
 
-  .button-container .button.secondary {
+  /* .button-container .button.secondary {
     margin-top: 0.5em;
-  }
+  } */
   
   .splash,
   .brief,
@@ -655,10 +671,6 @@ h2.shown {
 }
 
 @media screen and (max-height: 46em) {
-  .splash {
-    margin-top: 3.5em;
-  }
-
   .splash img {
     margin-bottom: 0.5em;
   }

@@ -23,19 +23,24 @@ h1 span {
   font-style: italic;
 }
 
+.subheading {
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
 .about .text {
   width: calc(100% - 21rem);
   max-width: 69ch;
 }
 
-.about p {
-  margin-bottom: 1.25em;
+.about p:not(.subheading) {
+  margin-bottom: 1.5em;
 }
 
 .about .links {
   margin: 0;
   padding: 0;
-  margin-top: 2em;
+  margin-top: 2.5em;
 }
 
 .about .links .primary a {
@@ -65,10 +70,11 @@ h1 span {
   height: 28.8rem;
   width: 18rem;
   max-width: 90%;
-  border-radius: 25px;
+  border-radius: 1em;
   object-fit: cover;
   box-shadow: var(--large-shadow);
   transition: var(--bouncy);
+
 }
 
 /************
