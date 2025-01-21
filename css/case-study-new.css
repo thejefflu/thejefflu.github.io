@@ -208,6 +208,10 @@ h1 {
   max-width: 30%;
 }
 
+.thinner {
+  max-width: 70%;
+}
+
 .shorter {
   max-width: 55ch;
 }
@@ -222,10 +226,6 @@ section {
 
 .label {
   margin-top: 0.5em;
-}
-
-.embed {
-  width: 100%;
 }
 
 p ~ iframe {
