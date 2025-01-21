@@ -305,6 +305,7 @@ section {
 
 .tagline {
   position: relative;
+  max-width: 40ch;
 }
 
 .work {
