@@ -95,13 +95,13 @@ h2 {
   flex-direction: row-reverse;
 }
 
-.left-text .subcontainer:not(:has(img)),
-.right-text .subcontainer:not(:has(img)) {
+.left-text .subcontainer:not(:has(.diagram)),
+.right-text .subcontainer:not(:has(.diagram)) {
   max-width: 70%;
 }
 
-.left-text .subcontainer:has(img),
-.right-text .subcontainer:has(img) {
+.left-text .subcontainer:has(.diagram),
+.right-text .subcontainer:has(.diagram) {
   min-width: 30%;
 }
 
@@ -377,8 +377,8 @@ h2:not(#always-shown).shown,
     display: block;
   }
 
-  .left-text .subcontainer:not(:has(img)),
-  .right-text .subcontainer:not(:has(img)) {
+  .left-text .subcontainer:not(:has(.diagram)),
+  .right-text .subcontainer:not(:has(.diagram)) {
     max-width: 100%;
   }
 
