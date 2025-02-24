@@ -40,13 +40,13 @@ section .container {
   margin-bottom: 0;
 }
 
-.image-container:hover {
-  transform: scale(0.975);
+/* .image-container:hover {
+  transform: scale(0.975) !important;
 }
 
 .image-container:hover img {
   transform: scale(1.075);
-}
+} */
 
 .title-large,
 .title-large span {
@@ -103,6 +103,11 @@ h2 {
 .left-text .subcontainer:has(.diagram),
 .right-text .subcontainer:has(.diagram) {
   min-width: 30%;
+}
+
+.left-text .subcontainer:has(.diagram.large-half),
+.right-text .subcontainer:has(.diagram.large-half) {
+  min-width: 50%;
 }
 
 .left-text,
@@ -206,6 +211,10 @@ h1 {
 
 .thin {
   max-width: 30%;
+}
+
+.thinish {
+  max-width: 45%;
 }
 
 .thinner {
@@ -317,7 +326,8 @@ h2:not(#always-shown).shown,
 
   .splash .image-container-outer .image-container,
   .image-container:has(.banner),
-  .banner {
+  .banner,
+  .splash video {
     border-radius: 0;
   }
 

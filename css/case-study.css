@@ -334,12 +334,16 @@ video {
   transition: var(--bouncy);
 }
 
+#splash {
+  transition: var(--ease-slow);
+}
+
 .graphic,
 .photo,
 iframe,
 video {
   border-radius: 20px;
-  box-shadow: var(--medium-shadow);
+  box-shadow: var(--medium-shadow) !important;
 }
 
 .diagram,
@@ -510,7 +514,7 @@ h2.shown {
     color: var(--text);
   }
 
-  .graphic:hover,
+  /* .graphic:hover,
   .graphic:focus,
   .photo:hover,
   .photo:focus,
@@ -522,7 +526,7 @@ h2.shown {
   .video-container:focus video {
     transform: scale(1.05);
     filter: grayscale(0);
-  }
+  } */
 }
 
 @media screen and (max-width: 60em) {

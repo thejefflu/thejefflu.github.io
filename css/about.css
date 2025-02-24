@@ -33,7 +33,7 @@ h1 span {
   max-width: 70ch;
 }
 
-p {
+p:not(.wordmark) {
   margin-bottom: 1.25em;
 }
 

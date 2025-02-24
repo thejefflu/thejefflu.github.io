@@ -5,6 +5,7 @@
     <title>TransCanWork</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="image" property="og:image" content="https://i.ibb.co/fYCcQKm/thumbnail.png">
 
     <!-- favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
@@ -15,6 +16,7 @@
     <!-- styles and fonts -->
     <link rel="stylesheet" href="../../css/main.css">
     <link rel="stylesheet" href="../../css/case-study.css">
+    <link rel="stylesheet" href="../../css/case-study-new.css">
     <link rel="stylesheet" href="../../css/transcanwork.css">
     <link rel="stylesheet" href="https://use.typekit.net/ygv6uzw.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,7 +36,7 @@
 
         <!-- left -->
         <a class="wordmark" href="../../">
-          <img src="../../assets/imgs/monogram.png" alt="JL Monogram">
+          <!-- <img src="../../assets/imgs/monogram.png" alt="JL Monogram"> -->
           <p>TransCanWork <i class="fa-solid fa-arrow-right-to-bracket"></i></p>
         </a>
 
@@ -59,6 +61,9 @@
               <a class="nav-process" onclick="enableScroll()">Process</a>
             </li>
             <li>
+              <a class="nav-testing" onclick="enableScroll()">Testing</a>
+            </li>
+            <li>
               <a class="nav-designs" onclick="enableScroll()">Final Designs</a>
             </li>
             <li>
@@ -70,59 +75,16 @@
     </nav>
 
     <!------------
-      CLOSE BUTTON 
-      ------------>
-      <!-- <a href="../../" class="close">
-        <i class="fa-solid fa-arrow-right-to-bracket"></i>
-      </a> -->
-
-    <!------------
       SPLASH 
       ------------>
-    <section class="splash">
-      <div class="splash-image-container">
-        <img src="splash.png">
-      </div>
-      <div class="container">
-        <h1>TransCanWork</h1>
-        <p class="main-subtitle">Increasing jobseeker satisfaction by 81% with an all-new interactive employment roadmap.</h3>
-        
-        <div class="specs">
-          <p>
-            <span>Timeline</span> 
-            <br> 
-            Nov 2022 - Sep 2023
-          </p>
-          <p>
-            <span>Platform</span>
-            <br> 
-            Responsive Website
-          </p>
-          <p>
-            <span>Role</span>
-            <br> 
-            Product Designer
-            <br>
-            Front End Developer
-          </p>
-          <p>
-            <span>Toolkit</span> 
-            <br> 
-            Figma
-            <br> 
-            React
-          </p>
-        </div>
 
-        <div class="button-container">
-          <a href="https://www.figma.com/community/file/1256082266489898005/transcanwork" target="_blank" class="button">
-            <p>View the Project</p>
-          </a>
-          <a href="transcanwork.pdf" target="_blank" class="button secondary">
-            <p>Slide Deck</p>
-          </a>
+    <section class="splash">
+      <div class="image-container-outer">
+        <div class="image-container">
+          <video id="splash" class="diagram" preload="true" loop="false" autoplay="false" poster="">
+            <source src="splash.mp4">
+          </video>
         </div>
-        
       </div>
       <div class="scroll-helper-brief"></div>
     </section>
@@ -130,61 +92,60 @@
     <!------------
       BRIEF 
       ------------>
+
     <section class="brief">
       <div class="container">
-        <h2 class="reveal">Brief</h2>
-
-        <div class="subcontainer">
-          <h3>Background</h3>
-          <p><span class="highlight">TransCanWork (TCW) is a nonprofit organization that provides job-hunting resources and support for trans, gender-diverse, and intersex (TGI) jobseekers.</span> They also create safer and more comfortable work environments from the ground up by offering training and certification to employers, equipping them with the tools they need to help improve TGI representation in the professional sphere.</p>
+        <div class="left">
+          <h2 id="always-shown">Summary</h2>
         </div>
-
-        <div class="subcontainer">
-          <h3>Team</h3>
-          <div class="subsubcontainer">
-            <p>To create this website, I worked with a team of UCLA students consisting of <span class="highlight">1 product manager</span> (<a href="https://www.linkedin.com/in/nasser-elhajjaoui-9a00a0213/" class="inline" target="_blank">Nasser</a>), <span class="highlight">2 fellow designers</span> (<a href="https://www.linkedin.com/in/jiyeonhann/" class="inline" target="_blank">Jiyeon</a>, <a href="https://www.linkedin.com/in/megan-tieu/" class="inline" target="_blank">Megan</a>), and <span class="highlight">10 developers</span> (<a href="https://www.linkedin.com/in/aaronshi53/" class="inline" target="_blank">Aaron</a>, <a href="https://www.linkedin.com/in/alan-nguyen-ucla/" class="inline" target="_blank">Alan</a>, <a href="https://www.linkedin.com/in/angela-hao-5246801b3/" class="inline" target="_blank">Angela</a>, <a href="https://www.linkedin.com/in/danxlee/" class="inline" target="_blank">Dan</a>, <a href="https://www.linkedin.com/in/diya-baliga-7049881ab/" class="inline" target="_blank">Diya</a>, <a href="https://www.linkedin.com/in/jiamin-xu-9046b7196/" class="inline" target="_blank">Jiamin</a>, <a href="https://www.linkedin.com/in/kayleemtran" class="inline" target="_blank">Kaylee</a>, <a href="https://www.linkedin.com/in/kevantony/" class="inline" target="_blank">Kevin</a>, <a href="https://www.linkedin.com/in/ryan-yeo-ab5010217/" class="inline" target="_blank">Ryan</a>, <a href="https://www.linkedin.com/in/solia-valentine-4961a9228/" class="inline" target="_blank">Solia</a>)!</p>
-          </div>
-          <div class="gallery subsubcontainer">
-            <img src="team1.png" class="photo">
-            <img src="team2.png" class="photo">
-          </div>
-        </div>  
-
-        <div class="subcontainer">
-          <h3>Problem</h3>
-
-          <div class="subsubcontainer">
-            <p><span class="highlight">The method TCW used for keeping track of a jobseeker's progress was a cumbersome, multi-page Google Sheets document.</span> For navigators (professionals assigned to jobseekers to guide them along their journey), repeating this workflow for many different clients was tedious and susceptible to human error. For jobseekers, the process was not very interactive or transparent—<span class="highlight">jobseekers had no way to even see their own progress, contributing to higher rates of burnout and even quitting!</span></p>
-          </div>
-
-          <img src="old-process.png" class="photo subsubcontainer">
-        </div>
-      
-
-        <div class="subcontainer">
-          <h3>Goals</h3>
-          <div class="columns">
-            <div class="subsubcontainer">
-              <h4><i class="fa-solid fa-gamepad"></i>Create a delightful client-side experience.</h4>
-              <p>In order to <span class="highlight">maintain jobseeker engagement and motivation</span> in what can be a demoralizing process, our main goal was to make the external-facing app for clients as fun and visually striking as possible.</p>
+        <div class="right">
+          <p class="title-large">TransCanWork <span class="gray">is a nonprofit working to eliminate barriers to employment for gender diverse individuals. They looked to us to create a portal that would streamline the job-hunting process for both their clientele and their internal employees.</span></p>
+          
+          <div class="specs">
+            <div class="topmost">
+              <p>Role</p> 
+              <p>Design Engineer</p>
             </div>
-            <div class="subsubcontainer">
-              <h4><i class="fa-solid fa-wheelchair-move"></i>Focus on accessibility and ease-of-use.</h4>
-              <p>At its core, we wanted the website to <span class="highlight">serve as an easy way for jobseekers to track their progress</span> towards finding employment. Simultaneously, we also sought to standardize content in a way that would <span class="highlight">make internal management simple</span> for TCW administrators.</p>
+            <div>
+              <p>Contributions</p> 
+              <p>UX Research · Illustration · Design System · Frontend Development</p>
             </div>
-            <div class="subsubcontainer">
-              <h4><i class="fa-solid fa-hourglass-half"></i>Prioritize long-term maintenance and upkeep.</h4>
-              <p>Since TCW doesn’t have any dedicated developers or designers on staff, designing a flexible and thoroughly fleshed out product was critical to <span class="highlight">ensure the product's long-term usefulness</span>.</p>
+            <div>
+              <p>Toolkit</p>
+              <p>Figma · FigJam · React · Notion</p>
+            </div>
+            <div>
+              <p>Team</p>
+              <p>2 Product Managers · 3 Designers · 10 Developers</p>
+            </div>
+            <div>
+              <p>Timeline</p> 
+              <p>10 Months (Nov 2022 – Sep 2023)</p>
             </div>
           </div>
-
-          <div class="callout subsubcontainer">
-            <i class="fa-solid fa-quote-left"></i>
-            <p class="callout-text-large">How might we improve the job hunting experience by representing it in a structured, yet interactive and engaging way?</p>
-            <i class="fa-solid fa-quote-right"></i>
+        </div>
+      </div>
+      <div class="container">
+        <div class="left">
+          <h2>Problem Statement</h2>
+        </div>
+        <div class="right">
+          <p class="title-small">"With us navigators working with over 100 job seekers at a time, we struggle to meet the needs of the position, and things fall through the cracks."</p>
+          <div class="flex">
+            <div class="subcontainer">
+              <p>To run their career services program, TransCanWork (TCW) <span class="highlight">kept track of each client's job hunting progress through a cumbersome, multi-page Google Sheets document</span>. </p>
+              <p>For navigators (TCW's in-house career mentors), repeating this workflow for many different clients was tedious and susceptible to human error. <span class="highlight">On the client side, the process was not very interactive or transparent.</span> Jobseekers had no way to even see their own progress outside of scheduled calls with their navigator, contributing to higher churn rates!</p>
+          </div>
+          <div class="image-container subcontainer thinish">
+            <img src="old-process.png" class="photo">
           </div>
         </div>
-      </div>  
+        <div class="subcontainer">
+          <a class="button secondary nav-designs2" onclick="enableScroll()">
+            <p>Jump to Solution</p>
+          </a>
+        </div>
+      </div>
       <div class="scroll-helper-research"></div>
     </section>
 
@@ -192,65 +153,117 @@
       RESEARCH 
       ------------>
       <section class="research">
+        <div class="image-container-outer">
+          <div class="image-container">
+            <img src="../idontmind/research.jpg" class="banner">
+          </div>
+        </div>
         <div class="container">
-          <h2 class="reveal">Research</h2>
-          <div class="subcontainer">
-            <h3>Competitive Analysis</h3>
-
-            <div class="subsubcontainer">
-              <p>To kick off our research, we <span class="highlight">conducted an analysis of three websites which offer services similar to that of TCW’s</span>: <a href="https://www.jibberjobber.com/login.php"  class="inline" target="_blank">JibberJobber</a>, <a href="https://www.ajcc.lacounty.gov/job-seekers/population-specific-placement-services/youth-work-ages-14-24"  class="inline" target="_blank">Youth@Work</a>, and <a href="https://www.jobsearchjourney.com"  class="inline" target="_blank">Job Search Journey</a>. We were then able to identify commonalities between the sites which suggested features we should incorporate in our own product, as well as things we noticed that we'd want to avoid doing.</p>
-            </div>
-            <img src="competitive-analysis.png" class="diagram subsubcontainer">
-
-            <div class="center-wrapper">
-              <a href="https://www.figma.com/file/GnoVUQZ7bY6BPs7RaZdxyA/TransCanWork-Competitive-Analysis?type=whiteboard&node-id=0%3A1&t=JPMDrkekqOwD8Jwi-1" target="_blank" class="button secondary">
-                <p>View in FigJam</p>
-              </a>
-            </div>
+          <div class="left">
+            <h2>Competitive Analysis</h2>
           </div>
+          <div class="right subcontainer">
+            <p class="title-small">Seeing how we can fill in gaps in the market.</p>
+            <div class="flex subcontainer">
+              <div>
+                <p>To kick off our research, we conducted an analysis of three websites which offer services similar to that of TCW’s: JibberJobber, Youth@Work, and Job Search Journey. We were then able to identify commonalities between the sites which suggested features we should incorporate in our own product, as well as things we noticed that we'd want to avoid doing.</br>
 
-          <div class="subcontainer">
-            <h3>Contextual Inquiry</h3>
-            <p class="subsubcontainer">Next, my team and I interviewed several TransCanWork employees to better understand the issues they were facing. <span class="highlight">Our conversations confirmed from firsthand sources that TCW’s process took a great deal of agency out of jobseekers' hands</span>, while simultaneously forcing lots of manual work and organization onto navigators.</p>
-
-            <img src="contextual-inquiry.png" class="photo subsubcontainer">
-          </div>
-
-          <div class="subcontainer">
-            <h3>Affinity Mapping</h3>
-            <p class="subsubcontainer">Lastly, we <span class="highlight">synthesized our findings from both the competitor audit and the preliminary user interviews</span> to identify common themes and trends. The result was this web of ideas:</p>
-            <img src="affinity-map.png" class="subsubcontainer diagram">
-
-            <div class="center-wrapper">
-              <a href="https://www.figma.com/file/Vnj8AZmlZJUWJADo4Ly9ol/TransCanWork-Affinity-Map?type=whiteboard&t=jgLQ15Tq8LJDfS93-6" target="_blank" class="button secondary">
-                <p>View in FigJam</p>
-              </a>
-            </div>
-          </div>
-
-          <div class="subcontainer">
-            <h3>Key Takeaways</h3>
-            <div class="columns">
-              <div class="subsubcontainer">
-                <h4><i class="fa-solid fa-clipboard-question"></i>Jobseekers felt removed from their own job-searching process.</h4>
-                <p>During our inquiries with TCW navigators, we found out that jobseekers only get to meet with their navigators once every 2 weeks, at most. <span class="highlight">Between sessions, jobseekers had no way of accessing the information on their own progress that navigators were seeing.</span> To make matters worse, they lacked easy communication with their navigators, leading to an uninteractive and isolating experience.</p>
+                <!-- <div class="subcontainer">
+                  <p class="subheading"><i class="fa-solid fa-circle-question"></i> Intentionality</p>
+                  <p class="short">7/8 competitors failed to motivate users with a reason <span class="highlight">why they should use the app in the first place</span>.</p>
+                </div>
+                <div class="subcontainer">
+                  <p class="subheading"><i class="fa-solid fa-heart-crack"></i> Personalization</p>
+                  <p class="short">7/8 competitors didn’t take into account <span class="highlight">users’ individual mental health needs</span> when presenting resources.</p>
+                </div>
+                <div class="subcontainer">
+                  <p class="subheading"><i class="fa-solid fa-sack-dollar"></i> Affordability</p>
+                  <p class="short">5/8 competitors <span class="highlight">hid features behind a paywall</span>, creating a financial barrier to mental health support.</p>
+                </div>
+                <div class="subcontainer">
+                  <a href="https://docs.google.com/spreadsheets/d/1plzAxNMAhxsGOiG6mNlIQJ0rsEnn0WDWItvQSXyrA1Q/edit?usp=sharing" target="_blank" class="button secondary">
+                    <p>Full Analysis</p>
+                  </a>
+                </div> -->
               </div>
-              <div class="subsubcontainer">
-                <h4><i class="fa-solid fa-user-group"></i>TCW’s systems were unequipped to handle large numbers of clients.</h4>
-                <p>While TCW’s spreadsheets were the very backbone of their work, they also contributed to a slow, tedious workflow since each jobseeker had their own individual spreadsheet. Our research revealed that <span class="highlight">navigators could expect to have upwards of 100 clients at a time. Having no compartmentalized way to represent all this data was slowing down the process for everyone involved.</span></p>
+
+            </div>
+            <div>
+              <img src="competitive-analysis.png" class="diagram">
+            </div>
+
+          </div>
+        </div>
+        <div class="container">
+          <div class="left">
+            <h2>Contextual Inquiry</h2>
+          </div>
+          <div class="right">
+            <p class="title-small">"It would be a quicker process if clients could see their file without having to wait for the next availability to book a whole meeting with me."</p>
+            <p></p>
+            <div class="flex subcontainer">
+              <div>
+                <p>Next, my team and I interviewed several TransCanWork employees to better understand the issues they were facing. Our conversations confirmed from firsthand sources that TCW’s process took a great deal of agency out of jobseekers' hands, while simultaneously forcing lots of manual work and organization onto navigators.</p>
+              </div>
+              <img src="contextual-inquiry.png" class="photo">
+            </div>
+            <div class="flex">
+              <div class="subcontainer">
+                <p class="subheading">Jobseekers felt removed from their own job-searching process.</p>
+                <p>During our inquiries with TCW navigators, we found out that jobseekers only get to meet with their navigators once every 2 weeks, at most. Between sessions, jobseekers had no way of accessing the information on their own progress that navigators were seeing. To make matters worse, they lacked easy communication with their navigators, leading to an uninteractive and isolating experience.</p>
+                <!-- <p class="label">— Catherine</p> -->
+              </div>
+              <div class="subcontainer">
+                <p class="subheading">TCW’s systems were unequipped to handle large numbers of clients.</p>
+                <p>While TCW’s spreadsheets were the very backbone of their work, they also contributed to a slow, tedious workflow since each jobseeker had their own individual spreadsheet. Our research revealed that navigators could expect to have upwards of 100 clients at a time. Having no compartmentalized way to represent all this data was slowing down the process for everyone involved.</p>
+                <!-- <p class="label">— Caileigh</p> -->
               </div>
             </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="left">
+            <h2>Affinity Mapping</h2>
+          </div>
+          <div class="right">
+            <p class="title-small">Putting it all together.</p>
 
-            <div class="callout subsubcontainer">
-              <i class="fa-solid fa-quote-left"></i>
-              <p class="callout-text-large">It would be a quicker process if clients could see their file without having to wait for the next availability to book a whole meeting with me.
-              </p>
-              <p class="callout-quote-author">— Diego, TCW navigator
-              </p>
-              <i class="fa-solid fa-quote-right"></i>
+            <div class="subcontainer">
+              <p class="shorter">Lastly, we synthesized our findings from both the competitor audit and the preliminary user interviews to identify common themes and trends. The result was this web of ideas:</p>
+            </div>
+            <div class="subcontainer">
+              <img src="affinity-map.png" class="diagram">
             </div>
           </div>
-
+        </div>
+        <div class="container">
+          <div class="left">
+            <h2>Proposed Solution</h2>
+          </div>
+          <div class="right">
+            <p class="title-small">Introducting: a two-pronged platform that lets jobseekers track milestones and next steps in an interactive way, while also allowing internal TCW employees to monitor client progress.</p>
+            <!-- <div class="subcontainer">
+              <p>After much discussion, both within my team and with IDONTMIND stakeholders, we eventually decided on some <span class="highlight">core functionalities that filled in gaps we observed in the market and addressed the pain points we heard about from our interviewees</span>. We tied these all together into a concept for a friendly mobile companion app with the following design philosophies:</p>
+            </div> -->
+            <div class="flex">
+              <div class="subcontainer">
+                <p class="subheading"><i class="fa-solid fa-earth-americas"></i> Create a delightful client-side experience.</p>
+                <p class="short">In order to maintain jobseeker engagement and motivation in what can be a demoralizing process, our main goal was to make the external-facing app for clients as fun and visually striking as possible.</p>
+              </div>
+              <div class="subcontainer">
+                <p class="subheading"><i class="fa-solid fa-chart-simple"></i> Focus on accessibility and ease-of-use.</p>
+                <p class="short">At its core, we wanted the website to serve as an easy way for jobseekers to track their progress towards finding employment. Simultaneously, we also sought to standardize content in a way that would make internal management simple for TCW administrators.</p>
+              </div>
+            </div>
+            <div class="flex">
+              <div class="subcontainer">
+                <p class="subheading"><i class="fa-solid fa-heart"></i> Prioritize long-term maintenance and upkeep.</p>
+                <p class="short">Since TCW doesn’t have any dedicated developers or designers on staff, designing a flexible and thoroughly fleshed out product was critical to ensure the product's long-term usefulness.</p>
+              </div>
+              <div class="subcontainer">
+              </div>
+            </div>
+          </div>
         </div>
         <div class="scroll-helper-process"></div>
       </section>
@@ -259,65 +272,208 @@
       PROCESS 
       ------------>
       <section class="process">
-        <div class="container">
-          <h2 class="reveal">Process</h2>
-            <div class="subcontainer">
-              <h3>User Flow</h3>
-              <p class="subsubcontainer">My team began the design process by mapping out a simple user flow based on the three kinds of TCW users: administrators, navigators, and jobseekers (my main population of interest for this project). This grounded us with <span class="highlight">a home base from which we could ideate possible solutions that worked to the benefit of all types of TCW members</span>.</p>
-
-              <img src="user-flow.png" class="subsubcontainer diagram">
-
-              <div class="center-wrapper">
-                <a href="https://www.figma.com/file/lZ8e6yebbLVPA2qiHqCmi3/TransCanWork-User-Flow?type=whiteboard&t=jgLQ15Tq8LJDfS93-6" target="_blank" class="button secondary">
-                  <p>View in FigJam</p>
-                </a>
-              </div>
-            </div>
-
-            <div class="subcontainer">
-              <h3>Initial Sketches</h3>
-              <div class="subsubcontainer">
-                <p>At this stage, in collaboration with the lovely folks over at TCW who acted as our liasions, <span class="highlight">we made the decision to represent jobseeker milestones in the form of a pirate roadmap! We felt that doing so would help facilitate a motivational sense of progression towards a goal, while also giving the platform an engaging and never-before-seen spin.</span> The theme was inspired by Our Flag Means Death, a rom-com about LGBTQ pirates that had just come out (no pun intended).</p>
-                <p>From this point on, I assumed full ownership over this portion of the project. I began by creating a rudimentary sketch, giving each island its own unique, alliterative name for that extra charm factor!</p>
-              </div>
-              <img src="initial-sketches.png" class="subsubcontainer diagram">
-            </div>
-
-            <div class="subcontainer">
-              <h3>Iterative Wireframes</h3>
-              <p class="subsubcontainer">Moving onto mid-fidelity designs, my first order of business was to replace the blobs with actual islands! <span class="highlight">Each of the 10 islands represents a section of the TCW's old spreadsheet for mangaing jobseekers, but in a reimagined and user-friendly way.</span> Since this would be an external interface, my main goal during this phase was to create a unique visual theme and alliterative name for each island.</p>
-              <img src="iteration1.png" class="subsubcontainer diagram">
-
-              <p class="subsubcontainer">Fast forward several more iterations (although I wish I could show you the whole process!)—the next major update came after showing some preliminary designs to TCW. <span class="highlight">Per TCW's feedback, I adjusted the roadmap details popup to align more with their brand, and modified the data within them to reflect their new data models</span>. I also continuously built upon the roadmap's visual design to give jobseekers the most fun experience possible!</p>
-              <img src="iteration2.png" class="subsubcontainer diagram">
-            </div>
-
-            <div class="subcontainer">
-              <h3>Usability Testing</h3>
-              <p class="subsubcontainer">At this point, the app was ready for testing with some real users. My team and I <span class="highlight">recruited a mix of jobseekers and navigators, with different levels of experience with TCW, to try out the new roadmap.</span> A session would consist of a series of scenario-based tasks, follow-up questions and feedback, and a questionnaire to help quantify the success of the design.</p>
-
-              <img src="usability-test.png" class="subsubcontainer photo">
-            </div>
-
-            <div class="subcontainer">
-              <h3>Feedback Implementation</h3>
-              <div class="subsubcontainer">
-                <h4><i class="fa-solid fa-map-location-dot"></i>Remove repetitive elements.</h4>
-                <p>The Menu button on the top-left, which served solely as an alternative way of navigating between islands, was only complicating things without providing any additional accessibility. After some discussion, my team and I opted to <span class="highlight">replace the extraneous menu with a calendar of TCW events, to give convenient access to a common resource and help reduce cognitive load</span>.</p>
-              </div>
-
-              <img src="usability-test-change1.png" class="subsubcontainer diagram small">
-
-              <div class="spacer"></div>
-
-              <div class="subsubcontainer">
-                <h4><i class="fa-solid fa-mobile"></i>Design for devices of all kinds.</h4>
-                <p>Even in our relatively small testing pool, we saw participants joining the call from tablets and mobile phones. Certain parts of our prototype weren’t equipped to handle these touch interactions, which only emphasized that <span class="highlight">we couldn’t bank on every user accessing TCW through a computer (an assumption we'd previously made)</span>.</p>
-              </div>
-
-              <img src="usability-test-change2.png" class="subsubcontainer diagram small">
-            </div>
+        <div class="image-container-outer">
+          <div class="image-container">
+            <img src="../idontmind/process.jpg" class="banner">
+          </div>
         </div>
+        <div class="container">
+          <div class="left">
+            <h2>User Flow</h2>
+          </div>
+          <div class="right">
+            <p class="title-small">Creating a solution for internal and external use.</p>
+            <div class="subcontainer">
+              <p>My team began the design process by mapping out a simple user flow based on the three kinds of TCW users: administrators, navigators, and jobseekers (my main population of interest for this project). This grounded us with a home base from which we could ideate possible solutions that worked to the benefit of all types of TCW members.</p>
+            </div>
+            <div class="subcontainer">
+              <img src="user-flow.png" class="diagram">
+            </div>
+          </div>
+          
+        </div>
+        <div class="container">
+          <div class="left">
+            <h2>Initial Sketches</h2>
+          </div>
+          <div class="right embed">
+            <p class="title-small">Paying homage to the LGBTQ community with... a pirate map?</p>
+            <div class="subcontainer">
+              <p>At this stage, in collaboration with the lovely folks over at TCW who acted as our liasions, we made the decision to represent jobseeker milestones in the form of a pirate roadmap! We felt that doing so would help facilitate a motivational sense of progression towards a goal, while also giving the platform an engaging and never-before-seen spin. The theme was inspired by Our Flag Means Death, a rom-com about LGBTQ pirates that had just come out (no pun intended).</p>
+              <p>From this point on, I assumed full ownership over this portion of the project. I began by creating a rudimentary sketch, giving each island its own unique, alliterative name for that extra charm factor!</p>
+            </div>
+            <div class="subcontainer">
+              <img src="initial-sketches.png" class="diagram">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="left">
+            <h2>Iterative Wireframing</h2>
+          </div>
+          <div class="right embed">
+            <p class="title-small">Putting metaphorical pen to paper.</p>
+            <div class="subcontainer">
+              <p>Moving onto mid-fidelity designs, my first order of business was to replace the blobs with actual islands! Each of the 10 islands represents a section of the TCW's old spreadsheet for mangaing jobseekers, but in a reimagined and user-friendly way. Since this would be an external interface, my main goal during this phase was to create a unique visual theme and alliterative name for each island.</p>
+            </div>
+            <div class="subcontainer">
+              <img src="iteration1.png" class="diagram">
+            </div>
+
+            <!-- <div class="subcontainer">
+              <p>Right away, we ran into some critical design questions. Here are a handful of them, and how we answered them through our early wireframes:</p>
+            </div>
+            
+            <div class="subcontainer">
+              <p class="subheading">How might we set users up to use the app with intention?</p>
+              <p>We included an <span class="highlight">interactive explanation of the app's overarching goal</span> (support when you need it, independence when you're ready) as part of the onboarding process after account creation. We also sprinkled in <span class="highlight">data-backed research on the benefits of habits encouraged by the app</span> including reflection and sleep hygiene.</p>
+            </div>
+
+            <div class="subcontainer">
+              <p class="subheading">How might we prevent check-ins from feeling like a chore?</p>
+              <p>We <span class="highlight">randomized and shuffled the prompts</span> shown in each check-in, with the exception of three core questions (determined by our expert therapist consultants) which target mood, sleep, and energy. To <span class="highlight">minimize any pressure and expectations that might induce additional stress</span>, we also provided an option to skip a day's check-in and come back to it later.</p>
+            </div>
+
+            <div class="subcontainer">
+              <p class="subheading">How might we display IDONTMIND's vast library of content?</p>
+              <p>We worked with IDONTMIND to file all content under one or more relevant tags (e.g. Burnout, Meditation, Anxiety). For easy discovery, we provided users with the ability to <span class="highlight">search, filter, and browse content by tag</span>. These tools <span class="highlight">combine the convenience of IDONTMIND's Instagram with the depth of their website</span> for a best-of-both-worlds platform.</p>
+            </div> -->
+
+            <div class="subcontainer">
+              <p>Fast forward several more iterations (although I wish I could show you the whole process!)—the next major update came after showing some preliminary designs to TCW. Per TCW's feedback, I adjusted the roadmap details popup to align more with their brand, and modified the data within them to reflect their new data models. I also continuously built upon the roadmap's visual design to give jobseekers the most fun experience possible!</p>
+            </div>
+            
+            <div class="subcontainer">
+              <img src="iteration2.png" class="diagram">
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="left">
+            <h2>Responsive Design</h2>
+          </div>
+          <div class="right">
+            <p class="title-small">Accounting for all use cases.</p>
+            <div class="subcontainer">
+              <p>As popularly requested during our user testing, jobseekers can also access their roadmaps from the convenience of their phones! The roadmap responsively condenses into a linear, scrollable design, intentionally crafted to take full advantage of smaller screens while still providing the feeling of navigating a map. This way, we provide a flexible and joyful experience on the go.</p>
+            </div>
+            <div class="subcontainer">
+              <img src="responsive-design.png" class="diagram">
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="left">
+            <h2>Design System</h2>
+          </div>
+          <div class="right">
+            <p class="title-small">Balancing stakeholder requests with my own creative additions.</p>
+            <div class="subcontainer">
+              <p>For a project of this scale, it was crucial to create an organized style guide that would ensure consistent design and implementation. Playful fonts and full color palettes were individually chosen for each island to create the most engaging and nautical experience possible. And it's not just for show: by creating and adhering to this style guide, I expedited my design speed in Figma by an estimated 75%!</p>
+            </div>
+            <div class="subcontainer">
+              <img src="style-guide.png" class="diagram">
+            </div>
+          </div>
+        </div>
+        <div class="scroll-helper-testing"></div>
+      </section>
+
+    <!------------
+      TESTING 
+      ------------>
+      <section class="process">
+        <div class="image-container-outer">
+          <div class="image-container">
+            <img src="../idontmind/testing.jpg" class="banner">
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="left">
+            <h2>Usability Testing</h2>
+          </div>
+          <div class="right">
+            <p class="title-small">Translating our design goals into measurable questions.</p>
+            <div class="flex subcontainer">
+              <div>
+                <p>At this point, the app was ready for testing with some real users. My team and I recruited a mix of jobseekers and navigators, with different levels of experience with TCW, to try out the new roadmap. A session would consist of a series of scenario-based tasks, follow-up questions and feedback, and a questionnaire to help quantify the success of the design.</p>
+              </div>
+              <img src="usability-test.png" class="diagram">
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="left">
+            <h2>Feedback Implementation #1</h2>
+          </div>
+          <div class="right embed">
+            <p class="title-small">Working with stakeholders to rework and improve upon their initial ideas.</p>
+            <div class="subcontainer">
+              <p>The Menu button on the top-left, which served solely as an alternative way of navigating between islands, was only complicating things without providing any additional accessibility.</p>
+              <p class="subheading">Solution</p>
+              <p>After some discussion, my team and I opted to replace the extraneous menu with a calendar of TCW events, to give convenient access to a common resource and help reduce cognitive load.</p>
+            </div>
+            <div class="subcontainer">
+              <img src="usability-test-change1.png" class="diagram">
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="left">
+            <h2>Feedback Implementation #2</h2>
+          </div>
+          <div class="right embed">
+            <p class="title-small">Eliminating assumptions and meeting users where they're at.</p>
+            <div class="subcontainer">
+              <p>Even in our relatively small testing pool, we saw participants joining the call from tablets and mobile phones. Certain parts of our prototype weren’t equipped to handle these touch interactions, which only emphasized that we couldn’t bank on every user accessing TCW through a computer (an assumption we'd previously made).</p>
+              <p class="subheading">Solution</p>
+              <p>X</p>
+            </div>
+            <div class="subcontainer">
+              <img src="usability-test-change2.png" class="diagram">
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="container">
+          <div class="left">
+            <h2>Feedback Implementation #3</h2>
+          </div>
+          <div class="right embed">
+            <p class="title-small">Bringing clarity and flexibility to the Journal feature.</p>
+            <div class="subcontainer">
+              <p>Participants expressed that they <span class="highlight">wouldn't necessarily always want to title their free-write journal entries</span>, and also brought an important question to our attention that we hadn't previously considered: <span class="highlight">what types of attachments would be supported</span> by the journal feature?</p>
+              <p class="subheading">Solution</p>
+              <p>To <span class="highlight">allow users to write for the sake of writing</span>, without being forced to pin on the label of a title, we made titling journal entries optional. We also <span class="highlight">worked with our team of developers to determine what types of media would be feasible</span> to attach in journal entries (we settled on images and videos).</p>
+            </div>
+            <div class="subcontainer">
+              <img src="feedback-implementation-3.png" class="diagram">
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="left">
+            <h2>Feedback Implementation #4</h2>
+          </div>
+          <div class="right embed">
+            <p class="title-small">Adapting Trends to both users' and developers' feedback.</p>
+            <div class="subcontainer">
+              <p>Participants were <span class="highlight">thrown off by the visual communication on the trends overview page</span>, expressing confusion over whether the circular rings were meant to be tappable and what the percentages underneath each ring meant.</p>
+              <p class="subheading">Solution</p>
+              <p>To <span class="highlight">more clearly demarcate interactivity</span>, and to <span class="highlight">address developer constraints that were brought to our attention</span> around the same time, we opted for a descriptive card design that was easier to implement, and would also allow for more flexibility in the kinds of trends shown to the user.</p>
+            </div>
+            <div class="subcontainer">
+              <img src="feedback-implementation-4.png" class="diagram">
+            </div>
+          </div>
+        </div> -->
+
         <div class="scroll-helper-designs"></div>
       </section>
 
@@ -325,54 +481,46 @@
       FINAL DESIGNS 
       ------------>
       <section class="designs">
-        <div class="container">
-          <h2 class="reveal">Final Designs</h2>
-  
-          <div class="subcontainer">
-            <h3>Employment Roadmap</h3>
-            <p>After what feels like countless iterations, the employment roadmap became what it is today! Small details were added throughout to improve the experience of using it. For example, <span class="highlight">the dotted line to the red X provides a sense of direction</span>, helping to demystify what is often a confusing process. In addition, <span class="highlight">islands will start black-and-white, then fill in with vibrant colors once their corresponding milestone is completed, to make progress feel more rewarding and interactive</span>.</p>
-            <img src="employment-roadmap.png" class="subsubcontainer diagram">
+        <div class="image-container-outer">
+          <div class="image-container">
+            <img src="../idontmind/final-designs.jpg" class="banner">
           </div>
+        </div>
 
+        <div class="container left-text">
           <div class="subcontainer">
-            <h3>Roadmap Details</h3>
-            <p class="extra-spacing">Clicking or tapping on an island reveals a popup with details about the milestone it represents. They can include forms to fill out, checklists to mull over, resources to check out, and more! These popups <span class="highlight">make it possible for jobseekers to instantly view and manage tasks without having to wait weeks for their next navigator check-in</span>. As requested by TCW, bits of pirate lingo are also sprinkled throughout!</p>
-
-            <div class="video-container">
-              <video autoplay muted loop>
-                <source src="roadmap-details.mp4">
-              </video>
-            </div>
+            <p class="title-large">Employment Roadmap</p>
+            <p class="title-small gray">Visualizing the steps to employment and completed progress through a joy-sparking medium.</p>
           </div>
-
           <div class="subcontainer">
-            <h3>Profile Page</h3>
-            <p class="extra-spacing">For the first time, TCW jobseekers can create profiles to show off their personality. Full profile customization, including avatar and banner image selection, <span class="highlight">provides jobseekers full control over their job-hunting voyage</span>. The profile page also <span class="highlight">acts as a portal to easily contact your assigned navigator</span>, if the need arises.</p>
-
-            <div class="video-container">
-              <video autoplay muted loop>
-                <source src="profile-page.mp4">
-              </video>
-            </div>
+            <img src="employment-roadmap.png" class="diagram large-half">
           </div>
+        </div>
 
+        <div class="container right-text">
           <div class="subcontainer">
-            <h3>Responsive Design</h3>
-            <p>As popularly requested during our user testing, jobseekers can also access their roadmaps from the convenience of their phones! The roadmap responsively condenses into a linear, scrollable design, <span class="highlight">intentionally crafted to take full advantage of smaller screens while still providing the feeling of navigating a map</span>. This way, we provide a flexible and joyful experience on the go.</p>
-            <img src="responsive-design.png" class="subsubcontainer diagram">
+            <p class="title-large">Roadmap Details</p>
+            <p class="title-small gray">Allowing clients and TCW employees alike to view and manage tasks on their own time.</p>
           </div>
-          
-          <!-- <div class="subcontainer">
-            <h3>Prototype Demo</h3>
-            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FFBK5eksvymdQluzLdtjXL3%2FTransCanWork%3Fpage-id%3D14%253A6281%26type%3Ddesign%26node-id%3D14-6361%26viewport%3D951%252C406%252C0.09%26t%3DBPiSpLegqjoZGcX1-1%26scaling%3Dscale-down%26starting-point-node-id%3D14%253A6361%26mode%3Ddesign" allowfullscreen></iframe>
-          </div> -->
-
           <div class="subcontainer">
-            <h3>Style Guide</h3>
-            <p class="subsubcontainer">For a project of this scale, it was crucial to create an organized style guide that would ensure consistent design and implementation. <span class="highlight">Playful fonts and full color palettes were individually chosen for each island</span> to create the most engaging and nautical experience possible. And it's not just for show: <span class="highlight">by creating and adhering to this style guide, I expedited my design speed in Figma by an estimated 75%!</span></p>
-            <img src="style-guide.png" class="subsubcontainer graphic">
+            <video class="diagram large-half" preload="true" loop="false" autoplay="false" poster="">
+              <source src="roadmap-details.mp4">
+            </video>
           </div>
+          </div>
+        </div>
 
+        <div class="container left-text">
+          <div class="subcontainer">
+            <p class="title-large">Profile Page</p>
+            <p class="title-small gray">Providing a means of client-navigator communication and individual expression through a customizable profile.</p>
+          </div>
+          <div class="subcontainer">
+            <video class="diagram large-half" preload="true" loop="false" autoplay="false" poster="">
+              <source src="profile-page.mp4">
+            </video>
+          </div>
+          </div>
         </div>
         <div class="scroll-helper-impact"></div>
       </section>
@@ -381,40 +529,75 @@
       IMPACT
       ------------>
       <section class="impact">
+        <div class="image-container-outer">
+          <div class="image-container">
+            <img src="../idontmind/impact.jpg" class="banner">
+          </div>
+        </div>
+
         <div class="container">
-          <h2 class="reveal">Impact</h2>
-            
-          <div class="subcontainer">
-            <h3>Outcomes</h3>
-            <img src="outcomes.png" class="subsubcontainer small diagram">
+          <div class="left">
+            <h2>Outcomes</h2>
+          </div>
+          <div class="right">
+            <div class="subcontainer">
+              <p class="title-small less-space">"The new website’s worlds apart from the old spreadsheet… It looks so much better, and it’s a lot easier to navigate!"</p>
+              <p class="label large">— Niko, Career Advisor @ TransCanWork</p>
+            </div>
 
-            <div class="callout subsubcontainer">
-              <i class="fa-solid fa-quote-left"></i>
-              <p class="callout-text-large">The new website’s worlds apart from the old spreadsheet… It looks so much better, and it’s a lot easier to navigate!
-              </p>
-              <p class="callout-quote-author">— Niko, TCW navigator
-              </p>
-              <i class="fa-solid fa-quote-right"></i>
+            <div class="subcontainer no-space">
+              <img src="outcomes.png" class="diagram thinner">
             </div>
           </div>
+        </div>
 
-          <div class="subcontainer">
-            <h3>Reflections</h3>
-            <div class="columns">
-              <div class="subsubcontainer">
-                <h4><i class="fa-solid fa-skull-crossbones"></i>Design can take many forms.</h4>
-                <p>When I was first entering the design industry, I never imagined I’d one day be creating a pirate map for job-hunting. This project, with all its flashy colors and illustrations, was much different from the minimalistic designs I was used to. </p>
-                <p>However, doing something a bit outside of my design comfort zone was incredibly refreshing and eye-opening. Not only did I get to create a gamified client interface—a rare opportunity in and of itself—in the process, <span class="highlight">I was introduced an entire world of design trends and styles that I had yet to previously delve into. Now that I've gotten a taste, I've found myself much more willing to experiment and take risks in my design work!</span></p>
-              </div>
+        <div class="container">
+          <div class="left">
+            <h2>Reflections</h2>
+          </div>
+          <div class="right">
+            <div class="subcontainer">
+              <p class="subheading">
+                Design can take many forms.
+              </p>
+              <p>When I was first entering the design industry, I never imagined I’d one day be creating a pirate map for job-hunting. This project, with all its flashy colors and illustrations, was much different from the minimalistic designs I was used to. However, doing something a bit outside of my design comfort zone was incredibly refreshing and eye-opening. Not only did I get to create a gamified client interface—a rare opportunity in and of itself—in the process, I was introduced an entire world of design trends and styles that I had yet to previously delve into. Now that I've gotten a taste, I've found myself much more willing to experiment and take risks in my design work!</p>
+            </div>
+            <div class="subcontainer">
+              <p class="subheading">
+                Keep an organized design file.
+              </p>
+              <p>This project helped me realize that in many ways, design is more about working smart than working hard (although I'd like to think I am doing both!) This manifested itself in my work with TCW when I decided to componentize everything I could, from input fields to decorational shipwrecks. Doing so ended up saving me hours of time, allowing for a more quality end result. My only regret is that I wish I’d started sooner—I only bit the bullet and componentized all of my work around the third iteration—but now I know what to do for whatever project I take on next!</p>
+            </div>
+          </div>
+        </div>
 
-              <div class="subsubcontainer">
-                <h4><i class="fa-solid fa-shapes"></i>Keep an organized design file.</h4>
-                <p>This project helped me realize that <span class="highlight">in many ways, design is more about working smart than working hard (although I'd like to think I am doing both!) This manifested itself in my work with TCW when I decided to componentize everything I could, from input fields to decorational shipwrecks. Doing so ended up saving me hours of time, allowing for a more quality end result.</span></p>
-                <p>My only regret is that I wish I’d started sooner—I only bit the bullet and componentized all of my work around the third iteration—but now I know what to do for whatever project I take on next!</p>
+        <div class="container">
+          <div class="left">
+            <h2></h2>
+          </div>
+          <div class="right">
+            <p class="title-small">
+              And to my team...
+            </p>
+            <div class="subcontainer">
+              <p>Thank you for holding the most wonderfully chaotic work sessions, for implementing all the crazy designs I came up with without a complaint, and for always being up for a discussion about whether Helen Keller really flew a plane.</p>
+            </div>
+            <div class="subcontainer">
+              <div class="image-container">
+                <img src="team2.png" class="photo">
               </div>
             </div>
-            <p class="shoutout"><span class="highlight">... And a big thank you to the TransCanWork team</span> for holding the most wonderfully chaotic work sessions, for implementing all the crazy designs I came up with without a complaint, and for always being up for a discussion about whether Helen Keller really flew a plane.</p>
           </div>
+        </div>
+
+        <div class="button-container">
+          <a class="button" href="../transcanwork/index.html">
+            <p>Next Case Study</p>
+          </a>
+          <a class="button secondary nav-top" onclick="enableScroll()">
+            <p>Back to Top</p>
+          </a>
+        </div>
       </section>
 
     <!------------
@@ -422,7 +605,7 @@
       ------------>
 
       <section class="footer">
-        <div class="container">
+        <div>
           <p>Proudly designed & handcoded by Jeff Lu</p>
           <div class="socials">
             <a class="social" id="linkedin" href="https://www.linkedin.com/in/thejefflu" target="_blank">
@@ -444,8 +627,6 @@
         </div>
       </section>
 
-    <div class="scroll-helper-bottom"></div>
-
-    <script src="../../js/case-study.js"></script>
+    <script src="../../js/case-study-new.js"></script>
   </body>
 </html>

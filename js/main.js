@@ -1,4 +1,42 @@
 // -----------------
+// ON-SCROLL EFFECTS
+// -----------------
+
+window.addEventListener('scroll', reveal);
+
+function reveal(){
+  var reveals = document.querySelectorAll('.hover-container');
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var revealTop = reveals[i].getBoundingClientRect().top;
+    var revealPoint = 100;
+
+    if (revealTop < windowHeight - revealPoint) {
+      reveals[i].classList.add('shown');
+    } else {
+      reveals[i].classList.remove('shown');
+    }
+  }
+}
+
+window.addEventListener('DOMContentLoaded', alwaysshown);
+
+function alwaysshown(){
+  var reveals = document.querySelectorAll('.hover-container');
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var revealTop = reveals[i].getBoundingClientRect().top;
+    var revealPoint = 0;
+
+    if (revealTop < windowHeight - revealPoint) {
+      reveals[i].classList.add('always-shown');
+    }
+  }
+}
+
+// -----------------
 // DYNAMIC HEADER
 // -----------------
 var navMenu = document.getElementById("nav-menu");
