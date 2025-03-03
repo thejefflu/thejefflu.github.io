@@ -33,8 +33,13 @@ h1 span {
   max-width: 70ch;
 }
 
-p:not(.wordmark) {
+p {
   margin-bottom: 1.25em;
+}
+
+p.wordmark,
+p.footer {
+  margin-bottom: 0;
 }
 
 .about .links {
@@ -156,8 +161,4 @@ p:not(.wordmark) {
   }
 }
 
-@media screen and (min-height: 57em) { /* tall devices: increase whitespace */
-  .about {
-    margin-top: 11em;
-  }
-}
+@media screen and (min-height: 57em) { /* tall devices: increase whites
