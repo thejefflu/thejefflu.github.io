@@ -161,4 +161,8 @@ p.footer {
   }
 }
 
-@media screen and (min-height: 57em) { /* tall devices: increase whites
+@media screen and (min-height: 57em) { /* tall devices: increase whitespace */
+  .about {
+    margin-top: 11em;
+  }
+}
