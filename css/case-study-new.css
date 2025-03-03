@@ -287,6 +287,7 @@ p ~ iframe {
   font-size: 1rem;
   padding-top: 0;
   margin-top: 0;
+  margin-bottom: 4em;
 }
 
 .less-space {
@@ -397,47 +398,4 @@ h2:not(#always-shown).shown,
   }
 
   .image-container-outer:has(.banner) {
-    width: 100vw;
-  }
-
-  .banner {
-    width: 100%;
-    object-fit: cover;
-  }
-
-  .thin {
-    max-width: 60%;
-  }
-
-  .button-container {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-  }
-  
-  .button-container * {
-    text-align: center;
-  }
-
-  section .container:has(.left-text,.right-text) {
-    display: block;
-  }
-
-  .left-text .subcontainer:not(:has(.diagram)),
-  .right-text .subcontainer:not(:has(.diagram)) {
-    max-width: 100%;
-  }
-
-  .left-text p,
-  .right-text p {
-    max-width: 100%;
-  }
-
-  .brief,
-  .research,
-  .process,
-  .designs {
-  box-shadow: none;
-  padding-top: 0;
-  }
-}
+    width: 1
