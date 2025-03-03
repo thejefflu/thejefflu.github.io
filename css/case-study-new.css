@@ -35,12 +35,17 @@ section .container {
   margin-bottom: 0;
 }
 
-.splash img {
-  padding-bottom: 1em;
+.image-container-full-width {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
 }
 
-.splash {
-  margin-top: 1em;
+.splash img {
+  width: 80%;
+  border-radius: 1em;
+  object-fit: cover;
+  max-width: 65em; 
 }
 
 /* .image-container:hover {
@@ -365,6 +370,7 @@ h2:not(#always-shown).shown,
     height: 25em;
     width: 100%;
     object-fit: cover;
+    border-radius: 0;
   }
 
   .title-large,
