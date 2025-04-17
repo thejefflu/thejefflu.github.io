@@ -110,11 +110,11 @@ h1 {
   font-family: IvyPresto-Display, Founders Grotesk, sans-serif;
   letter-spacing: -0.025rem;
   font-size: 2.5rem;
-  line-height: 90%;
+  margin-top: -0.1em;
+  line-height: 100%;
 }
 
 /* paragraphs */
-
 .label,
 .footer p {
   text-transform: uppercase;

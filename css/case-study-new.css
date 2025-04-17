@@ -64,6 +64,7 @@ section .container {
   margin-bottom: 1em;
   font-family: IvyPresto-Display;
   line-height: 1.2em;
+  margin-top: -0.175em;
 }
 
 .title-small {
@@ -71,6 +72,7 @@ section .container {
   line-height: 1.2em;
   margin-bottom: 0.625em;
   font-family: IvyPresto-Display;
+  margin-top: -0.1em;
 }
 
 h2 {
@@ -351,6 +353,11 @@ h2:not(#always-shown).shown,
 
   .container .left h2 {
     max-width: none;
+  }
+
+  .title-large,
+  .title-large span {
+    margin-top: 0em;
   }
 }
 
